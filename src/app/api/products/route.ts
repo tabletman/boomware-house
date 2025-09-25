@@ -84,7 +84,7 @@ export async function GET(request: NextRequest) {
   }
 }
 
-export async function POST(request: NextRequest) {
+export async function POST(_request: NextRequest) {
   // This would handle creating new products in a real implementation
   return NextResponse.json(
     { error: 'Product creation not implemented in demo mode' },
