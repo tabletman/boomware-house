@@ -118,7 +118,7 @@ export default function CategoryPage({ params }: CategoryPageProps) {
           <div className="text-center py-12">
             <h3 className="text-xl font-semibold mb-2">No products found</h3>
             <p className="text-muted-foreground mb-6">
-              We don't currently have any products in this category.
+              We don&apos;t currently have any products in this category.
             </p>
             <Button asChild>
               <Link href="/products">Browse All Products</Link>

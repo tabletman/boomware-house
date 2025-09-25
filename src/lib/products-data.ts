@@ -13,7 +13,7 @@ export interface Product {
   brand?: string;
   model?: string;
   year?: number;
-  specifications: Record<string, any>;
+  specifications: Record<string, string | number | boolean>;
   dimensions?: {
     width: number;
     height: number;

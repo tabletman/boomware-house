@@ -1,13 +1,13 @@
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
+import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { MainLayout } from '@/components/layout/main-layout'
 import { ProductImage } from '@/components/ui/product-image'
 import { UpsellSection } from '@/components/ui/upsell-section'
 import { getProductById, products } from '@/lib/products-data'
-import { ArrowLeft, ShoppingCart, Truck, Shield, Star, MapPin } from 'lucide-react'
+import { ShoppingCart, Truck, Shield, Star, MapPin } from 'lucide-react'
 
 interface ProductPageProps {
   params: Promise<{
@@ -130,7 +130,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                 <div>
                   <h4 className="font-medium mb-2">Dimensions</h4>
                   <p className="text-sm text-muted-foreground">
-                    {product.dimensions.width}" × {product.dimensions.height}" × {product.dimensions.depth}"
+                    {product.dimensions.width}&quot; × {product.dimensions.height}&quot; × {product.dimensions.depth}&quot;
                   </p>
                 </div>
               )}

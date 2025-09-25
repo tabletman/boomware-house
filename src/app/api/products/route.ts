@@ -1,10 +1,13 @@
 import { NextRequest, NextResponse } from 'next/server';
 import fs from 'fs/promises';
 import path from 'path';
+import { Database } from '@/types/database';
+
+type Product = Database['public']['Tables']['products']['Row'];
 
 // For demonstration purposes, we'll serve data from our generated JSON file
 // In production, this would connect to Supabase
-async function getProductsFromFile() {
+async function getProductsFromFile(): Promise<Product[]> {
   try {
     const dataDir = path.join(process.cwd(), 'data');
     const files = await fs.readdir(dataDir);
@@ -37,25 +40,25 @@ export async function GET(request: NextRequest) {
 
     // Filter by category
     if (category && category !== 'all') {
-      products = products.filter((product: any) =>
+      products = products.filter((product: Product) =>
         product.category.toLowerCase().replace(/\s+/g, '-') === category
       );
     }
 
     // Filter by condition
     if (condition) {
-      products = products.filter((product: any) =>
+      products = products.filter((product: Product) =>
         product.condition.toLowerCase() === condition.toLowerCase()
       );
     }
 
     // Filter by featured
     if (featured === 'true') {
-      products = products.filter((product: any) => product.is_featured);
+      products = products.filter((product: Product) => product.is_featured);
     }
 
     // Sort by featured first, then by created_at desc
-    products.sort((a: any, b: any) => {
+    products.sort((a: Product, b: Product) => {
       if (a.is_featured && !b.is_featured) return -1;
       if (!a.is_featured && b.is_featured) return 1;
       return new Date(b.created_at).getTime() - new Date(a.created_at).getTime();

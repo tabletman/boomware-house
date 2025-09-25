@@ -2,12 +2,11 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { MainLayout } from '@/components/layout/main-layout'
 import { ProductImage } from '@/components/ui/product-image'
-import { products, categories, Product } from '@/lib/products-data'
+import { products, categories } from '@/lib/products-data'
 import { Filter, Grid, List } from 'lucide-react'
 
 export default function ProductsPage() {
@@ -145,7 +144,7 @@ export default function ProductsPage() {
                   <label className="text-sm">Sort by:</label>
                   <select
                     value={sortBy}
-                    onChange={(e) => setSortBy(e.target.value as any)}
+                    onChange={(e) => setSortBy(e.target.value as 'price-low' | 'price-high' | 'name' | 'condition')}
                     className="border rounded px-2 py-1 text-sm"
                   >
                     <option value="price-low">Price: Low to High</option>
