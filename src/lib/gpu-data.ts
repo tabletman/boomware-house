@@ -77,8 +77,10 @@ export interface ROICalculation {
     insurance: number
   }
   paybackMonths: number
+  paybackPeriod: number
   annualROI: number
   breakEvenUtilization: number
+  netProfit: number
 }
 
 // GPU Models Data
@@ -481,8 +483,10 @@ export const calculateROI = (
     monthlyRevenue,
     monthlyOperatingCosts,
     paybackMonths,
+    paybackPeriod: paybackMonths, // Same as paybackMonths
     annualROI,
-    breakEvenUtilization
+    breakEvenUtilization,
+    netProfit: netMonthlyProfit
   }
 }
 

@@ -2,11 +2,12 @@
 
 import Link from 'next/link'
 import { useState } from 'react'
-import { ShoppingCart, Search, Menu, X, User, Package } from 'lucide-react'
+import { ShoppingCart, Search, Menu, X, User, Package, ChevronDown, Zap } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isGPUMenuOpen, setIsGPUMenuOpen] = useState(false)
 
   const navigation = [
     { name: 'Shop All', href: '/products' },
@@ -15,6 +16,14 @@ export function Header() {
     { name: 'Monitors', href: '/category/monitors-displays' },
     { name: 'Mobile', href: '/category/mobile-devices' },
     { name: 'Gaming', href: '/category/gaming' },
+  ]
+
+  const gpuMenuItems = [
+    { name: 'Overview', href: '/gpu-rental', description: 'GPU rental platform overview' },
+    { name: 'AI Researchers', href: '/gpu-rental/ai-researchers', description: 'Academic pricing & credits' },
+    { name: 'ML Engineers', href: '/gpu-rental/ml-engineers', description: 'API access & technical docs' },
+    { name: 'Startups', href: '/gpu-rental/startups', description: 'Flexible pricing & scaling' },
+    { name: 'Game Developers', href: '/gpu-rental/game-developers', description: 'Rendering benchmarks' }
   ]
 
   return (
@@ -37,6 +46,37 @@ export function Header() {
               {item.name}
             </Link>
           ))}
+
+          {/* GPU Rental Dropdown */}
+          <div
+            className="relative"
+            onMouseEnter={() => setIsGPUMenuOpen(true)}
+            onMouseLeave={() => setIsGPUMenuOpen(false)}
+          >
+            <button className="flex items-center space-x-1 transition-colors hover:text-foreground/80 text-foreground/60">
+              <Zap className="h-4 w-4" />
+              <span>GPU Rental</span>
+              <ChevronDown className="h-3 w-3" />
+            </button>
+
+            {isGPUMenuOpen && (
+              <div className="absolute top-full left-0 w-64 mt-2 bg-white rounded-md shadow-lg border z-50">
+                <div className="p-2">
+                  {gpuMenuItems.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="block px-3 py-2 rounded-md text-sm hover:bg-gray-100 transition-colors"
+                      onClick={() => setIsGPUMenuOpen(false)}
+                    >
+                      <div className="font-medium text-gray-900">{item.name}</div>
+                      <div className="text-xs text-gray-500">{item.description}</div>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
         </nav>
 
         <div className="flex flex-1 items-center justify-end space-x-4">
@@ -98,6 +138,26 @@ export function Header() {
                 {item.name}
               </Link>
             ))}
+
+            {/* GPU Rental Mobile Menu */}
+            <div className="border-t pt-2">
+              <div className="px-3 py-2 text-base font-medium text-gray-900 flex items-center">
+                <Zap className="mr-2 h-5 w-5 text-primary" />
+                GPU Rental
+              </div>
+              {gpuMenuItems.map((item) => (
+                <Link
+                  key={item.name}
+                  href={item.href}
+                  className="block ml-6 px-3 py-2 rounded-md text-sm hover:bg-accent hover:text-accent-foreground"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <div className="font-medium">{item.name}</div>
+                  <div className="text-xs text-gray-500">{item.description}</div>
+                </Link>
+              ))}
+            </div>
+
             <div className="border-t pt-2">
               <Link
                 href="/account"

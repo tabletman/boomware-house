@@ -137,7 +137,7 @@ export function ROICalculator() {
         if (!gpu || !calculations) return
 
         const avgCalculation = calculations[1] // Use average utilization
-        const cumulativeProfit = avgCalculation.netProfit.monthly * month
+        const cumulativeProfit = avgCalculation.netProfit * month
         const netProfit = cumulativeProfit - gpu.basePrice // Subtract initial investment
 
         dataPoint[gpu.shortName] = Math.round(netProfit)
@@ -166,7 +166,7 @@ export function ROICalculator() {
         risk: riskLevel,
         fill: COLORS[index % COLORS.length]
       }
-    }).filter(Boolean)
+    }).filter((item): item is { name: string; value: number; risk: string; fill: string } => item !== null)
   }, [selectedGPUs, roiCalculations])
 
   const toggleGPU = (gpuId: string) => {
@@ -377,7 +377,7 @@ export function ROICalculator() {
                     <div className="grid grid-cols-2 gap-4">
                       <div className="text-center">
                         <div className="text-2xl font-bold text-green-600">
-                          ${avgUtil.netProfit.monthly.toFixed(0)}
+                          ${avgUtil.netProfit.toFixed(0)}
                         </div>
                         <div className="text-xs text-muted-foreground">Monthly Profit*</div>
                       </div>
@@ -773,9 +773,9 @@ export function ROICalculator() {
                         ))}
                       </Pie>
                       <Tooltip
-                        formatter={(value: number, name: string, props: { payload: { risk: string } }) => [
+                        formatter={(value: number) => [
                           `${value.toFixed(1)} months`,
-                          `${props.payload.risk} Risk`
+                          'Risk Assessment'
                         ]}
                       />
                     </RechartsPieChart>
@@ -893,7 +893,7 @@ export function ROICalculator() {
                         <div className="flex justify-between">
                           <span>Monthly Profit:</span>
                           <span className="font-medium text-blue-600">
-                            ${avgCalculation.netProfit.monthly.toFixed(0)}
+                            ${avgCalculation.netProfit.toFixed(0)}
                           </span>
                         </div>
                       </div>

@@ -3,6 +3,8 @@ import fs from 'fs/promises';
 import path from 'path';
 import { Database } from '@/types/database';
 
+export const dynamic = 'force-static';
+
 type Product = Database['public']['Tables']['products']['Row'];
 
 // For demonstration purposes, we'll serve data from our generated JSON file
