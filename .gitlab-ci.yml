@@ -8,6 +8,8 @@ stages:
 
 variables:
   NODE_VERSION: "18.17.0"
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: ""
 
 # Cache node_modules between jobs
 cache:
@@ -16,7 +18,7 @@ cache:
     - node_modules/
     - .next/cache/
 
-# Build job
+# Build Next.js Application
 build:
   stage: build
   image: node:${NODE_VERSION}
@@ -25,9 +27,12 @@ build:
     - npm ci
     - echo "Building Next.js application..."
     - npm run build
+    - echo "Exporting static site..."
+    - npx next export -o out || echo "Export not needed for this config"
   artifacts:
     paths:
       - .next/
+      - out/
       - public/
       - node_modules/
     expire_in: 1 day
@@ -51,70 +56,110 @@ test:
     - develop
     - merge_requests
 
-# Deploy to GitLab Pages
+# Build and push Docker image
+build_image:
+  stage: build
+  image: docker:latest
+  services:
+    - docker:dind
+  before_script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+  script:
+    - echo "Building Docker image..."
+    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA .
+    - docker tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA $CI_REGISTRY_IMAGE:latest
+    - echo "Pushing to GitLab Container Registry..."
+    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+    - docker push $CI_REGISTRY_IMAGE:latest
+  only:
+    - main
+    - develop
+
+# Deploy to GitLab Pages (Static Site)
 pages:
   stage: deploy
   dependencies:
     - build
   script:
-    - echo "Preparing deployment..."
-    - mkdir -p public
-    - cp -r .next/static public/_next/static
-    - cp -r .next/standalone/* public/ || true
-    - echo "Deployment prepared for GitLab Pages"
+    - echo "Preparing GitLab Pages deployment..."
+    - mkdir -p .public
+    - |
+      if [ -d "out" ]; then
+        echo "Using Next.js export output..."
+        cp -r out/* .public/
+      else
+        echo "Using build output..."
+        cp -r .next/static .public/_next/static 2>/dev/null || true
+        cp -r public/* .public/ 2>/dev/null || true
+      fi
+    - mv .public public
+    - echo "GitLab Pages deployment ready"
   artifacts:
     paths:
       - public
   only:
     - main
 
-# Deploy to staging (Docker)
+# Deploy container to staging server
 deploy_staging:
   stage: deploy
-  image: docker:latest
-  services:
-    - docker:dind
-  variables:
-    DOCKER_DRIVER: overlay2
-    DOCKER_TLS_CERTDIR: ""
+  image: alpine:latest
   before_script:
-    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - apk add --no-cache openssh-client
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -H $STAGING_SERVER >> ~/.ssh/known_hosts 2>/dev/null || true
   script:
-    - echo "Building Docker image..."
-    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA .
-    - docker tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA $CI_REGISTRY_IMAGE:staging
-    - echo "Pushing to GitLab Container Registry..."
-    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
-    - docker push $CI_REGISTRY_IMAGE:staging
+    - |
+      ssh $SSH_USER@$STAGING_SERVER << EOF
+        docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+        docker pull $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+        docker stop boomware-staging || true
+        docker rm boomware-staging || true
+        docker run -d --name boomware-staging \
+          -p 3001:3000 \
+          -e NODE_ENV=production \
+          -e NEXT_PUBLIC_SUPABASE_URL=$NEXT_PUBLIC_SUPABASE_URL \
+          -e NEXT_PUBLIC_SUPABASE_ANON_KEY=$NEXT_PUBLIC_SUPABASE_ANON_KEY \
+          --restart unless-stopped \
+          $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+      EOF
   only:
     - develop
+  when: manual
   environment:
     name: staging
-    url: https://staging.boom-warehouse.com
+    url: https://staging.boomware.house
 
-# Deploy to production (Docker)
+# Deploy container to production server
 deploy_production:
   stage: deploy
-  image: docker:latest
-  services:
-    - docker:dind
-  variables:
-    DOCKER_DRIVER: overlay2
-    DOCKER_TLS_CERTDIR: ""
+  image: alpine:latest
   before_script:
-    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+    - apk add --no-cache openssh-client
+    - mkdir -p ~/.ssh
+    - echo "$SSH_PRIVATE_KEY" | tr -d '\r' > ~/.ssh/id_rsa
+    - chmod 600 ~/.ssh/id_rsa
+    - ssh-keyscan -H $PRODUCTION_SERVER >> ~/.ssh/known_hosts 2>/dev/null || true
   script:
-    - echo "Building production Docker image..."
-    - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA .
-    - docker tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA $CI_REGISTRY_IMAGE:latest
-    - docker tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA $CI_REGISTRY_IMAGE:production
-    - echo "Pushing to GitLab Container Registry..."
-    - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
-    - docker push $CI_REGISTRY_IMAGE:latest
-    - docker push $CI_REGISTRY_IMAGE:production
+    - |
+      ssh $SSH_USER@$PRODUCTION_SERVER << EOF
+        docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
+        docker pull $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+        docker stop boomware-production || true
+        docker rm boomware-production || true
+        docker run -d --name boomware-production \
+          -p 80:3000 \
+          -e NODE_ENV=production \
+          -e NEXT_PUBLIC_SUPABASE_URL=$NEXT_PUBLIC_SUPABASE_URL \
+          -e NEXT_PUBLIC_SUPABASE_ANON_KEY=$NEXT_PUBLIC_SUPABASE_ANON_KEY \
+          --restart unless-stopped \
+          $CI_REGISTRY_IMAGE:$CI_COMMIT_SHA
+      EOF
   only:
     - main
   when: manual
   environment:
     name: production
-    url: https://boom-warehouse.com
+    url: https://boomware.house
