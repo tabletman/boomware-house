@@ -85,7 +85,7 @@ export default function ProductsPage() {
                     const count = products.filter(p => p.category === category.name).length
                     return (
                       <button
-                        key={category.id}
+                        key={category.slug}
                         onClick={() => setSelectedCategory(category.name)}
                         className={`block w-full text-left text-sm px-2 py-1 rounded ${
                           selectedCategory === category.name ? 'bg-primary text-primary-foreground' : 'hover:bg-muted'
