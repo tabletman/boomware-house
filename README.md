@@ -1,36 +1,188 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Boom Warehouse E-Commerce Platform
+
+A modern, full-stack e-commerce platform built for Boom Warehouse - a used electronics and appliances business in Warrensville Heights, OH.
+
+## Features
+
+### 🏪 Core E-Commerce
+- Complete product catalog with advanced filtering
+- Professional condition grading system (Grade A-D)
+- Serial number tracking for electronics
+- Real-time inventory management
+- Shopping cart and checkout system
+- Order tracking and management
+
+### 📱 Customer Experience
+- Responsive design optimized for mobile
+- Guest checkout capability
+- Local pickup scheduling
+- Delivery radius calculator
+- Order tracking via email/SMS
+- Customer account management
+
+### 🔧 Admin Dashboard
+- Comprehensive inventory management
+- Barcode scanning integration
+- Bulk product imports (CSV)
+- Order fulfillment system
+- Analytics and reporting
+- Customer management
+
+### 💳 Payment & Fulfillment
+- Stripe payment processing
+- Multiple payment methods
+- Local pickup option
+- Delivery scheduling
+- Email notifications
+- Receipt generation
+
+### 🎨 Design & UX
+- Modern, clean interface
+- Condition-based product badges
+- Dynamic pricing displays
+- Image optimization with Cloudinary
+- SEO-optimized pages
+- Performance monitoring
+
+## Tech Stack
+
+### Frontend
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type safety and developer experience
+- **Tailwind CSS** - Utility-first styling
+- **Radix UI** - Accessible component primitives
+- **Lucide React** - Beautiful icons
+- **React Hook Form** - Form management
+- **Zod** - Schema validation
+
+### Backend & Database
+- **Supabase** - PostgreSQL database and authentication
+- **Stripe** - Payment processing
+- **Cloudinary** - Image management and optimization
+
+### Infrastructure
+- **Vercel** - Hosting and deployment
+- **Cloudflare** - CDN and security
+- **Google Analytics** - Analytics and tracking
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+- Supabase account
+- Stripe account
+- Cloudinary account
 
+### Environment Setup
+
+1. Clone the repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone <repository-url>
+cd boom-warehouse
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install --legacy-peer-deps
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Set up environment variables
+```bash
+cp .env.local.example .env.local
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Fill in your environment variables:
+- Supabase credentials
+- Stripe keys
+- Cloudinary settings
+- Email configuration
 
-## Learn More
+### Database Setup
 
-To learn more about Next.js, take a look at the following resources:
+1. Create a new Supabase project
+2. Run the database migrations:
+```sql
+-- Execute the contents of supabase/migrations/001_initial_schema.sql
+-- Execute the contents of supabase/seed.sql for sample data
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Development
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Start the development server:
+```bash
+npm run dev
+```
 
-## Deploy on Vercel
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Building for Production
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run build
+npm start
+```
+
+## Database Schema
+
+The application uses a comprehensive PostgreSQL schema including:
+- `products` - Product catalog with condition grading
+- `categories` - Product categorization
+- `orders` - Order management
+- `customers` - Customer data
+- `cart_items` - Shopping cart functionality
+- `inventory_transactions` - Inventory tracking
+
+## Key Features Implementation
+
+### Condition Grading System
+Products are graded A through D with:
+- **Grade A**: Excellent condition, minimal wear
+- **Grade B**: Good condition, light wear
+- **Grade C**: Fair condition, noticeable wear
+- **Grade D**: Poor cosmetic condition, fully functional
+
+### Inventory Management
+- Real-time stock tracking
+- Reserved inventory for pending orders
+- Automatic inventory adjustments
+- Location-based organization
+- Barcode scanning support
+
+### Order Processing
+- Automated order number generation
+- Inventory reservation on order
+- Email notifications
+- Tracking number integration
+- Local pickup scheduling
+
+## Deployment
+
+### Vercel Deployment
+1. Connect your repository to Vercel
+2. Configure environment variables
+3. Deploy automatically on push to main
+
+### Supabase Configuration
+1. Set up Row Level Security policies
+2. Configure database functions
+3. Set up real-time subscriptions
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+This project is proprietary software for Boom Warehouse.
+
+## Support
+
+For support and inquiries:
+- Email: info@boomwarehouse.com
+- Phone: (216) 555-0123
+- Address: Warrensville Heights, OH

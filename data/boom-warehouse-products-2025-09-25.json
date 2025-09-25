@@ -1,0 +1,712 @@
+[
+  {
+    "name": "Dell OptiPlex 7060 Desktop Computer",
+    "description": "Powerful business desktop with Intel Core i5 processor. Perfect for office work, light gaming, and everyday computing. Includes keyboard and mouse. Recently refurbished and tested.",
+    "category": "Used Computers",
+    "condition": "Grade A",
+    "price": 299.99,
+    "compare_at_price": 399.99,
+    "brand": "Dell",
+    "model": "OptiPlex 7060",
+    "year": 2019,
+    "quantity": 3,
+    "specifications": {
+      "processor": "Intel Core i5-8500",
+      "ram": "8GB DDR4",
+      "storage": "256GB SSD",
+      "graphics": "Intel UHD Graphics",
+      "ports": "USB 3.0, HDMI, DisplayPort"
+    },
+    "tags": [
+      "desktop",
+      "business",
+      "intel",
+      "refurbished"
+    ],
+    "location": "Warehouse A-1",
+    "id": "BW-UC-0001",
+    "sku": "BW-UC-0001",
+    "serial_number": "3Y11GC59LP",
+    "cost": 180,
+    "weight": 14.09048321006152,
+    "dimensions": {
+      "length": 13.509680388960234,
+      "width": 7.080108361900983,
+      "height": 11.80527008154825
+    },
+    "warranty_months": 6,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-uc-0001-1.jpg"
+    ],
+    "created_at": "2025-09-20T20:33:59.846Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "HP Pavilion Gaming Laptop",
+    "description": "Gaming laptop with dedicated graphics card. Great for gaming, video editing, and demanding applications. Screen in excellent condition, minimal wear on keyboard.",
+    "category": "Used Computers",
+    "condition": "Grade B",
+    "price": 549.99,
+    "compare_at_price": 699.99,
+    "brand": "HP",
+    "model": "Pavilion 15-dk1056wm",
+    "year": 2020,
+    "quantity": 2,
+    "specifications": {
+      "processor": "Intel Core i5-10300H",
+      "ram": "8GB DDR4",
+      "storage": "512GB SSD",
+      "graphics": "NVIDIA GTX 1650",
+      "display": "15.6\" Full HD"
+    },
+    "tags": [
+      "laptop",
+      "gaming",
+      "nvidia",
+      "portable"
+    ],
+    "location": "Warehouse A-2",
+    "id": "BW-UC-0002",
+    "sku": "BW-UC-0002",
+    "serial_number": "ZAYPJ0OYGU",
+    "cost": 330,
+    "weight": 16.005420415704034,
+    "dimensions": {
+      "length": 14.474540156112912,
+      "width": 9.84480247813584,
+      "height": 4.015276069253837
+    },
+    "warranty_months": 3,
+    "is_featured": true,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-uc-0002-1.jpg"
+    ],
+    "created_at": "2025-09-13T04:28:54.030Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Apple iMac 21.5\" All-in-One",
+    "description": "Sleek all-in-one computer perfect for creative work and everyday use. Beautiful Retina display, wireless keyboard and mouse included. Minor scratches on stand.",
+    "category": "Used Computers",
+    "condition": "Grade B",
+    "price": 649.99,
+    "compare_at_price": 899.99,
+    "brand": "Apple",
+    "model": "iMac 21.5\" 2017",
+    "year": 2017,
+    "quantity": 1,
+    "specifications": {
+      "processor": "Intel Core i5",
+      "ram": "8GB",
+      "storage": "1TB Fusion Drive",
+      "display": "21.5\" Retina 4K",
+      "graphics": "Radeon Pro 555"
+    },
+    "tags": [
+      "apple",
+      "all-in-one",
+      "retina",
+      "creative"
+    ],
+    "location": "Warehouse A-3",
+    "id": "BW-UC-0003",
+    "sku": "BW-UC-0003",
+    "serial_number": "7WC3O7T443",
+    "cost": 390,
+    "weight": 19.023187902160572,
+    "dimensions": {
+      "length": 16.153654420429618,
+      "width": 15.327868779710947,
+      "height": 11.267878326473209
+    },
+    "warranty_months": 3,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-uc-0003-1.jpg"
+    ],
+    "created_at": "2025-09-09T07:58:14.981Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Lenovo ThinkPad X1 Carbon Ultrabook",
+    "description": "Premium business ultrabook with carbon fiber construction. Ultra-portable and durable. Perfect for business travel and professional use.",
+    "category": "Used Computers",
+    "condition": "Grade A",
+    "price": 699.99,
+    "compare_at_price": 999.99,
+    "brand": "Lenovo",
+    "model": "ThinkPad X1 Carbon Gen 7",
+    "year": 2019,
+    "quantity": 2,
+    "specifications": {
+      "processor": "Intel Core i7-8565U",
+      "ram": "16GB LPDDR3",
+      "storage": "512GB SSD",
+      "display": "14\" Full HD",
+      "weight": "2.4 lbs"
+    },
+    "tags": [
+      "ultrabook",
+      "business",
+      "lightweight",
+      "premium"
+    ],
+    "location": "Warehouse A-4",
+    "id": "BW-UC-0004",
+    "sku": "BW-UC-0004",
+    "serial_number": "U9DKUZXSYC",
+    "cost": 420,
+    "weight": 7.939520791847742,
+    "dimensions": {
+      "length": 7.148161644252948,
+      "width": 14.904138892912336,
+      "height": 6.8278865678116585
+    },
+    "warranty_months": 6,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-uc-0004-1.jpg"
+    ],
+    "created_at": "2025-09-23T08:19:17.020Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Samsung 32\" Curved Gaming Monitor",
+    "description": "Immersive curved gaming monitor with fast refresh rate. Perfect for gaming and productivity. Minor scuff on back, screen is flawless.",
+    "category": "Electronics",
+    "condition": "Grade B",
+    "price": 249.99,
+    "compare_at_price": 349.99,
+    "brand": "Samsung",
+    "model": "C32F391",
+    "year": 2020,
+    "quantity": 4,
+    "specifications": {
+      "size": "32 inches",
+      "resolution": "1920x1080",
+      "refresh_rate": "60Hz",
+      "panel": "VA Curved",
+      "connections": "HDMI, VGA"
+    },
+    "tags": [
+      "monitor",
+      "curved",
+      "gaming",
+      "display"
+    ],
+    "location": "Warehouse B-1",
+    "id": "BW-EL-0005",
+    "sku": "BW-EL-0005",
+    "serial_number": "4PTS2FPLYT",
+    "cost": 150,
+    "weight": 5.393673190561531,
+    "dimensions": {
+      "length": 13.347632574112431,
+      "width": 12.909385255267972,
+      "height": 3.3388106896915786
+    },
+    "warranty_months": 3,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-el-0005-1.jpg"
+    ],
+    "created_at": "2025-09-25T01:58:24.991Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Logitech MX Master 3 Wireless Mouse",
+    "description": "Premium wireless mouse for productivity and creative work. Ergonomic design with customizable buttons. Like new condition with original packaging.",
+    "category": "Electronics",
+    "condition": "Grade A",
+    "price": 69.99,
+    "compare_at_price": 99.99,
+    "brand": "Logitech",
+    "model": "MX Master 3",
+    "year": 2021,
+    "quantity": 6,
+    "specifications": {
+      "connectivity": "Wireless, USB-C",
+      "battery": "70 days",
+      "buttons": "7 customizable",
+      "compatibility": "Windows, Mac, Linux"
+    },
+    "tags": [
+      "mouse",
+      "wireless",
+      "productivity",
+      "ergonomic"
+    ],
+    "location": "Warehouse B-2",
+    "id": "BW-EL-0006",
+    "sku": "BW-EL-0006",
+    "serial_number": "SJHSED6R84",
+    "cost": 42,
+    "weight": 2.0718659795441443,
+    "dimensions": {
+      "length": 5.814427886520015,
+      "width": 7.916723867482725,
+      "height": 4.520238734711375
+    },
+    "warranty_months": 6,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-el-0006-1.jpg"
+    ],
+    "created_at": "2025-09-22T00:41:46.348Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "iPad Air 10.9\" WiFi Tablet",
+    "description": "Versatile tablet perfect for work, entertainment, and creativity. Screen protector applied, minimal signs of use. Includes charging cable.",
+    "category": "Electronics",
+    "condition": "Grade B",
+    "price": 399.99,
+    "compare_at_price": 549.99,
+    "brand": "Apple",
+    "model": "iPad Air 4th Gen",
+    "year": 2020,
+    "quantity": 3,
+    "specifications": {
+      "display": "10.9\" Liquid Retina",
+      "storage": "64GB",
+      "processor": "A14 Bionic",
+      "connectivity": "WiFi",
+      "cameras": "12MP rear, 7MP front"
+    },
+    "tags": [
+      "tablet",
+      "apple",
+      "portable",
+      "touchscreen"
+    ],
+    "location": "Warehouse B-3",
+    "id": "BW-EL-0007",
+    "sku": "BW-EL-0007",
+    "serial_number": "SSE1R8UZ9D",
+    "cost": 240,
+    "weight": 19.42689523100377,
+    "dimensions": {
+      "length": 8.083633984535705,
+      "width": 9.298534137026405,
+      "height": 8.601317854851073
+    },
+    "warranty_months": 3,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-el-0007-1.jpg"
+    ],
+    "created_at": "2025-09-02T02:53:19.307Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Sony WH-1000XM4 Noise Canceling Headphones",
+    "description": "Industry-leading noise canceling headphones with premium sound quality. Excellent for travel and work from home. Minor wear on headband padding.",
+    "category": "Electronics",
+    "condition": "Grade B",
+    "price": 199.99,
+    "compare_at_price": 279.99,
+    "brand": "Sony",
+    "model": "WH-1000XM4",
+    "year": 2021,
+    "quantity": 5,
+    "specifications": {
+      "type": "Over-ear wireless",
+      "noise_canceling": "Active",
+      "battery": "30 hours",
+      "connectivity": "Bluetooth, USB-C, 3.5mm"
+    },
+    "tags": [
+      "headphones",
+      "wireless",
+      "noise-canceling",
+      "premium"
+    ],
+    "location": "Warehouse B-4",
+    "id": "BW-EL-0008",
+    "sku": "BW-EL-0008",
+    "serial_number": "D2SY4LMGBM",
+    "cost": 120,
+    "weight": 16.14874604037942,
+    "dimensions": {
+      "length": 18.246963613785702,
+      "width": 7.7084397220905565,
+      "height": 6.534406604399291
+    },
+    "warranty_months": 3,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-el-0008-1.jpg"
+    ],
+    "created_at": "2025-09-09T04:56:31.109Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Frigidaire 3.2 Cu Ft Compact Refrigerator",
+    "description": "Perfect compact refrigerator for dorm rooms, offices, or small apartments. Energy efficient with separate freezer compartment. Excellent working condition.",
+    "category": "Small Refrigerators",
+    "condition": "Grade A",
+    "price": 149.99,
+    "compare_at_price": 199.99,
+    "brand": "Frigidaire",
+    "model": "EFR372",
+    "year": 2022,
+    "quantity": 8,
+    "specifications": {
+      "capacity": "3.2 cubic feet",
+      "freezer": "Separate compartment",
+      "energy_star": "Yes",
+      "dimensions": "19.1\" W x 17.4\" D x 32.5\" H"
+    },
+    "tags": [
+      "mini-fridge",
+      "compact",
+      "energy-efficient",
+      "dorm"
+    ],
+    "location": "Warehouse C-1",
+    "id": "BW-RF-0009",
+    "sku": "BW-RF-0009",
+    "serial_number": "GXBYBAOOEJ",
+    "cost": 90,
+    "weight": 16.347644353655777,
+    "dimensions": {
+      "length": 9.939092980143984,
+      "width": 13.441971098165114,
+      "height": 7.858395373545621
+    },
+    "warranty_months": 6,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-rf-0009-1.jpg"
+    ],
+    "created_at": "2025-08-26T17:30:23.538Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Danby 4.4 Cu Ft All Refrigerator",
+    "description": "All-refrigerator unit with no freezer compartment. Ideal for beverages and fresh food storage. Adjustable shelves and door storage.",
+    "category": "Small Refrigerators",
+    "condition": "Grade B",
+    "price": 179.99,
+    "compare_at_price": 229.99,
+    "brand": "Danby",
+    "model": "DAR044A6DDB",
+    "year": 2021,
+    "quantity": 4,
+    "specifications": {
+      "capacity": "4.4 cubic feet",
+      "type": "All refrigerator",
+      "shelves": "2 adjustable wire",
+      "dimensions": "20.7\" W x 22.2\" D x 32.2\" H"
+    },
+    "tags": [
+      "refrigerator",
+      "beverage",
+      "no-freezer",
+      "compact"
+    ],
+    "location": "Warehouse C-2",
+    "id": "BW-RF-0010",
+    "sku": "BW-RF-0010",
+    "serial_number": "92M1QS4OCB",
+    "cost": 108,
+    "weight": 11.090757885995599,
+    "dimensions": {
+      "length": 17.300284064288178,
+      "width": 11.231882800443172,
+      "height": 4.81213842724882
+    },
+    "warranty_months": 3,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-rf-0010-1.jpg"
+    ],
+    "created_at": "2025-09-21T04:27:43.455Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "BLACK+DECKER Mini Fridge with Freezer",
+    "description": "Dual-door mini fridge with separate freezer. Perfect for small spaces. Interior light, adjustable temperature control. Minor dents on exterior.",
+    "category": "Small Refrigerators",
+    "condition": "Grade C",
+    "price": 119.99,
+    "compare_at_price": 159.99,
+    "brand": "BLACK+DECKER",
+    "model": "BCRK32B",
+    "year": 2020,
+    "quantity": 6,
+    "specifications": {
+      "capacity": "3.2 cubic feet",
+      "freezer": "Separate door",
+      "features": "Interior light, adjustable thermostat",
+      "dimensions": "19.7\" W x 20.1\" D x 33.5\" H"
+    },
+    "tags": [
+      "mini-fridge",
+      "dual-door",
+      "freezer",
+      "budget"
+    ],
+    "location": "Warehouse C-3",
+    "id": "BW-RF-0011",
+    "sku": "BW-RF-0011",
+    "serial_number": "2JV5D7FUHG",
+    "cost": 72,
+    "weight": 15.743880366521147,
+    "dimensions": {
+      "length": 24.627762860305545,
+      "width": 19.930102927307985,
+      "height": 11.932548979835232
+    },
+    "warranty_months": 3,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-rf-0011-1.jpg"
+    ],
+    "created_at": "2025-09-04T23:45:14.724Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Hamilton Beach Microwave Oven",
+    "description": "Countertop microwave with digital controls and multiple preset functions. Perfect for reheating and basic cooking. Interior and exterior in great condition.",
+    "category": "Appliances",
+    "condition": "Grade A",
+    "price": 79.99,
+    "compare_at_price": 109.99,
+    "brand": "Hamilton Beach",
+    "model": "0.9 Cu Ft",
+    "year": 2022,
+    "quantity": 10,
+    "specifications": {
+      "capacity": "0.9 cubic feet",
+      "power": "900 watts",
+      "controls": "Digital with 10 power levels",
+      "features": "6 preset functions"
+    },
+    "tags": [
+      "microwave",
+      "countertop",
+      "digital",
+      "compact"
+    ],
+    "location": "Warehouse D-1",
+    "id": "BW-AP-0012",
+    "sku": "BW-AP-0012",
+    "serial_number": "AVWSI4AJ9Z",
+    "cost": 48,
+    "weight": 13.382370994890412,
+    "dimensions": {
+      "length": 22.793211474434088,
+      "width": 9.290921458882623,
+      "height": 9.455574367906387
+    },
+    "warranty_months": 6,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-ap-0012-1.jpg"
+    ],
+    "created_at": "2025-09-06T13:26:07.738Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Keurig K-Elite Coffee Maker",
+    "description": "Premium single-serve coffee maker with multiple cup sizes and strong brew setting. Perfect for office or home use. Some mineral buildup, needs descaling.",
+    "category": "Appliances",
+    "condition": "Grade B",
+    "price": 89.99,
+    "compare_at_price": 139.99,
+    "brand": "Keurig",
+    "model": "K-Elite",
+    "year": 2021,
+    "quantity": 7,
+    "specifications": {
+      "type": "Single-serve",
+      "cup_sizes": "4, 6, 8, 10, 12 oz",
+      "features": "Strong brew, iced coffee setting",
+      "water_reservoir": "75 oz removable"
+    },
+    "tags": [
+      "coffee-maker",
+      "keurig",
+      "single-serve",
+      "office"
+    ],
+    "location": "Warehouse D-2",
+    "id": "BW-AP-0013",
+    "sku": "BW-AP-0013",
+    "serial_number": "QU50BV9U76",
+    "cost": 54,
+    "weight": 15.069403733151676,
+    "dimensions": {
+      "length": 12.069182479143734,
+      "width": 11.82123232169423,
+      "height": 10.730549745209245
+    },
+    "warranty_months": 3,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-ap-0013-1.jpg"
+    ],
+    "created_at": "2025-09-11T16:59:59.728Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Ninja Foodi Personal Blender",
+    "description": "Compact personal blender perfect for smoothies and protein shakes. Comes with travel cups and lids. Powerful motor in excellent working condition.",
+    "category": "Appliances",
+    "condition": "Grade A",
+    "price": 49.99,
+    "compare_at_price": 69.99,
+    "brand": "Ninja",
+    "model": "BL480",
+    "year": 2022,
+    "quantity": 12,
+    "specifications": {
+      "power": "1000 watts",
+      "capacity": "18 oz cups",
+      "includes": "2 Nutri Ninja cups with lids",
+      "blades": "Pro Extractor blades"
+    },
+    "tags": [
+      "blender",
+      "personal",
+      "smoothie",
+      "portable"
+    ],
+    "location": "Warehouse D-3",
+    "id": "BW-AP-0014",
+    "sku": "BW-AP-0014",
+    "serial_number": "XVNUZBTK37",
+    "cost": 30,
+    "weight": 4.654430079328856,
+    "dimensions": {
+      "length": 21.439271137040677,
+      "width": 12.894904274210209,
+      "height": 10.279796276023855
+    },
+    "warranty_months": 6,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-ap-0014-1.jpg"
+    ],
+    "created_at": "2025-09-12T08:26:18.419Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Instant Vortex Plus Air Fryer",
+    "description": "Large capacity air fryer with multiple cooking functions. Perfect for healthy cooking and meal prep. Non-stick basket shows some wear but functions perfectly.",
+    "category": "Appliances",
+    "condition": "Grade B",
+    "price": 79.99,
+    "compare_at_price": 119.99,
+    "brand": "Instant",
+    "model": "Vortex Plus 6 Qt",
+    "year": 2021,
+    "quantity": 8,
+    "specifications": {
+      "capacity": "6 quarts",
+      "functions": "Air fry, roast, broil, bake, reheat, dehydrate",
+      "temperature_range": "95-400°F",
+      "accessories": "Non-stick basket and tray"
+    },
+    "tags": [
+      "air-fryer",
+      "healthy-cooking",
+      "instant",
+      "large-capacity"
+    ],
+    "location": "Warehouse D-4",
+    "id": "BW-AP-0015",
+    "sku": "BW-AP-0015",
+    "serial_number": "PD23IB4Y3F",
+    "cost": 48,
+    "weight": 10.43956499182805,
+    "dimensions": {
+      "length": 20.66276454762488,
+      "width": 15.599818259774558,
+      "height": 10.737299010100664
+    },
+    "warranty_months": 3,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-ap-0015-1.jpg"
+    ],
+    "created_at": "2025-09-11T22:31:15.201Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  },
+  {
+    "name": "Dyson V8 Cordless Vacuum Cleaner",
+    "description": "Powerful cordless stick vacuum with multiple attachments. Great for quick cleanups and reaching tight spaces. Battery holds charge well, some wear on attachments.",
+    "category": "Appliances",
+    "condition": "Grade B",
+    "price": 199.99,
+    "compare_at_price": 279.99,
+    "brand": "Dyson",
+    "model": "V8 Animal",
+    "year": 2020,
+    "quantity": 4,
+    "specifications": {
+      "type": "Cordless stick vacuum",
+      "battery": "Up to 40 minutes",
+      "bin_capacity": "0.14 gallons",
+      "attachments": "Crevice tool, dusting brush, mini motorized tool"
+    },
+    "tags": [
+      "vacuum",
+      "cordless",
+      "dyson",
+      "pet-hair"
+    ],
+    "location": "Warehouse D-5",
+    "id": "BW-AP-0016",
+    "sku": "BW-AP-0016",
+    "serial_number": "EHEMQAIHZE",
+    "cost": 120,
+    "weight": 1.4743638573020315,
+    "dimensions": {
+      "length": 9.509179879500476,
+      "width": 10.919010080142797,
+      "height": 3.8816261579991123
+    },
+    "warranty_months": 3,
+    "is_featured": false,
+    "is_active": true,
+    "reserved_quantity": 0,
+    "images": [
+      "/images/products/bw-ap-0016-1.jpg"
+    ],
+    "created_at": "2025-08-27T04:32:44.329Z",
+    "updated_at": "2025-09-25T12:55:41.319Z"
+  }
+]
