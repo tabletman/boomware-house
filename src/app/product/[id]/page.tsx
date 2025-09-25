@@ -9,6 +9,13 @@ import { UpsellSection } from '@/components/ui/upsell-section'
 import { getProductById, products } from '@/lib/products-data'
 import { ShoppingCart, Truck, Shield, Star, MapPin } from 'lucide-react'
 
+// Generate static params for all product IDs
+export async function generateStaticParams() {
+  return products.map((product) => ({
+    id: product.id,
+  }))
+}
+
 interface ProductPageProps {
   params: Promise<{
     id: string
@@ -244,11 +251,4 @@ export default async function ProductPage({ params }: ProductPageProps) {
       </div>
     </MainLayout>
   )
-}
-
-// Generate static params for all products
-export async function generateStaticParams() {
-  return products.map((product) => ({
-    id: product.id,
-  }))
 }

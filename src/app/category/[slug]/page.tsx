@@ -1,5 +1,3 @@
-'use client'
-
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { Button } from '@/components/ui/button'
@@ -8,6 +6,13 @@ import { Badge } from '@/components/ui/badge'
 import { MainLayout } from '@/components/layout/main-layout'
 import { ProductImage } from '@/components/ui/product-image'
 import { products, categories } from '@/lib/products-data'
+
+// Generate static params for all category slugs
+export async function generateStaticParams() {
+  return categories.map((category) => ({
+    slug: category.slug,
+  }))
+}
 
 interface CategoryPageProps {
   params: {
