@@ -6,6 +6,7 @@ import { useState } from 'react'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { MainLayout } from '@/components/layout/main-layout'
 import { GPU_MODELS, PLATFORMS, type GPUModel } from '@/lib/gpu-data'
 import {
   Code,
@@ -169,11 +170,12 @@ spec:
   }
 
   return (
-    <div className="min-h-screen">
-      {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
-        <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20" />
-        <div className="relative container mx-auto px-4 py-20">
+    <MainLayout>
+      <div className="pl-4">
+        {/* Hero Section */}
+        <section className="relative overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-indigo-900">
+          <div className="absolute inset-0 bg-[url('/grid.svg')] opacity-20" />
+          <div className="relative container mx-auto px-4 py-20">
           <div className="max-w-4xl mx-auto text-center text-white">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-6">
               <Terminal className="h-4 w-4" />
@@ -521,6 +523,7 @@ spec:
           </div>
         </div>
       </section>
-    </div>
+      </div>
+    </MainLayout>
   )
 }

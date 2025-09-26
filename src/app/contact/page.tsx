@@ -1,8 +1,6 @@
 import { MainLayout } from '@/components/layout/main-layout'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Input } from '@/components/ui/input'
-import { Textarea } from '@/components/ui/textarea'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
 
 export default function ContactPage() {
@@ -110,13 +108,21 @@ export default function ContactPage() {
                         <label htmlFor="firstName" className="block text-sm font-medium mb-1">
                           First Name
                         </label>
-                        <Input id="firstName" placeholder="John" />
+                        <input
+                          id="firstName"
+                          placeholder="John"
+                          className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                        />
                       </div>
                       <div>
                         <label htmlFor="lastName" className="block text-sm font-medium mb-1">
                           Last Name
                         </label>
-                        <Input id="lastName" placeholder="Doe" />
+                        <input
+                          id="lastName"
+                          placeholder="Doe"
+                          className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                        />
                       </div>
                     </div>
 
@@ -124,31 +130,46 @@ export default function ContactPage() {
                       <label htmlFor="email" className="block text-sm font-medium mb-1">
                         Email Address
                       </label>
-                      <Input id="email" type="email" placeholder="john@example.com" />
+                      <input
+                        id="email"
+                        type="email"
+                        placeholder="john@example.com"
+                        className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                      />
                     </div>
 
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium mb-1">
                         Phone Number (Optional)
                       </label>
-                      <Input id="phone" type="tel" placeholder="(216) 555-0123" />
+                      <input
+                        id="phone"
+                        type="tel"
+                        placeholder="(216) 555-0123"
+                        className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                      />
                     </div>
 
                     <div>
                       <label htmlFor="subject" className="block text-sm font-medium mb-1">
                         Subject
                       </label>
-                      <Input id="subject" placeholder="How can we help?" />
+                      <input
+                        id="subject"
+                        placeholder="How can we help?"
+                        className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50"
+                      />
                     </div>
 
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium mb-1">
                         Message
                       </label>
-                      <Textarea
+                      <textarea
                         id="message"
                         rows={6}
                         placeholder="Tell us about your question or inquiry..."
+                        className="flex min-h-[80px] w-full rounded-md border border-input bg-transparent px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                       />
                     </div>
 
