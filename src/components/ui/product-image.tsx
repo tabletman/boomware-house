@@ -2,6 +2,7 @@
 
 import Image from 'next/image'
 import { useState } from 'react'
+import { getImageUrl } from '@/lib/paths'
 
 interface ProductImageProps {
   src: string
@@ -15,7 +16,7 @@ export function ProductImage({ src, alt, fill = false, className = '' }: Product
 
   return (
     <Image
-      src={imageError ? '/images/placeholder.svg' : src}
+      src={imageError ? getImageUrl('/images/placeholder.svg') : getImageUrl(src)}
       alt={alt}
       fill={fill}
       className={className}

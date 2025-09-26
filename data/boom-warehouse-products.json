@@ -17,7 +17,7 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 18,
+      "weight": 24,
       "dimensions": {
         "width": 32,
         "height": 21,
@@ -25,7 +25,7 @@
       },
       "specifications": {},
       "created_at": "2025-09-12T16:54:33.000Z",
-      "updated_at": "2025-09-25T23:41:24.178Z"
+      "updated_at": "2025-09-25T23:39:59.657Z"
     },
     {
       "id": "DOrDKzVCfJV",
@@ -41,18 +41,18 @@
         "/images/products/DOrDKzVCfJV_3_dcfb072f.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 14,
       "dimensions": {
-        "width": 11,
-        "height": 10,
-        "depth": 7
+        "width": 9,
+        "height": 9,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2025-09-16T18:09:15.000Z",
-      "updated_at": "2025-09-25T23:41:24.179Z"
+      "updated_at": "2025-09-25T23:39:59.849Z"
     },
     {
       "id": "DPCUXhpEzUx",
@@ -71,22 +71,22 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 16,
       "dimensions": {
-        "width": 11,
-        "height": 7,
-        "depth": 8
+        "width": 21,
+        "height": 12,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2025-09-25T19:02:04.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:00.337Z"
     },
     {
       "id": "DPCVJOHk8nI",
       "name": "Pre-Owned 2012 Apple iMac.",
       "description": "All-in-One Desktop Computer. 21.5 inch Screen. Quad-Core intel Core i5. 2.7GHz.",
-      "price": 107,
-      "compareAtPrice": 139,
+      "price": 503,
+      "compareAtPrice": 653,
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
@@ -98,15 +98,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 24,
       "dimensions": {
-        "width": 17,
-        "height": 8,
-        "depth": 4
+        "width": 25,
+        "height": 10,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2025-09-25T19:08:51.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:01.063Z"
     },
     {
       "id": "DOgntltDMqv",
@@ -125,15 +125,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 8,
       "dimensions": {
-        "width": 18,
-        "height": 10,
-        "depth": 6
+        "width": 8,
+        "height": 14,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2025-09-12T16:56:55.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:01.557Z"
     },
     {
       "id": "DOrGHPOjpxv",
@@ -149,18 +149,18 @@
         "/images/products/DOrGHPOjpxv_3_9e62724a.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
       "weight": 23,
       "dimensions": {
-        "width": 27,
-        "height": 19,
+        "width": 15,
+        "height": 11,
         "depth": 7
       },
       "specifications": {},
       "created_at": "2025-09-16T18:34:58.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:02.488Z"
     },
     {
       "id": "DOecc1vjg5D",
@@ -179,22 +179,22 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 18,
+      "weight": 10,
       "dimensions": {
-        "width": 24,
-        "height": 12,
-        "depth": 12
+        "width": 20,
+        "height": 16,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-09-11T20:40:02.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:02.929Z"
     },
     {
       "id": "DPCU274E_6H",
       "name": "Pre-Owned 2012 Apple iMac.",
       "description": "All-in-One Desktop Computer. 21.5 inch Screen. Quad-Core intel Core i7. 3.1GHz.",
-      "price": 231,
-      "compareAtPrice": 300,
+      "price": 321,
+      "compareAtPrice": 417,
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
@@ -206,22 +206,22 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 11,
       "dimensions": {
-        "width": 9,
-        "height": 14,
-        "depth": 13
+        "width": 27,
+        "height": 13,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2025-09-25T19:06:21.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:03.108Z"
     },
     {
       "id": "DPCVqfUk6IS",
       "name": "!!! ON SALE !!!",
       "description": "Pre-Owned 2012-2013 Apple iMacs. All-in-One Desktop Computer. 21.5 inch Screen.",
-      "price": 153,
-      "compareAtPrice": 198,
+      "price": 288,
+      "compareAtPrice": 374,
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
@@ -233,15 +233,15 @@
       "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 13,
+      "weight": 20,
       "dimensions": {
-        "width": 12,
-        "height": 10,
-        "depth": 8
+        "width": 20,
+        "height": 20,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2025-09-25T19:13:23.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:04.017Z"
     },
     {
       "id": "DOCNVa3jdtg",
@@ -259,15 +259,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 9,
       "dimensions": {
-        "width": 25,
-        "height": 6,
-        "depth": 5
+        "width": 24,
+        "height": 11,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2025-08-31T21:29:13.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:04.689Z"
     },
     {
       "id": "DOGx8fvkfup",
@@ -286,15 +286,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 21,
       "dimensions": {
-        "width": 14,
-        "height": 20,
-        "depth": 11
+        "width": 17,
+        "height": 9,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2025-09-02T16:06:05.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:05.541Z"
     },
     {
       "id": "DOCD6xfjoR5",
@@ -310,18 +310,18 @@
         "/images/products/DOCD6xfjoR5_3_79dc79e0.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 8,
+      "weight": 20,
       "dimensions": {
-        "width": 19,
-        "height": 18,
-        "depth": 5
+        "width": 12,
+        "height": 10,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2025-08-31T20:06:56.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:07.836Z"
     },
     {
       "id": "DOCEwoBDyLV",
@@ -339,15 +339,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 16,
+      "weight": 14,
       "dimensions": {
-        "width": 23,
-        "height": 16,
-        "depth": 8
+        "width": 25,
+        "height": 9,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2025-08-31T20:14:17.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:08.272Z"
     },
     {
       "id": "DOeXMQGDk1f",
@@ -366,15 +366,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 21,
       "dimensions": {
         "width": 21,
         "height": 6,
-        "depth": 12
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2025-09-11T19:54:05.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:09.063Z"
     },
     {
       "id": "DOCEKMejdnF",
@@ -393,15 +393,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 13,
       "dimensions": {
-        "width": 15,
-        "height": 20,
-        "depth": 13
+        "width": 26,
+        "height": 9,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2025-08-31T20:09:02.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:09.979Z"
     },
     {
       "id": "DOGyrgjjWFu",
@@ -420,15 +420,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 9,
       "dimensions": {
         "width": 16,
-        "height": 17,
-        "depth": 13
+        "height": 19,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2025-09-02T16:12:30.000Z",
-      "updated_at": "2025-09-25T23:41:24.180Z"
+      "updated_at": "2025-09-25T23:40:10.675Z"
     },
     {
       "id": "DOebg3igGn0",
@@ -444,18 +444,18 @@
         "/images/products/DOebg3igGn0_3_b03f2b6a.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 21,
+      "weight": 12,
       "dimensions": {
-        "width": 27,
-        "height": 7,
-        "depth": 5
+        "width": 8,
+        "height": 11,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-09-11T20:31:51.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:11.991Z"
     },
     {
       "id": "DOeWT26j_qK",
@@ -471,18 +471,18 @@
         "/images/products/DOeWT26j_qK_3_c841be2b.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 22,
+      "weight": 21,
       "dimensions": {
-        "width": 12,
-        "height": 18,
-        "depth": 7
+        "width": 22,
+        "height": 16,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2025-09-11T19:46:23.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:12.641Z"
     },
     {
       "id": "DOrDc7lj4JX",
@@ -501,22 +501,22 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 7,
+      "weight": 11,
       "dimensions": {
-        "width": 9,
-        "height": 7,
-        "depth": 6
+        "width": 8,
+        "height": 14,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2025-09-16T18:11:43.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:13.268Z"
     },
     {
       "id": "DPCVfDoE_Fa",
       "name": "Pre-Owned 2013 Apple iMac.",
       "description": "All-in-One Desktop Computer. 21.5 inch Screen. Quad-Core intel Core i5. 2.7GHz.",
-      "price": 330,
-      "compareAtPrice": 429,
+      "price": 258,
+      "compareAtPrice": 335,
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
@@ -525,18 +525,18 @@
         "/images/products/DPCVfDoE_Fa_3_7c3c1130.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 16,
+      "weight": 13,
       "dimensions": {
-        "width": 11,
-        "height": 17,
-        "depth": 6
+        "width": 27,
+        "height": 10,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2025-09-25T19:11:50.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:14.113Z"
     },
     {
       "id": "DOebz07j7rk",
@@ -552,18 +552,18 @@
         "/images/products/DOebz07j7rk_3_6860a701.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 21,
       "dimensions": {
-        "width": 9,
-        "height": 14,
-        "depth": 9
+        "width": 10,
+        "height": 18,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2025-09-11T20:34:26.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:14.947Z"
     },
     {
       "id": "DOCNh9lCQp0",
@@ -582,15 +582,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 7,
       "dimensions": {
-        "width": 16,
-        "height": 20,
-        "depth": 7
+        "width": 14,
+        "height": 17,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2025-08-31T21:30:56.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:18.194Z"
     },
     {
       "id": "DKNeZYksmqb",
@@ -608,15 +608,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 12,
       "dimensions": {
-        "width": 10,
-        "height": 13,
-        "depth": 13
+        "width": 8,
+        "height": 19,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2025-05-28T20:24:22.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:18.774Z"
     },
     {
       "id": "DOCCreKjFej",
@@ -635,15 +635,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 14,
       "dimensions": {
-        "width": 19,
-        "height": 11,
-        "depth": 13
+        "width": 11,
+        "height": 14,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2025-08-31T19:56:06.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:19.362Z"
     },
     {
       "id": "DNUyTJnsKY9",
@@ -662,15 +662,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 5,
       "dimensions": {
-        "width": 18,
-        "height": 10,
-        "depth": 9
+        "width": 23,
+        "height": 12,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2025-08-14T06:07:09.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:20.048Z"
     },
     {
       "id": "DNH2G9ntxGe",
@@ -689,15 +689,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 14,
+      "weight": 12,
       "dimensions": {
-        "width": 26,
-        "height": 8,
-        "depth": 8
+        "width": 23,
+        "height": 18,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2025-08-09T05:30:19.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:20.996Z"
     },
     {
       "id": "DNH17mSNFhd",
@@ -713,25 +713,25 @@
         "/images/products/DNH17mSNFhd_3_e3bd76e3.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 20,
       "dimensions": {
-        "width": 22,
-        "height": 8,
-        "depth": 13
+        "width": 8,
+        "height": 13,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2025-08-09T05:28:46.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:21.442Z"
     },
     {
       "id": "DNPPWSkxl-r",
       "name": "BOOMwarehouse",
       "description": "4554 Renaissance Pkwy. Warrensville Hts., OH 44128 11am-6pm",
-      "price": 481,
-      "compareAtPrice": 625,
+      "price": 113,
+      "compareAtPrice": 146,
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
@@ -740,25 +740,25 @@
         "/images/products/DNPPWSkxl-r_3_3f6f1275.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 7,
+      "weight": 13,
       "dimensions": {
-        "width": 8,
-        "height": 15,
-        "depth": 9
+        "width": 12,
+        "height": 6,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2025-08-12T02:25:32.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:22.288Z"
     },
     {
       "id": "DNPPpD6RH5Q",
       "name": "BOOMwarehouse",
       "description": "4554 Renaissance Pkwy. Warrensville Hts., OH 44128 11am-6pm",
-      "price": 215,
-      "compareAtPrice": 279,
+      "price": 64,
+      "compareAtPrice": null,
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
@@ -770,15 +770,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 6,
+      "weight": 15,
       "dimensions": {
-        "width": 22,
-        "height": 10,
-        "depth": 9
+        "width": 20,
+        "height": 13,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2025-08-12T02:28:06.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:22.603Z"
     },
     {
       "id": "DOeX1tQD_vP",
@@ -797,15 +797,15 @@
       "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 8,
+      "weight": 21,
       "dimensions": {
-        "width": 21,
-        "height": 9,
-        "depth": 9
+        "width": 27,
+        "height": 7,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-09-11T19:59:44.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:23.323Z"
     },
     {
       "id": "DOCDE_qjn6D",
@@ -821,18 +821,18 @@
         "/images/products/DOCDE_qjn6D_3_c4c55963.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 13,
       "dimensions": {
-        "width": 25,
-        "height": 7,
-        "depth": 9
+        "width": 23,
+        "height": 6,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2025-08-31T19:59:35.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:24.515Z"
     },
     {
       "id": "DOCDd8UFaSt",
@@ -850,22 +850,22 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 9,
+      "weight": 16,
       "dimensions": {
-        "width": 9,
-        "height": 10,
-        "depth": 6
+        "width": 19,
+        "height": 8,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2025-08-31T20:03:00.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:26.992Z"
     },
     {
       "id": "DNPOfA5RPOR",
       "name": "“BoomWarehouse”",
       "description": "4554 Renaissance Pkwy Warrensville Hts. OH. 44128  11am———6pm",
-      "price": 69,
-      "compareAtPrice": null,
+      "price": 422,
+      "compareAtPrice": 548,
       "category": "Mobile Devices",
       "condition": "Grade B",
       "images": [
@@ -877,15 +877,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 22,
+      "weight": 21,
       "dimensions": {
-        "width": 14,
-        "height": 8,
-        "depth": 6
+        "width": 9,
+        "height": 16,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2025-08-12T02:18:00.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:27.923Z"
     },
     {
       "id": "DOCDumBjnxj",
@@ -904,15 +904,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 24,
+      "weight": 11,
       "dimensions": {
-        "width": 25,
-        "height": 8,
-        "depth": 10
+        "width": 19,
+        "height": 14,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2025-08-31T20:05:16.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:28.392Z"
     },
     {
       "id": "DKNcU50uKl_",
@@ -932,20 +932,20 @@
       "location": "Warrensville Heights, OH",
       "weight": 17,
       "dimensions": {
-        "width": 16,
-        "height": 17,
-        "depth": 12
+        "width": 27,
+        "height": 11,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2025-05-28T20:06:17.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:28.685Z"
     },
     {
       "id": "DKNeG5dvKPB",
       "name": "4554 Renaissance Pkwy.",
       "description": "Warrensville Hts., OH 44128 11am-6pm  Every day (yes, weekends too!)",
-      "price": 260,
-      "compareAtPrice": 338,
+      "price": 536,
+      "compareAtPrice": 696,
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
@@ -953,18 +953,18 @@
         "/images/products/DKNeG5dvKPB_2_16ef3389.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 8,
       "dimensions": {
         "width": 20,
-        "height": 14,
-        "depth": 12
+        "height": 18,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2025-05-28T20:21:51.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:29.101Z"
     },
     {
       "id": "DKNdjLqAMSi",
@@ -982,15 +982,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 21,
+      "weight": 24,
       "dimensions": {
-        "width": 20,
-        "height": 7,
-        "depth": 4
+        "width": 18,
+        "height": 18,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2025-05-28T20:16:58.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:29.956Z"
     },
     {
       "id": "DKNeQFepYVB",
@@ -1009,15 +1009,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 21,
       "dimensions": {
-        "width": 11,
-        "height": 13,
-        "depth": 9
+        "width": 20,
+        "height": 7,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2025-05-28T20:23:06.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:31.488Z"
     },
     {
       "id": "DKNdalZNbXb",
@@ -1035,15 +1035,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 15,
       "dimensions": {
-        "width": 13,
-        "height": 13,
+        "width": 14,
+        "height": 8,
         "depth": 11
       },
       "specifications": {},
       "created_at": "2025-05-28T20:15:48.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:31.908Z"
     },
     {
       "id": "DKNdQ1qu57n",
@@ -1062,15 +1062,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 13,
       "dimensions": {
-        "width": 17,
-        "height": 18,
-        "depth": 10
+        "width": 11,
+        "height": 9,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-05-28T20:14:28.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:32.498Z"
     },
     {
       "id": "DKNcCsrPImp",
@@ -1086,18 +1086,18 @@
         "/images/products/DKNcCsrPImp_3_1a0d3f37.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 12,
+      "weight": 17,
       "dimensions": {
-        "width": 15,
-        "height": 14,
-        "depth": 9
+        "width": 26,
+        "height": 12,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-05-28T20:03:48.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:33.378Z"
     },
     {
       "id": "DKNcK1KJfOj",
@@ -1114,15 +1114,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 11,
       "dimensions": {
-        "width": 12,
-        "height": 17,
-        "depth": 4
+        "width": 16,
+        "height": 18,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2025-05-28T20:04:55.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:35.796Z"
     },
     {
       "id": "DJiXISlxewn",
@@ -1140,15 +1140,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 14,
+      "weight": 6,
       "dimensions": {
-        "width": 22,
-        "height": 8,
-        "depth": 9
+        "width": 8,
+        "height": 13,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2025-05-12T02:33:32.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:36.250Z"
     },
     {
       "id": "DJr_craPGu6",
@@ -1167,15 +1167,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 9,
       "dimensions": {
-        "width": 14,
-        "height": 15,
-        "depth": 7
+        "width": 10,
+        "height": 12,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2025-05-15T20:19:00.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:36.845Z"
     },
     {
       "id": "DJr82LBuB-x",
@@ -1194,15 +1194,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 11,
+      "weight": 9,
       "dimensions": {
-        "width": 8,
-        "height": 16,
-        "depth": 10
+        "width": 14,
+        "height": 9,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2025-05-15T19:56:16.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:37.321Z"
     },
     {
       "id": "DJiaXoCR_qN",
@@ -1218,18 +1218,18 @@
         "/images/products/DJiaXoCR_qN_3_61cea06e.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 16,
+      "weight": 11,
       "dimensions": {
-        "width": 20,
-        "height": 12,
-        "depth": 7
+        "width": 18,
+        "height": 8,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2025-05-12T03:01:50.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:37.721Z"
     },
     {
       "id": "DJiYWOrROu-",
@@ -1248,42 +1248,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 22,
+      "weight": 12,
       "dimensions": {
-        "width": 17,
-        "height": 17,
-        "depth": 8
+        "width": 11,
+        "height": 16,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2025-05-12T02:44:10.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
-    },
-    {
-      "id": "DJiXd-DRQZh",
-      "name": "Frigidaire mini coolers, NEW, BOOMwarehouse",
-      "description": "4554 Renaissance Pkwy. Warrensville Hts., OH 44128 11am-6pm",
-      "price": 19,
-      "compareAtPrice": null,
-      "category": "Electronics",
-      "condition": "Grade A",
-      "images": [
-        "/images/products/DJiXd-DRQZh_1_3a7939b2.jpg",
-        "/images/products/DJiXd-DRQZh_2_90cb8967.jpg",
-        "/images/products/DJiXd-DRQZh_3_effd6224.jpg"
-      ],
-      "inStock": true,
-      "is_featured": false,
-      "warranty_months": 6,
-      "location": "Warrensville Heights, OH",
-      "weight": 12,
-      "dimensions": {
-        "width": 26,
-        "height": 8,
-        "depth": 7
-      },
-      "specifications": {},
-      "created_at": "2025-05-12T02:36:29.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:40:38.545Z"
     },
     {
       "id": "DJr7jI0vzgN",
@@ -1302,15 +1275,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 22,
+      "weight": 14,
       "dimensions": {
-        "width": 12,
-        "height": 10,
-        "depth": 8
+        "width": 8,
+        "height": 18,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2025-05-15T19:44:56.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:44:24.121Z"
     },
     {
       "id": "DJr-Gd0PM5C",
@@ -1325,18 +1298,18 @@
         "/images/products/DJr-Gd0PM5C_2_b6bd7c6b.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 6,
       "dimensions": {
-        "width": 27,
-        "height": 6,
-        "depth": 4
+        "width": 10,
+        "height": 11,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2025-05-15T20:07:14.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:44:25.125Z"
     },
     {
       "id": "DKNc1GTOJRV",
@@ -1353,15 +1326,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 6,
+      "weight": 8,
       "dimensions": {
-        "width": 9,
-        "height": 20,
-        "depth": 5
+        "width": 11,
+        "height": 17,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2025-05-28T20:10:41.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:44:25.225Z"
     },
     {
       "id": "DJr7cv8R2aj",
@@ -1377,18 +1350,18 @@
         "/images/products/DJr7cv8R2aj_3_b5831aad.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 8,
+      "weight": 16,
       "dimensions": {
-        "width": 26,
-        "height": 8,
-        "depth": 4
+        "width": 24,
+        "height": 15,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2025-05-15T19:44:04.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:44:27.877Z"
     },
     {
       "id": "DJr_w_DtOBG",
@@ -1407,15 +1380,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 9,
+      "weight": 19,
       "dimensions": {
-        "width": 17,
-        "height": 7,
-        "depth": 13
+        "width": 24,
+        "height": 9,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2025-05-15T20:21:46.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:44:28.088Z"
     },
     {
       "id": "DJiJaHRRyd8",
@@ -1431,18 +1404,18 @@
         "/images/products/DJiJaHRRyd8_3_1e245f47.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 13,
       "dimensions": {
-        "width": 17,
-        "height": 19,
-        "depth": 13
+        "width": 14,
+        "height": 17,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2025-05-12T00:33:38.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:44:28.916Z"
     },
     {
       "id": "DJiS5oaRuJv",
@@ -1454,21 +1427,22 @@
       "condition": "Grade B",
       "images": [
         "/images/products/DJiS5oaRuJv_1_0729ac87.jpg",
-        "/images/products/DJiS5oaRuJv_2_9083cf9b.jpg"
+        "/images/products/DJiS5oaRuJv_2_9083cf9b.jpg",
+        "/images/products/DJiS5oaRuJv_3_aae94280.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 13,
+      "weight": 16,
       "dimensions": {
-        "width": 18,
-        "height": 14,
-        "depth": 6
+        "width": 26,
+        "height": 19,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-05-12T01:56:34.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:44:30.369Z"
     },
     {
       "id": "DJiOEZ1RU2q",
@@ -1479,21 +1453,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJiOEZ1RU2q_1_a9a7f2dc.jpg"
+        "/images/products/DJiOEZ1RU2q_1_a9a7f2dc.jpg",
+        "/images/products/DJiOEZ1RU2q_2_3cd5d7d4.jpg",
+        "/images/products/DJiOEZ1RU2q_3_f8dd42b3.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 24,
       "dimensions": {
-        "width": 14,
-        "height": 16,
-        "depth": 11
+        "width": 17,
+        "height": 13,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2025-05-12T01:14:21.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:44:31.710Z"
     },
     {
       "id": "DJiVTehx_Go",
@@ -1504,21 +1480,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJiVTehx_Go_1_a45e5889.jpg"
+        "/images/products/DJiVTehx_Go_1_a45e5889.jpg",
+        "/images/products/DJiVTehx_Go_2_21640c6b.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 6,
+      "weight": 17,
       "dimensions": {
-        "width": 17,
-        "height": 11,
-        "depth": 11
+        "width": 12,
+        "height": 8,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-05-12T02:17:35.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:44:32.405Z"
     },
     {
       "id": "DJiUyyVRfUi",
@@ -1529,21 +1506,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJiUyyVRfUi_1_5691636d.jpg"
+        "/images/products/DJiUyyVRfUi_1_5691636d.jpg",
+        "/images/products/DJiUyyVRfUi_2_929cfa4c.jpg",
+        "/images/products/DJiUyyVRfUi_3_f0e218c4.jpg"
       ],
       "inStock": true,
       "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 14,
+      "weight": 17,
       "dimensions": {
-        "width": 15,
-        "height": 9,
-        "depth": 7
+        "width": 16,
+        "height": 17,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2025-05-12T02:13:07.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:44:33.722Z"
     },
     {
       "id": "DJiJ-R8R0lQ",
@@ -1554,21 +1533,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJiJ-R8R0lQ_1_bf002e77.jpg"
+        "/images/products/DJiJ-R8R0lQ_1_bf002e77.jpg",
+        "/images/products/DJiJ-R8R0lQ_2_177795ed.jpg",
+        "/images/products/DJiJ-R8R0lQ_3_cef40eb4.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 21,
+      "weight": 11,
       "dimensions": {
-        "width": 16,
-        "height": 8,
-        "depth": 7
+        "width": 11,
+        "height": 13,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2025-05-12T00:38:34.000Z",
-      "updated_at": "2025-09-25T23:41:24.181Z"
+      "updated_at": "2025-09-25T23:44:36.135Z"
     },
     {
       "id": "DJiHgtLRJ3V",
@@ -1579,21 +1560,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJiHgtLRJ3V_1_6bf1b8a2.jpg"
+        "/images/products/DJiHgtLRJ3V_1_6bf1b8a2.jpg",
+        "/images/products/DJiHgtLRJ3V_2_5d6738e6.jpg",
+        "/images/products/DJiHgtLRJ3V_3_32be3b95.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 6,
+      "weight": 20,
       "dimensions": {
-        "width": 12,
-        "height": 7,
-        "depth": 4
+        "width": 16,
+        "height": 8,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2025-05-12T00:17:03.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:37.823Z"
     },
     {
       "id": "DJiRz8SRbAO",
@@ -1604,7 +1587,9 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJiRz8SRbAO_1_dc8adad7.jpg"
+        "/images/products/DJiRz8SRbAO_1_dc8adad7.jpg",
+        "/images/products/DJiRz8SRbAO_2_332fbbac.jpg",
+        "/images/products/DJiRz8SRbAO_3_c6303891.jpg"
       ],
       "inStock": true,
       "is_featured": false,
@@ -1612,13 +1597,13 @@
       "location": "Warrensville Heights, OH",
       "weight": 9,
       "dimensions": {
-        "width": 8,
-        "height": 6,
-        "depth": 8
+        "width": 9,
+        "height": 13,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2025-05-12T01:47:04.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:38.953Z"
     },
     {
       "id": "DJiWVHtxq2m",
@@ -1629,21 +1614,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJiWVHtxq2m_1_e37e3a65.jpg"
+        "/images/products/DJiWVHtxq2m_1_e37e3a65.jpg",
+        "/images/products/DJiWVHtxq2m_2_55e428e8.jpg",
+        "/images/products/DJiWVHtxq2m_3_12c57f0c.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 19,
       "dimensions": {
-        "width": 22,
-        "height": 13,
-        "depth": 7
+        "width": 12,
+        "height": 16,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2025-05-12T02:26:33.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:42.477Z"
     },
     {
       "id": "DJr8aFTRUIh",
@@ -1654,21 +1641,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJr8aFTRUIh_1_0f1afa2d.jpg"
+        "/images/products/DJr8aFTRUIh_1_0f1afa2d.jpg",
+        "/images/products/DJr8aFTRUIh_2_a9526b5e.jpg",
+        "/images/products/DJr8aFTRUIh_3_a6af7d50.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 12,
+      "weight": 5,
       "dimensions": {
-        "width": 13,
-        "height": 6,
-        "depth": 5
+        "width": 16,
+        "height": 15,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2025-05-15T19:52:26.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:43.917Z"
     },
     {
       "id": "DJr9TMWPWzO",
@@ -1679,21 +1668,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJr9TMWPWzO_1_61011c03.jpg"
+        "/images/products/DJr9TMWPWzO_1_61011c03.jpg",
+        "/images/products/DJr9TMWPWzO_2_8d06b418.jpg",
+        "/images/products/DJr9TMWPWzO_3_3db7a0a2.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 9,
+      "weight": 14,
       "dimensions": {
-        "width": 11,
+        "width": 20,
         "height": 12,
-        "depth": 9
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2025-05-15T20:00:14.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:45.127Z"
     },
     {
       "id": "DJiI6Cgxrk2",
@@ -1704,21 +1695,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJiI6Cgxrk2_1_7dface4a.jpg"
+        "/images/products/DJiI6Cgxrk2_1_7dface4a.jpg",
+        "/images/products/DJiI6Cgxrk2_2_82d0ade4.jpg",
+        "/images/products/DJiI6Cgxrk2_3_df60e567.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 24,
+      "weight": 23,
       "dimensions": {
-        "width": 19,
-        "height": 10,
-        "depth": 6
+        "width": 18,
+        "height": 8,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2025-05-12T00:29:15.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:47.830Z"
     },
     {
       "id": "DJiaOsURh8G",
@@ -1729,21 +1722,22 @@
       "category": "Monitors & Displays",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJiaOsURh8G_1_11223470.jpg"
+        "/images/products/DJiaOsURh8G_1_11223470.jpg",
+        "/images/products/DJiaOsURh8G_2_682e259b.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 15,
       "dimensions": {
-        "width": 10,
-        "height": 17,
-        "depth": 6
+        "width": 25,
+        "height": 15,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-05-12T03:00:37.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:49.994Z"
     },
     {
       "id": "DGn_7x3yDMb",
@@ -1754,21 +1748,23 @@
       "category": "Appliances",
       "condition": "Grade B",
       "images": [
-        "/images/products/DGn_7x3yDMb_1_1388300f.jpg"
+        "/images/products/DGn_7x3yDMb_1_1388300f.jpg",
+        "/images/products/DGn_7x3yDMb_2_2a409866.jpg",
+        "/images/products/DGn_7x3yDMb_3_2ff908da.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 6,
+      "weight": 9,
       "dimensions": {
-        "width": 27,
-        "height": 20,
-        "depth": 9
+        "width": 26,
+        "height": 14,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2025-02-28T17:32:06.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:51.542Z"
     },
     {
       "id": "DGn_RybP4L5",
@@ -1779,7 +1775,9 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DGn_RybP4L5_1_73b17953.jpg"
+        "/images/products/DGn_RybP4L5_1_73b17953.jpg",
+        "/images/products/DGn_RybP4L5_2_f3eac80e.jpg",
+        "/images/products/DGn_RybP4L5_3_3d8d0178.jpg"
       ],
       "inStock": true,
       "is_featured": false,
@@ -1787,13 +1785,13 @@
       "location": "Warrensville Heights, OH",
       "weight": 22,
       "dimensions": {
-        "width": 14,
-        "height": 11,
-        "depth": 11
+        "width": 23,
+        "height": 14,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2025-02-28T17:26:22.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:52.968Z"
     },
     {
       "id": "DGoBXBJPTZq",
@@ -1804,7 +1802,8 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DGoBXBJPTZq_1_d134a70c.jpg"
+        "/images/products/DGoBXBJPTZq_1_d134a70c.jpg",
+        "/images/products/DGoBXBJPTZq_2_7f1a9cbe.jpg"
       ],
       "inStock": true,
       "is_featured": true,
@@ -1812,13 +1811,13 @@
       "location": "Warrensville Heights, OH",
       "weight": 10,
       "dimensions": {
-        "width": 23,
+        "width": 16,
         "height": 17,
-        "depth": 5
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2025-02-28T17:44:34.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:54.035Z"
     },
     {
       "id": "DGoBRz0Mt1T",
@@ -1829,21 +1828,23 @@
       "category": "Appliances",
       "condition": "Grade B",
       "images": [
-        "/images/products/DGoBRz0Mt1T_1_26027723.jpg"
+        "/images/products/DGoBRz0Mt1T_1_26027723.jpg",
+        "/images/products/DGoBRz0Mt1T_2_6132ccb8.jpg",
+        "/images/products/DGoBRz0Mt1T_3_216d1f45.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 24,
+      "weight": 16,
       "dimensions": {
-        "width": 20,
-        "height": 13,
-        "depth": 10
+        "width": 11,
+        "height": 9,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-02-28T17:43:51.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:55.573Z"
     },
     {
       "id": "DGn-PZ8NPhq",
@@ -1854,21 +1855,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DGn-PZ8NPhq_1_dac1d4ab.jpg"
+        "/images/products/DGn-PZ8NPhq_1_dac1d4ab.jpg",
+        "/images/products/DGn-PZ8NPhq_2_3d61d1e6.jpg",
+        "/images/products/DGn-PZ8NPhq_3_00889c96.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 18,
+      "weight": 24,
       "dimensions": {
-        "width": 10,
-        "height": 13,
-        "depth": 4
+        "width": 18,
+        "height": 12,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2025-02-28T17:17:18.000Z",
-      "updated_at": "2025-09-25T23:41:24.182Z"
+      "updated_at": "2025-09-25T23:44:56.993Z"
     },
     {
       "id": "DJhqjyVv00J",
@@ -1879,21 +1882,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJhqjyVv00J_1_e1679790.jpg"
+        "/images/products/DJhqjyVv00J_1_e1679790.jpg",
+        "/images/products/DJhqjyVv00J_2_a7546a4b.jpg",
+        "/images/products/DJhqjyVv00J_3_75d72ae0.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 9,
       "dimensions": {
-        "width": 14,
-        "height": 20,
-        "depth": 11
+        "width": 26,
+        "height": 18,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2025-05-11T20:04:04.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:00.657Z"
     },
     {
       "id": "DGn8-atRvio",
@@ -1904,21 +1909,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DGn8-atRvio_1_db9f4ac7.jpg"
+        "/images/products/DGn8-atRvio_1_db9f4ac7.jpg",
+        "/images/products/DGn8-atRvio_2_6f597e3b.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 20,
       "dimensions": {
-        "width": 21,
-        "height": 19,
-        "depth": 12
+        "width": 11,
+        "height": 13,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2025-02-28T17:06:15.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:02.237Z"
     },
     {
       "id": "DKNc-TLJ1rd",
@@ -1929,46 +1935,49 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DKNc-TLJ1rd_1_e3bd2f22.jpg"
+        "/images/products/DKNc-TLJ1rd_1_e3bd2f22.jpg",
+        "/images/products/DKNc-TLJ1rd_2_2231afe0.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 9,
+      "weight": 24,
       "dimensions": {
-        "width": 18,
-        "height": 19,
-        "depth": 5
+        "width": 21,
+        "height": 13,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2025-05-28T20:11:56.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:03.160Z"
     },
     {
       "id": "DJiKlJ8xwm5",
       "name": "BOOMwarehouse",
       "description": "4554 Renaissance Pkwy. Warrensville Hts., OH 44128 11am-6pm",
-      "price": 429,
-      "compareAtPrice": 557,
+      "price": 472,
+      "compareAtPrice": 613,
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJiKlJ8xwm5_1_9bc7f502.jpg"
+        "/images/products/DJiKlJ8xwm5_1_9bc7f502.jpg",
+        "/images/products/DJiKlJ8xwm5_2_356044f3.jpg",
+        "/images/products/DJiKlJ8xwm5_3_13e5bb9f.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 15,
       "dimensions": {
-        "width": 16,
-        "height": 15,
-        "depth": 9
+        "width": 9,
+        "height": 18,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2025-05-12T00:43:52.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:04.753Z"
     },
     {
       "id": "DJiVv6AROMH",
@@ -1979,21 +1988,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJiVv6AROMH_1_20d03c08.jpg"
+        "/images/products/DJiVv6AROMH_1_20d03c08.jpg",
+        "/images/products/DJiVv6AROMH_2_5306e7b7.jpg",
+        "/images/products/DJiVv6AROMH_3_60d6544e.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 14,
       "dimensions": {
-        "width": 17,
-        "height": 15,
-        "depth": 10
+        "width": 19,
+        "height": 20,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2025-05-12T02:21:28.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:05.956Z"
     },
     {
       "id": "DGn8V0bRAmK",
@@ -2004,21 +2015,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DGn8V0bRAmK_1_d14dcb5d.jpg"
+        "/images/products/DGn8V0bRAmK_1_d14dcb5d.jpg",
+        "/images/products/DGn8V0bRAmK_2_d929364a.jpg",
+        "/images/products/DGn8V0bRAmK_3_517a73d9.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 14,
+      "weight": 12,
       "dimensions": {
-        "width": 14,
-        "height": 12,
-        "depth": 10
+        "width": 20,
+        "height": 20,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2025-02-28T17:00:42.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:07.619Z"
     },
     {
       "id": "DOrFtR8jd_t",
@@ -2029,21 +2042,23 @@
       "category": "Monitors & Displays",
       "condition": "Grade B",
       "images": [
-        "/images/products/DOrFtR8jd_t_1_ab518546.jpg"
+        "/images/products/DOrFtR8jd_t_1_ab518546.jpg",
+        "/images/products/DOrFtR8jd_t_2_c7c2cd63.jpg",
+        "/images/products/DOrFtR8jd_t_3_172766aa.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 13,
+      "weight": 14,
       "dimensions": {
         "width": 18,
-        "height": 20,
-        "depth": 10
+        "height": 8,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2025-09-16T18:31:26.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:08.453Z"
     },
     {
       "id": "DFD2DfcP5xs",
@@ -2054,21 +2069,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DFD2DfcP5xs_1_a33a277e.jpg"
+        "/images/products/DFD2DfcP5xs_1_a33a277e.jpg",
+        "/images/products/DFD2DfcP5xs_2_b54335a6.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 16,
+      "weight": 9,
       "dimensions": {
-        "width": 16,
-        "height": 7,
-        "depth": 10
+        "width": 8,
+        "height": 19,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2025-01-20T20:01:43.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:09.416Z"
     },
     {
       "id": "DD8lae5RfrY",
@@ -2079,21 +2095,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DD8lae5RfrY_1_c1ecaac6.jpg"
+        "/images/products/DD8lae5RfrY_1_c1ecaac6.jpg",
+        "/images/products/DD8lae5RfrY_2_896269b1.jpg",
+        "/images/products/DD8lae5RfrY_3_913615a8.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 14,
       "dimensions": {
-        "width": 17,
-        "height": 16,
-        "depth": 11
+        "width": 13,
+        "height": 17,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-12-24T03:50:14.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:10.737Z"
     },
     {
       "id": "DFDysTGPY65",
@@ -2104,21 +2122,23 @@
       "category": "Appliances",
       "condition": "Grade B",
       "images": [
-        "/images/products/DFDysTGPY65_1_0a1d4c31.jpg"
+        "/images/products/DFDysTGPY65_1_0a1d4c31.jpg",
+        "/images/products/DFDysTGPY65_2_58bc871b.jpg",
+        "/images/products/DFDysTGPY65_3_94fc36db.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 13,
+      "weight": 24,
       "dimensions": {
         "width": 14,
         "height": 14,
-        "depth": 6
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2025-01-20T19:32:20.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:11.885Z"
     },
     {
       "id": "DFD7teoPkIN",
@@ -2129,21 +2149,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DFD7teoPkIN_1_4480512d.jpg"
+        "/images/products/DFD7teoPkIN_1_4480512d.jpg",
+        "/images/products/DFD7teoPkIN_2_60267cf5.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 18,
+      "weight": 13,
       "dimensions": {
-        "width": 20,
-        "height": 6,
-        "depth": 6
+        "width": 16,
+        "height": 9,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2025-01-20T20:51:09.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:15.388Z"
     },
     {
       "id": "DFDyR6SPQzP",
@@ -2154,21 +2175,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DFDyR6SPQzP_1_da5ea181.jpg"
+        "/images/products/DFDyR6SPQzP_1_da5ea181.jpg",
+        "/images/products/DFDyR6SPQzP_2_2c86836d.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 9,
       "dimensions": {
-        "width": 14,
-        "height": 7,
-        "depth": 11
+        "width": 9,
+        "height": 12,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2025-01-20T19:28:44.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:16.542Z"
     },
     {
       "id": "DD8klq5R3wl",
@@ -2179,7 +2201,9 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DD8klq5R3wl_1_8d7528db.jpg"
+        "/images/products/DD8klq5R3wl_1_8d7528db.jpg",
+        "/images/products/DD8klq5R3wl_2_7e01d349.jpg",
+        "/images/products/DD8klq5R3wl_3_b193d95d.jpg"
       ],
       "inStock": true,
       "is_featured": false,
@@ -2187,13 +2211,13 @@
       "location": "Warrensville Heights, OH",
       "weight": 15,
       "dimensions": {
-        "width": 19,
-        "height": 8,
-        "depth": 4
+        "width": 11,
+        "height": 17,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-12-24T03:43:01.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:17.806Z"
     },
     {
       "id": "DFD9wdxvHN-",
@@ -2204,21 +2228,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DFD9wdxvHN-_1_2d26e293.jpg"
+        "/images/products/DFD9wdxvHN-_1_2d26e293.jpg",
+        "/images/products/DFD9wdxvHN-_2_91b507b5.jpg",
+        "/images/products/DFD9wdxvHN-_3_4128d98c.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 21,
       "dimensions": {
-        "width": 16,
-        "height": 7,
-        "depth": 11
+        "width": 9,
+        "height": 16,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2025-01-20T21:09:02.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:19.274Z"
     },
     {
       "id": "DFD1vzuvhdS",
@@ -2229,21 +2255,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DFD1vzuvhdS_1_935f7aef.jpg"
+        "/images/products/DFD1vzuvhdS_1_935f7aef.jpg",
+        "/images/products/DFD1vzuvhdS_2_aa750c30.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 15,
       "dimensions": {
-        "width": 12,
-        "height": 8,
-        "depth": 10
+        "width": 15,
+        "height": 17,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2025-01-20T19:59:02.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:20.981Z"
     },
     {
       "id": "DD8kBMjxeuU",
@@ -2254,7 +2281,8 @@
       "category": "Mobile Devices",
       "condition": "Grade A",
       "images": [
-        "/images/products/DD8kBMjxeuU_1_291c06d4.jpg"
+        "/images/products/DD8kBMjxeuU_1_291c06d4.jpg",
+        "/images/products/DD8kBMjxeuU_2_fd253d16.jpg"
       ],
       "inStock": true,
       "is_featured": false,
@@ -2262,13 +2290,13 @@
       "location": "Warrensville Heights, OH",
       "weight": 17,
       "dimensions": {
-        "width": 12,
-        "height": 16,
+        "width": 14,
+        "height": 17,
         "depth": 10
       },
       "specifications": {},
       "created_at": "2024-12-24T03:38:03.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:21.831Z"
     },
     {
       "id": "DJhrBY7vSyO",
@@ -2279,21 +2307,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJhrBY7vSyO_1_fb2839db.jpg"
+        "/images/products/DJhrBY7vSyO_1_fb2839db.jpg",
+        "/images/products/DJhrBY7vSyO_2_6351c066.jpg",
+        "/images/products/DJhrBY7vSyO_3_09b2134f.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 12,
       "dimensions": {
-        "width": 27,
-        "height": 20,
-        "depth": 4
+        "width": 21,
+        "height": 8,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2025-05-11T20:08:06.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:22.856Z"
     },
     {
       "id": "DGn95uPNiQ0",
@@ -2304,46 +2334,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DGn95uPNiQ0_1_ec603722.jpg"
+        "/images/products/DGn95uPNiQ0_1_ec603722.jpg",
+        "/images/products/DGn95uPNiQ0_2_b62920f0.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 7,
       "dimensions": {
-        "width": 24,
+        "width": 14,
         "height": 17,
-        "depth": 13
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-02-28T17:14:21.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
-    },
-    {
-      "id": "DDyLZlkx_q5",
-      "name": "Mannequin head, New in Box, BOOMwarehouse",
-      "description": "4554 Renaissance Pkwy. Warrensville Hts., OH 44128 11am-6pm",
-      "price": 20,
-      "compareAtPrice": null,
-      "category": "Electronics",
-      "condition": "Grade A",
-      "images": [
-        "/images/products/DDyLZlkx_q5_1_beef2f65.jpg"
-      ],
-      "inStock": true,
-      "is_featured": false,
-      "warranty_months": 6,
-      "location": "Warrensville Heights, OH",
-      "weight": 14,
-      "dimensions": {
-        "width": 20,
-        "height": 10,
-        "depth": 12
-      },
-      "specifications": {},
-      "created_at": "2024-12-20T02:50:31.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:45:24.055Z"
     },
     {
       "id": "DDyK61px_tr",
@@ -2357,18 +2363,18 @@
         "/images/products/DDyK61px_tr_1_d302bc7f.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 9,
       "dimensions": {
-        "width": 14,
-        "height": 6,
-        "depth": 11
+        "width": 26,
+        "height": 15,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2024-12-20T02:46:19.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:10.076Z"
     },
     {
       "id": "DDyOvaiRNX4",
@@ -2379,21 +2385,22 @@
       "category": "Computers & Electronics",
       "condition": "Grade C",
       "images": [
-        "/images/products/DDyOvaiRNX4_1_1258e018.jpg"
+        "/images/products/DDyOvaiRNX4_1_1258e018.jpg",
+        "/images/products/DDyOvaiRNX4_2_2a2bcd62.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 1,
       "location": "Warrensville Heights, OH",
-      "weight": 11,
+      "weight": 17,
       "dimensions": {
         "width": 9,
-        "height": 14,
-        "depth": 5
+        "height": 9,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2024-12-20T03:19:43.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:13.659Z"
     },
     {
       "id": "DD8jrZEx2Tf",
@@ -2404,46 +2411,50 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DD8jrZEx2Tf_1_3591064e.jpg"
+        "/images/products/DD8jrZEx2Tf_1_3591064e.jpg",
+        "/images/products/DD8jrZEx2Tf_2_b93832d8.jpg",
+        "/images/products/DD8jrZEx2Tf_3_67e965e9.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 23,
       "dimensions": {
-        "width": 24,
-        "height": 13,
-        "depth": 12
+        "width": 25,
+        "height": 6,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2024-12-24T03:35:04.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:15.752Z"
     },
     {
       "id": "DDvrMTXRnLG",
       "name": "ONE PAIR PER BOOMwarehouse follower customer.",
       "description": "MERRY CHRISTMAS!!! BOOMwarehouse 4554 Renaissance Pkwy.",
-      "price": 88,
-      "compareAtPrice": null,
+      "price": 403,
+      "compareAtPrice": 523,
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DDvrMTXRnLG_1_4f65d87e.jpg"
+        "/images/products/DDvrMTXRnLG_1_4f65d87e.jpg",
+        "/images/products/DDvrMTXRnLG_2_97e99612.jpg",
+        "/images/products/DDvrMTXRnLG_3_0806daf3.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 21,
+      "weight": 15,
       "dimensions": {
-        "width": 24,
-        "height": 17,
-        "depth": 5
+        "width": 25,
+        "height": 18,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2024-12-19T03:30:36.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:17.914Z"
     },
     {
       "id": "DDyPFPHx4xa",
@@ -2454,21 +2465,23 @@
       "category": "Electronics",
       "condition": "Grade C",
       "images": [
-        "/images/products/DDyPFPHx4xa_1_5f61aeba.jpg"
+        "/images/products/DDyPFPHx4xa_1_5f61aeba.jpg",
+        "/images/products/DDyPFPHx4xa_2_9a4b3aec.jpg",
+        "/images/products/DDyPFPHx4xa_3_4084f8b8.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 1,
       "location": "Warrensville Heights, OH",
-      "weight": 14,
+      "weight": 22,
       "dimensions": {
-        "width": 13,
-        "height": 12,
-        "depth": 6
+        "width": 23,
+        "height": 18,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-12-20T03:22:41.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:19.067Z"
     },
     {
       "id": "DDyMYFORdtu",
@@ -2479,21 +2492,22 @@
       "category": "Computer Parts",
       "condition": "Grade B",
       "images": [
-        "/images/products/DDyMYFORdtu_1_0d4454ab.jpg"
+        "/images/products/DDyMYFORdtu_1_0d4454ab.jpg",
+        "/images/products/DDyMYFORdtu_2_cd7569c5.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 7,
+      "weight": 17,
       "dimensions": {
-        "width": 15,
-        "height": 7,
-        "depth": 8
+        "width": 19,
+        "height": 12,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2024-12-20T02:59:03.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:20.313Z"
     },
     {
       "id": "DDvnIaBx849",
@@ -2504,46 +2518,49 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvnIaBx849_1_f937999a.jpg"
+        "/images/products/DDvnIaBx849_1_f937999a.jpg",
+        "/images/products/DDvnIaBx849_2_10a3d7e6.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 18,
+      "weight": 14,
       "dimensions": {
-        "width": 17,
-        "height": 9,
-        "depth": 11
+        "width": 16,
+        "height": 13,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2024-12-19T02:55:07.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:21.258Z"
     },
     {
       "id": "DD8jPX-x3Wt",
       "name": "BOOMwarehouse",
       "description": "4554 Renaissance Pkwy. Warrensville Hts., OH 44128 11am-6pm",
-      "price": 360,
-      "compareAtPrice": 468,
+      "price": 430,
+      "compareAtPrice": 559,
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DD8jPX-x3Wt_1_779bd01c.jpg"
+        "/images/products/DD8jPX-x3Wt_1_779bd01c.jpg",
+        "/images/products/DD8jPX-x3Wt_2_8886e2d9.jpg",
+        "/images/products/DD8jPX-x3Wt_3_38fcb6a1.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 6,
       "dimensions": {
-        "width": 10,
-        "height": 20,
-        "depth": 12
+        "width": 11,
+        "height": 16,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2024-12-24T03:31:15.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:23.627Z"
     },
     {
       "id": "DFD1Y-6PPrh",
@@ -2554,21 +2571,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DFD1Y-6PPrh_1_284a2b99.jpg"
+        "/images/products/DFD1Y-6PPrh_1_284a2b99.jpg",
+        "/images/products/DFD1Y-6PPrh_2_b6ae689a.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 14,
+      "weight": 6,
       "dimensions": {
-        "width": 16,
-        "height": 14,
-        "depth": 6
+        "width": 24,
+        "height": 17,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2025-01-20T19:55:55.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:25.269Z"
     },
     {
       "id": "DDvpdMiRlw7",
@@ -2579,21 +2597,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvpdMiRlw7_1_47f0521c.jpg"
+        "/images/products/DDvpdMiRlw7_1_47f0521c.jpg",
+        "/images/products/DDvpdMiRlw7_2_4d52cc8e.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 8,
+      "weight": 15,
       "dimensions": {
-        "width": 19,
-        "height": 16,
+        "width": 23,
+        "height": 8,
         "depth": 4
       },
       "specifications": {},
       "created_at": "2024-12-19T03:15:26.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:26.892Z"
     },
     {
       "id": "DDvrkfTxsbK",
@@ -2604,21 +2623,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvrkfTxsbK_1_d0be2cb0.jpg"
+        "/images/products/DDvrkfTxsbK_1_d0be2cb0.jpg",
+        "/images/products/DDvrkfTxsbK_2_b4c6a71f.jpg",
+        "/images/products/DDvrkfTxsbK_3_9c1090c3.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 18,
       "dimensions": {
-        "width": 15,
-        "height": 19,
-        "depth": 12
+        "width": 8,
+        "height": 11,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2024-12-19T03:33:54.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:28.845Z"
     },
     {
       "id": "DJhvFe-xU2W",
@@ -2629,21 +2650,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJhvFe-xU2W_1_8d72dc02.jpg"
+        "/images/products/DJhvFe-xU2W_1_8d72dc02.jpg",
+        "/images/products/DJhvFe-xU2W_2_e87328f5.jpg",
+        "/images/products/DJhvFe-xU2W_3_f7b8b298.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 11,
+      "weight": 24,
       "dimensions": {
-        "width": 8,
-        "height": 12,
-        "depth": 11
+        "width": 19,
+        "height": 8,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-05-11T20:43:37.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:32.576Z"
     },
     {
       "id": "DDvLUi-xVdQ",
@@ -2654,21 +2677,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvLUi-xVdQ_1_0e5060c9.jpg"
+        "/images/products/DDvLUi-xVdQ_1_0e5060c9.jpg",
+        "/images/products/DDvLUi-xVdQ_2_0f1c096c.jpg",
+        "/images/products/DDvLUi-xVdQ_3_363403d6.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 5,
       "dimensions": {
-        "width": 10,
-        "height": 17,
-        "depth": 8
+        "width": 26,
+        "height": 13,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2024-12-18T22:52:06.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:36.053Z"
     },
     {
       "id": "DDvlmd9R82k",
@@ -2679,21 +2704,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvlmd9R82k_1_bf77688d.jpg"
+        "/images/products/DDvlmd9R82k_1_bf77688d.jpg",
+        "/images/products/DDvlmd9R82k_2_0d8eeb55.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 11,
+      "weight": 21,
       "dimensions": {
-        "width": 15,
-        "height": 15,
-        "depth": 9
+        "width": 10,
+        "height": 7,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-12-19T02:41:45.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:37.632Z"
     },
     {
       "id": "DDvmJDXRZhZ",
@@ -2704,21 +2730,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvmJDXRZhZ_1_674ea040.jpg"
+        "/images/products/DDvmJDXRZhZ_1_674ea040.jpg",
+        "/images/products/DDvmJDXRZhZ_2_fe4aefc4.jpg",
+        "/images/products/DDvmJDXRZhZ_3_701eb73e.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 11,
       "dimensions": {
-        "width": 17,
-        "height": 17,
+        "width": 18,
+        "height": 13,
         "depth": 7
       },
       "specifications": {},
       "created_at": "2024-12-19T02:46:28.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:39.483Z"
     },
     {
       "id": "DDvS4GfRZ1E",
@@ -2729,21 +2757,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvS4GfRZ1E_1_258dfd24.jpg"
+        "/images/products/DDvS4GfRZ1E_1_258dfd24.jpg",
+        "/images/products/DDvS4GfRZ1E_2_22746a0a.jpg",
+        "/images/products/DDvS4GfRZ1E_3_2ee756e2.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 24,
+      "weight": 20,
       "dimensions": {
-        "width": 9,
-        "height": 12,
+        "width": 13,
+        "height": 11,
         "depth": 6
       },
       "specifications": {},
       "created_at": "2024-12-18T23:58:08.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:41.081Z"
     },
     {
       "id": "DDvmykiRWMj",
@@ -2754,21 +2784,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvmykiRWMj_1_1536fc67.jpg"
+        "/images/products/DDvmykiRWMj_1_1536fc67.jpg",
+        "/images/products/DDvmykiRWMj_2_c68ff08e.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 6,
       "dimensions": {
-        "width": 12,
-        "height": 18,
-        "depth": 13
+        "width": 22,
+        "height": 19,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-12-19T02:52:08.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:42.333Z"
     },
     {
       "id": "DDvLus9RC5B",
@@ -2779,21 +2810,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvLus9RC5B_1_6f58552d.jpg"
+        "/images/products/DDvLus9RC5B_1_6f58552d.jpg",
+        "/images/products/DDvLus9RC5B_2_c53f6d3e.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 22,
+      "weight": 16,
       "dimensions": {
-        "width": 11,
-        "height": 6,
-        "depth": 9
+        "width": 20,
+        "height": 19,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2024-12-18T22:55:41.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:43.806Z"
     },
     {
       "id": "DDvmeIexHb6",
@@ -2807,18 +2839,18 @@
         "/images/products/DDvmeIexHb6_1_68ec190f.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 9,
       "dimensions": {
-        "width": 27,
-        "height": 11,
-        "depth": 4
+        "width": 19,
+        "height": 8,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2024-12-19T02:49:21.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:49:44.591Z"
     },
     {
       "id": "DDvPBuIxTO4",
@@ -2829,46 +2861,21 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvPBuIxTO4_1_a42dd5eb.jpg"
+        "/images/products/DDvPBuIxTO4_2_a49cc24b.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 13,
       "dimensions": {
-        "width": 15,
-        "height": 7,
-        "depth": 4
+        "width": 14,
+        "height": 19,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-12-18T23:24:29.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
-    },
-    {
-      "id": "DDvTYfoR3Ya",
-      "name": "RCA Portable DISHWASHER, NEW, BOOMwarehouse",
-      "description": "4554 Renaissance Pkwy. Warrensville Hts., OH 44128 11am-6pm",
-      "price": 199,
-      "compareAtPrice": 258,
-      "category": "Appliances",
-      "condition": "Grade A",
-      "images": [
-        "/images/products/DDvTYfoR3Ya_1_2b390045.jpg"
-      ],
-      "inStock": true,
-      "is_featured": false,
-      "warranty_months": 6,
-      "location": "Warrensville Heights, OH",
-      "weight": 6,
-      "dimensions": {
-        "width": 11,
-        "height": 15,
-        "depth": 5
-      },
-      "specifications": {},
-      "created_at": "2024-12-19T00:02:33.000Z",
-      "updated_at": "2025-09-25T23:41:24.183Z"
+      "updated_at": "2025-09-25T23:51:00.509Z"
     },
     {
       "id": "DOCDPCrjyuL",
@@ -2879,21 +2886,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DOCDPCrjyuL_1_ba9beb11.jpg"
+        "/images/products/DOCDPCrjyuL_1_ba9beb11.jpg",
+        "/images/products/DOCDPCrjyuL_2_99ea377b.jpg",
+        "/images/products/DOCDPCrjyuL_3_bd8a6302.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 22,
+      "weight": 14,
       "dimensions": {
-        "width": 21,
-        "height": 15,
-        "depth": 4
+        "width": 13,
+        "height": 8,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2025-08-31T20:00:58.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:31.662Z"
     },
     {
       "id": "DDvqH0xxmQM",
@@ -2904,21 +2913,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvqH0xxmQM_1_520426f6.jpg"
+        "/images/products/DDvqH0xxmQM_1_520426f6.jpg",
+        "/images/products/DDvqH0xxmQM_2_24ffa661.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 9,
+      "weight": 21,
       "dimensions": {
-        "width": 21,
-        "height": 12,
-        "depth": 7
+        "width": 19,
+        "height": 6,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2024-12-19T03:21:15.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:32.240Z"
     },
     {
       "id": "DDkp1MoRl9y",
@@ -2929,21 +2939,23 @@
       "category": "Monitors & Displays",
       "condition": "Grade B",
       "images": [
-        "/images/products/DDkp1MoRl9y_1_27af8e20.jpg"
+        "/images/products/DDkp1MoRl9y_1_27af8e20.jpg",
+        "/images/products/DDkp1MoRl9y_2_6f3d571c.jpg",
+        "/images/products/DDkp1MoRl9y_3_43e295ca.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 14,
+      "weight": 8,
       "dimensions": {
-        "width": 27,
-        "height": 18,
+        "width": 22,
+        "height": 14,
         "depth": 5
       },
       "specifications": {},
       "created_at": "2024-12-14T20:47:04.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:33.601Z"
     },
     {
       "id": "DGn7dL3xfo9",
@@ -2954,21 +2966,23 @@
       "category": "Monitors & Displays",
       "condition": "Grade B",
       "images": [
-        "/images/products/DGn7dL3xfo9_1_d59c7f9e.jpg"
+        "/images/products/DGn7dL3xfo9_1_d59c7f9e.jpg",
+        "/images/products/DGn7dL3xfo9_2_7ba0c8ec.jpg",
+        "/images/products/DGn7dL3xfo9_3_abda3c62.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 16,
       "dimensions": {
-        "width": 11,
-        "height": 14,
-        "depth": 10
+        "width": 8,
+        "height": 12,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2025-02-28T16:52:58.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:34.669Z"
     },
     {
       "id": "DDkpE5ENx_V",
@@ -2979,21 +2993,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DDkpE5ENx_V_1_3a985c20.jpg"
+        "/images/products/DDkpE5ENx_V_1_3a985c20.jpg",
+        "/images/products/DDkpE5ENx_V_2_c9eeb590.jpg",
+        "/images/products/DDkpE5ENx_V_3_a07d3f25.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 8,
       "dimensions": {
-        "width": 16,
-        "height": 15,
-        "depth": 13
+        "width": 27,
+        "height": 12,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-12-14T20:40:28.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:36.282Z"
     },
     {
       "id": "DCzvDgrMoj6",
@@ -3004,21 +3020,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzvDgrMoj6_1_eae92218.jpg"
+        "/images/products/DCzvDgrMoj6_1_eae92218.jpg",
+        "/images/products/DCzvDgrMoj6_2_5fc46a79.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 11,
+      "weight": 12,
       "dimensions": {
-        "width": 10,
-        "height": 17,
-        "depth": 13
+        "width": 11,
+        "height": 8,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2024-11-25T20:49:55.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:36.783Z"
     },
     {
       "id": "DCzudTxt7rO",
@@ -3035,40 +3052,42 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 13,
+      "weight": 22,
       "dimensions": {
-        "width": 21,
-        "height": 18,
-        "depth": 8
+        "width": 18,
+        "height": 8,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-11-25T20:44:43.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:37.143Z"
     },
     {
       "id": "DC58UuBRZvh",
       "name": "starting now till FRIDAY, we are open on Thanksgiving day too.",
       "description": "HAPPY THANKSGIVING!!!!!  BOOMwarehouse 4554 Renaissance Pkwy.",
-      "price": 96,
-      "compareAtPrice": null,
+      "price": 501,
+      "compareAtPrice": 651,
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DC58UuBRZvh_1_3c85ecfa.jpg"
+        "/images/products/DC58UuBRZvh_1_3c85ecfa.jpg",
+        "/images/products/DC58UuBRZvh_2_a5ea5a70.jpg",
+        "/images/products/DC58UuBRZvh_3_011e4038.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 17,
       "dimensions": {
-        "width": 25,
-        "height": 11,
-        "depth": 6
+        "width": 16,
+        "height": 7,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2024-11-28T06:41:19.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:38.331Z"
     },
     {
       "id": "DDvJl6zxOqv",
@@ -3079,21 +3098,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvJl6zxOqv_1_309d952a.jpg"
+        "/images/products/DDvJl6zxOqv_1_309d952a.jpg",
+        "/images/products/DDvJl6zxOqv_2_4eff1306.jpg",
+        "/images/products/DDvJl6zxOqv_3_d48a2a88.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 24,
       "dimensions": {
-        "width": 21,
-        "height": 15,
-        "depth": 11
+        "width": 16,
+        "height": 7,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-12-18T22:37:00.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:39.078Z"
     },
     {
       "id": "DDkpP7QyFFd",
@@ -3104,21 +3125,23 @@
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DDkpP7QyFFd_1_8ed0f11f.jpg"
+        "/images/products/DDkpP7QyFFd_1_8ed0f11f.jpg",
+        "/images/products/DDkpP7QyFFd_2_dd111b1e.jpg",
+        "/images/products/DDkpP7QyFFd_3_e946437c.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 20,
       "dimensions": {
-        "width": 15,
-        "height": 19,
-        "depth": 4
+        "width": 14,
+        "height": 7,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-12-14T20:41:58.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:40.311Z"
     },
     {
       "id": "DCzvH67h6B9",
@@ -3129,21 +3152,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzvH67h6B9_1_a2b8f9ef.jpg"
+        "/images/products/DCzvH67h6B9_1_a2b8f9ef.jpg",
+        "/images/products/DCzvH67h6B9_2_b9c02e19.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 13,
       "dimensions": {
-        "width": 23,
-        "height": 19,
+        "width": 27,
+        "height": 11,
         "depth": 8
       },
       "specifications": {},
       "created_at": "2024-11-25T20:50:31.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:43.187Z"
     },
     {
       "id": "DDvIyv1x_54",
@@ -3154,21 +3178,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvIyv1x_54_1_1d4e8dae.jpg"
+        "/images/products/DDvIyv1x_54_1_1d4e8dae.jpg",
+        "/images/products/DDvIyv1x_54_2_e811c006.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 11,
+      "weight": 8,
       "dimensions": {
-        "width": 14,
-        "height": 19,
-        "depth": 4
+        "width": 8,
+        "height": 12,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-12-18T22:30:01.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:43.812Z"
     },
     {
       "id": "DCzt-agNnTg",
@@ -3179,21 +3204,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzt-agNnTg_1_068e8269.jpg"
+        "/images/products/DCzt-agNnTg_1_068e8269.jpg",
+        "/images/products/DCzt-agNnTg_2_98a84659.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 16,
       "dimensions": {
-        "width": 9,
-        "height": 8,
-        "depth": 12
+        "width": 25,
+        "height": 10,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2024-11-25T20:40:29.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:45.129Z"
     },
     {
       "id": "DDvJN2PxSho",
@@ -3204,21 +3230,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvJN2PxSho_1_4658c090.jpg"
+        "/images/products/DDvJN2PxSho_1_4658c090.jpg",
+        "/images/products/DDvJN2PxSho_2_fe894ef5.jpg",
+        "/images/products/DDvJN2PxSho_3_002e870a.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 21,
       "dimensions": {
-        "width": 13,
-        "height": 13,
-        "depth": 4
+        "width": 22,
+        "height": 16,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-12-18T22:33:43.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:46.213Z"
     },
     {
       "id": "DDvK-SNRMeL",
@@ -3229,21 +3257,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvK-SNRMeL_1_d7804a99.jpg"
+        "/images/products/DDvK-SNRMeL_1_d7804a99.jpg",
+        "/images/products/DDvK-SNRMeL_2_2f1e7e45.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 6,
       "dimensions": {
-        "width": 9,
-        "height": 6,
-        "depth": 12
+        "width": 13,
+        "height": 14,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2024-12-18T22:49:04.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:46.832Z"
     },
     {
       "id": "DDvlIWIxJrH",
@@ -3254,21 +3283,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvlIWIxJrH_1_6b5cb0d9.jpg"
+        "/images/products/DDvlIWIxJrH_1_6b5cb0d9.jpg",
+        "/images/products/DDvlIWIxJrH_2_73b30c00.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 8,
+      "weight": 18,
       "dimensions": {
-        "width": 13,
-        "height": 15,
-        "depth": 11
+        "width": 27,
+        "height": 19,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-12-19T02:37:38.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:47.921Z"
     },
     {
       "id": "DDvQKROREmN",
@@ -3279,21 +3309,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DDvQKROREmN_1_5b1b65a0.jpg"
+        "/images/products/DDvQKROREmN_1_5b1b65a0.jpg",
+        "/images/products/DDvQKROREmN_2_0da0ae95.jpg",
+        "/images/products/DDvQKROREmN_3_01735f0c.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
       "weight": 10,
       "dimensions": {
         "width": 12,
-        "height": 7,
-        "depth": 5
+        "height": 9,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-12-18T23:34:24.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:49.482Z"
     },
     {
       "id": "DJhv0i0RcwK",
@@ -3304,46 +3336,50 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJhv0i0RcwK_1_15c6d26d.jpg"
+        "/images/products/DJhv0i0RcwK_1_15c6d26d.jpg",
+        "/images/products/DJhv0i0RcwK_2_e5b68352.jpg",
+        "/images/products/DJhv0i0RcwK_3_9a624e4e.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 16,
       "dimensions": {
-        "width": 26,
-        "height": 9,
-        "depth": 12
+        "width": 15,
+        "height": 19,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2025-05-11T20:50:03.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:50.559Z"
     },
     {
       "id": "DC4kBTxBAzX",
       "name": "starting now till FRIDAY, we are open on Thanksgiving day too.",
       "description": "HAPPY THANKSGIVING!!!!!  BOOMwarehouse 4554 Renaissance Pkwy.",
-      "price": 218,
-      "compareAtPrice": 283,
+      "price": 360,
+      "compareAtPrice": 468,
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DC4kBTxBAzX_1_eee1af46.jpg"
+        "/images/products/DC4kBTxBAzX_1_eee1af46.jpg",
+        "/images/products/DC4kBTxBAzX_2_670f7a7c.jpg",
+        "/images/products/DC4kBTxBAzX_3_29c13917.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 17,
       "dimensions": {
-        "width": 15,
-        "height": 20,
-        "depth": 7
+        "width": 20,
+        "height": 19,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2024-11-27T17:49:42.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:51.382Z"
     },
     {
       "id": "DCztlKCvpXf",
@@ -3354,21 +3390,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCztlKCvpXf_1_9b88c954.jpg"
+        "/images/products/DCztlKCvpXf_1_9b88c954.jpg",
+        "/images/products/DCztlKCvpXf_2_126755cb.jpg",
+        "/images/products/DCztlKCvpXf_3_d433c73c.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 22,
+      "weight": 10,
       "dimensions": {
-        "width": 23,
-        "height": 10,
-        "depth": 7
+        "width": 19,
+        "height": 6,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-11-25T20:37:02.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:52.334Z"
     },
     {
       "id": "DCzsTj9sOFL",
@@ -3379,21 +3417,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzsTj9sOFL_1_22259f2b.jpg"
+        "/images/products/DCzsTj9sOFL_1_22259f2b.jpg",
+        "/images/products/DCzsTj9sOFL_2_65d497b3.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 9,
+      "weight": 11,
       "dimensions": {
-        "width": 27,
-        "height": 13,
-        "depth": 13
+        "width": 24,
+        "height": 20,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2024-11-25T20:25:54.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:54.741Z"
     },
     {
       "id": "DCzoF32tOwl",
@@ -3404,21 +3443,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzoF32tOwl_1_c1847c4e.jpg"
+        "/images/products/DCzoF32tOwl_1_c1847c4e.jpg",
+        "/images/products/DCzoF32tOwl_2_4c2d0231.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 13,
+      "weight": 9,
       "dimensions": {
-        "width": 16,
+        "width": 20,
         "height": 16,
-        "depth": 9
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2024-11-25T19:49:05.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:55.756Z"
     },
     {
       "id": "DCzrFiEOLo5",
@@ -3429,21 +3469,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzrFiEOLo5_1_72e01a5a.jpg"
+        "/images/products/DCzrFiEOLo5_1_72e01a5a.jpg",
+        "/images/products/DCzrFiEOLo5_2_0d8e5dfc.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 12,
+      "weight": 21,
       "dimensions": {
-        "width": 14,
-        "height": 17,
+        "width": 24,
+        "height": 14,
         "depth": 12
       },
       "specifications": {},
       "created_at": "2024-11-25T20:15:15.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:56.612Z"
     },
     {
       "id": "DCzp9nmMALn",
@@ -3454,21 +3495,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzp9nmMALn_1_a06cbffd.jpg"
+        "/images/products/DCzp9nmMALn_1_a06cbffd.jpg",
+        "/images/products/DCzp9nmMALn_2_2f2de20f.jpg"
       ],
       "inStock": true,
       "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 8,
       "dimensions": {
-        "width": 22,
-        "height": 19,
-        "depth": 13
+        "width": 17,
+        "height": 9,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-11-25T20:05:26.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:57.478Z"
     },
     {
       "id": "DCzs64NPnCw",
@@ -3479,21 +3521,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzs64NPnCw_1_265995b5.jpg"
+        "/images/products/DCzs64NPnCw_1_265995b5.jpg",
+        "/images/products/DCzs64NPnCw_2_46cb4683.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 9,
       "dimensions": {
-        "width": 17,
-        "height": 19,
-        "depth": 6
+        "width": 19,
+        "height": 8,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2024-11-25T20:31:16.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:58.762Z"
     },
     {
       "id": "DCzpnhfthKa",
@@ -3504,21 +3547,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzpnhfthKa_1_0cdbf482.jpg"
+        "/images/products/DCzpnhfthKa_1_0cdbf482.jpg",
+        "/images/products/DCzpnhfthKa_2_61b184f7.jpg",
+        "/images/products/DCzpnhfthKa_3_10de1533.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 11,
       "dimensions": {
-        "width": 20,
-        "height": 14,
-        "depth": 8
+        "width": 18,
+        "height": 19,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2024-11-25T20:02:25.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:53:59.604Z"
     },
     {
       "id": "DCzogXGNAwx",
@@ -3529,21 +3574,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzogXGNAwx_1_90e9c5b9.jpg"
+        "/images/products/DCzogXGNAwx_1_90e9c5b9.jpg",
+        "/images/products/DCzogXGNAwx_2_3815a1ec.jpg",
+        "/images/products/DCzogXGNAwx_3_0b2a6c3e.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 7,
+      "weight": 20,
       "dimensions": {
-        "width": 11,
-        "height": 16,
-        "depth": 13
+        "width": 22,
+        "height": 8,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2024-11-25T19:52:42.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:01.226Z"
     },
     {
       "id": "DCzrYq0Pik9",
@@ -3554,21 +3601,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzrYq0Pik9_1_14b595c1.jpg"
+        "/images/products/DCzrYq0Pik9_1_14b595c1.jpg",
+        "/images/products/DCzrYq0Pik9_2_eb51de17.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 13,
       "dimensions": {
-        "width": 24,
-        "height": 19,
-        "depth": 7
+        "width": 27,
+        "height": 17,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2024-11-25T20:17:51.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:02.202Z"
     },
     {
       "id": "DCzrtxtSn4F",
@@ -3579,21 +3627,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzrtxtSn4F_1_e564340c.jpg"
+        "/images/products/DCzrtxtSn4F_1_e564340c.jpg",
+        "/images/products/DCzrtxtSn4F_2_f892efa0.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 16,
       "dimensions": {
-        "width": 22,
-        "height": 16,
-        "depth": 7
+        "width": 18,
+        "height": 12,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2024-11-25T20:20:44.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:02.876Z"
     },
     {
       "id": "DCzsk3wS8bW",
@@ -3604,21 +3653,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzsk3wS8bW_1_e85e451b.jpg"
+        "/images/products/DCzsk3wS8bW_1_e85e451b.jpg",
+        "/images/products/DCzsk3wS8bW_2_c88d089f.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 24,
+      "weight": 22,
       "dimensions": {
-        "width": 10,
-        "height": 19,
-        "depth": 12
+        "width": 24,
+        "height": 14,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2024-11-25T20:28:16.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:03.345Z"
     },
     {
       "id": "DCzlTUZOT1I",
@@ -3629,21 +3679,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzlTUZOT1I_1_7619f67d.jpg"
+        "/images/products/DCzlTUZOT1I_1_7619f67d.jpg",
+        "/images/products/DCzlTUZOT1I_2_67e5f094.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 24,
+      "weight": 12,
       "dimensions": {
-        "width": 11,
-        "height": 17,
-        "depth": 10
+        "width": 12,
+        "height": 11,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-11-25T19:24:42.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:06.177Z"
     },
     {
       "id": "DCCcdAttIqt",
@@ -3654,21 +3705,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCCcdAttIqt_1_9c25875b.jpg"
+        "/images/products/DCCcdAttIqt_1_9c25875b.jpg",
+        "/images/products/DCCcdAttIqt_2_ba42fb49.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 20,
       "dimensions": {
-        "width": 15,
-        "height": 20,
-        "depth": 13
+        "width": 14,
+        "height": 11,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2024-11-06T17:24:36.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:06.772Z"
     },
     {
       "id": "DCCeMUgOAQA",
@@ -3679,46 +3731,50 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCeMUgOAQA_1_5425147d.jpg"
+        "/images/products/DCCeMUgOAQA_1_5425147d.jpg",
+        "/images/products/DCCeMUgOAQA_2_5e07021c.jpg",
+        "/images/products/DCCeMUgOAQA_3_184f2b18.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 12,
+      "weight": 15,
       "dimensions": {
-        "width": 20,
-        "height": 13,
-        "depth": 13
+        "width": 24,
+        "height": 11,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-11-06T17:39:47.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:08.448Z"
     },
     {
       "id": "DCCdSyUxWy0",
       "name": "4554 Renaissance Pkwy.",
       "description": "Warrensville Hts., OH 44128 11am-6pm  Every day (yes, weekends too!)",
-      "price": 414,
-      "compareAtPrice": 538,
+      "price": 507,
+      "compareAtPrice": 659,
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCCdSyUxWy0_1_8ff71c44.jpg"
+        "/images/products/DCCdSyUxWy0_1_8ff71c44.jpg",
+        "/images/products/DCCdSyUxWy0_2_4ebedc98.jpg",
+        "/images/products/DCCdSyUxWy0_3_2be5cd77.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 16,
+      "weight": 5,
       "dimensions": {
-        "width": 17,
-        "height": 13,
-        "depth": 6
+        "width": 22,
+        "height": 7,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2024-11-06T17:31:56.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:09.990Z"
     },
     {
       "id": "DCznLOiv4G1",
@@ -3729,21 +3785,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCznLOiv4G1_1_028af320.jpg"
+        "/images/products/DCznLOiv4G1_1_028af320.jpg",
+        "/images/products/DCznLOiv4G1_2_d0ff09f7.jpg",
+        "/images/products/DCznLOiv4G1_3_adca03ce.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 5,
       "dimensions": {
-        "width": 24,
-        "height": 9,
-        "depth": 4
+        "width": 15,
+        "height": 15,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-11-25T19:41:04.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:11.349Z"
     },
     {
       "id": "DCCf9vHO7tp",
@@ -3754,21 +3812,23 @@
       "category": "Mobile Devices",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCf9vHO7tp_1_63eeeb68.jpg"
+        "/images/products/DCCf9vHO7tp_1_63eeeb68.jpg",
+        "/images/products/DCCf9vHO7tp_2_107666f6.jpg",
+        "/images/products/DCCf9vHO7tp_3_a30d2c00.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 21,
+      "weight": 8,
       "dimensions": {
-        "width": 23,
-        "height": 10,
-        "depth": 8
+        "width": 16,
+        "height": 16,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-11-06T17:55:16.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:12.472Z"
     },
     {
       "id": "DCCcE7KO8hQ",
@@ -3779,21 +3839,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCCcE7KO8hQ_1_91858459.jpg"
+        "/images/products/DCCcE7KO8hQ_1_91858459.jpg",
+        "/images/products/DCCcE7KO8hQ_2_2232c0bf.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
       "weight": 14,
       "dimensions": {
         "width": 26,
-        "height": 8,
-        "depth": 9
+        "height": 6,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2024-11-06T17:21:18.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:13.303Z"
     },
     {
       "id": "DCzmm3Ut7sA",
@@ -3804,46 +3865,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzmm3Ut7sA_1_693eb341.jpg"
+        "/images/products/DCzmm3Ut7sA_1_693eb341.jpg",
+        "/images/products/DCzmm3Ut7sA_2_ea58f0fa.jpg",
+        "/images/products/DCzmm3Ut7sA_3_5f0780cb.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 22,
+      "weight": 13,
       "dimensions": {
-        "width": 22,
-        "height": 12,
-        "depth": 11
+        "width": 12,
+        "height": 15,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2024-11-25T19:36:06.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
-    },
-    {
-      "id": "DCCUEWmxV9j",
-      "name": "DELL, HP Windows Laptops, GOOD Working,",
-      "description": "BOOMwarehouse 4554 Renaissance Pkwy. Warrensville Hts., OH 44128",
-      "price": 99,
-      "compareAtPrice": null,
-      "category": "Computers & Electronics",
-      "condition": "Grade B",
-      "images": [
-        "https://instagram.fosu2-1.fna.fbcdn.net/v/t39.30808-6/488227940_1123837766424281_447750637779580408_n.jpg?stp=dst-jpg_e35_s1080x1080_sh0.08_tt6&_nc_ht=instagram.fosu2-1.fna.fbcdn.net&_nc_cat=105&_nc_oc=Q6cZ2QHPYnyWJgGbXdH57naIOKvKkMDVTdw1LW71gzwiN6YhLUrXSxrYpt6ry24SOLzTjl4Q2HBLdeAFoSTdlAY3YvKY&_nc_ohc=nwEXtoAD7CoQ7kNvwHEfN5O&_nc_gid=MuHiDuG4DoJjZQH-4-yzpg&edm=APs17CUAAAAA&ccb=7-5&oh=00_AfY2CUS1fHEKuee_GBnixTWz4C1_Fk8KcDIeCnc5TQ7ltw&oe=68DB6F24&_nc_sid=10d13b"
-      ],
-      "inStock": true,
-      "is_featured": false,
-      "warranty_months": 3,
-      "location": "Warrensville Heights, OH",
-      "weight": 8,
-      "dimensions": {
-        "width": 22,
-        "height": 7,
-        "depth": 4
-      },
-      "specifications": {},
-      "created_at": "2024-11-06T16:11:19.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:54:14.937Z"
     },
     {
       "id": "DCCc0PlsAdh",
@@ -3854,21 +3892,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCCc0PlsAdh_1_6136d841.jpg"
+        "/images/products/DCCc0PlsAdh_1_6136d841.jpg",
+        "/images/products/DCCc0PlsAdh_2_afc5e550.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 12,
+      "weight": 17,
       "dimensions": {
-        "width": 13,
-        "height": 15,
-        "depth": 11
+        "width": 15,
+        "height": 7,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-11-06T17:27:46.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:58:00.816Z"
     },
     {
       "id": "DCCep7PuTx6",
@@ -3879,21 +3918,22 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCep7PuTx6_1_0622118a.jpg"
+        "/images/products/DCCep7PuTx6_1_0622118a.jpg",
+        "/images/products/DCCep7PuTx6_2_b41779a5.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 24,
+      "weight": 5,
       "dimensions": {
-        "width": 9,
+        "width": 27,
         "height": 10,
-        "depth": 8
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-11-06T17:43:50.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:58:04.128Z"
     },
     {
       "id": "DKNdxHUSUBP",
@@ -3904,21 +3944,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DKNdxHUSUBP_1_892546a8.jpg"
+        "/images/products/DKNdxHUSUBP_1_892546a8.jpg",
+        "/images/products/DKNdxHUSUBP_2_4827788e.jpg",
+        "/images/products/DKNdxHUSUBP_3_de8aac30.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 8,
+      "weight": 24,
       "dimensions": {
-        "width": 26,
-        "height": 18,
-        "depth": 5
+        "width": 25,
+        "height": 20,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2025-05-28T20:18:52.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:58:05.130Z"
     },
     {
       "id": "DCCdmrBP9DY",
@@ -3929,21 +3971,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCCdmrBP9DY_1_f25138bf.jpg"
+        "/images/products/DCCdmrBP9DY_1_f25138bf.jpg",
+        "/images/products/DCCdmrBP9DY_2_5410c260.jpg",
+        "/images/products/DCCdmrBP9DY_3_3f330b10.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 18,
       "dimensions": {
-        "width": 23,
-        "height": 7,
-        "depth": 10
+        "width": 10,
+        "height": 19,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2024-11-06T17:34:39.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:58:06.246Z"
     },
     {
       "id": "DCzqyGKA3--",
@@ -3954,21 +3998,22 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DCzqyGKA3--_1_75e87757.jpg"
+        "/images/products/DCzqyGKA3--_1_75e87757.jpg",
+        "/images/products/DCzqyGKA3--_2_063a5935.jpg"
       ],
       "inStock": true,
       "is_featured": true,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 8,
+      "weight": 10,
       "dimensions": {
-        "width": 18,
-        "height": 11,
-        "depth": 10
+        "width": 8,
+        "height": 18,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-11-25T20:12:35.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:58:07.005Z"
     },
     {
       "id": "DJhwQadRcNL",
@@ -3979,21 +4024,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DJhwQadRcNL_1_32045b8f.jpg"
+        "/images/products/DJhwQadRcNL_1_32045b8f.jpg",
+        "/images/products/DJhwQadRcNL_2_6c817b02.jpg",
+        "/images/products/DJhwQadRcNL_3_ee1c4d4d.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 8,
       "dimensions": {
-        "width": 16,
+        "width": 13,
         "height": 15,
-        "depth": 8
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2025-05-11T20:53:51.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:58:08.467Z"
     },
     {
       "id": "DCCM0_DR2Hu",
@@ -4004,21 +4051,22 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCM0_DR2Hu_1_a117141f.jpg"
+        "/images/products/DCCM0_DR2Hu_1_a117141f.jpg",
+        "/images/products/DCCM0_DR2Hu_2_030838ef.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 24,
       "dimensions": {
-        "width": 19,
-        "height": 16,
-        "depth": 11
+        "width": 22,
+        "height": 12,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2024-11-06T15:08:03.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:58:09.087Z"
     },
     {
       "id": "DCCLs6BxSEN",
@@ -4029,21 +4077,22 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCLs6BxSEN_1_68ae24d9.jpg"
+        "/images/products/DCCLs6BxSEN_1_68ae24d9.jpg",
+        "/images/products/DCCLs6BxSEN_2_3a87f9d1.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 16,
+      "weight": 18,
       "dimensions": {
-        "width": 13,
+        "width": 17,
         "height": 16,
-        "depth": 6
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-11-06T14:58:13.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:58:10.205Z"
     },
     {
       "id": "DCCQgGjxVPU",
@@ -4054,21 +4103,22 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCQgGjxVPU_1_89acd6d0.jpg"
+        "/images/products/DCCQgGjxVPU_1_89acd6d0.jpg",
+        "/images/products/DCCQgGjxVPU_2_9eaaf34a.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 24,
       "dimensions": {
-        "width": 24,
-        "height": 18,
-        "depth": 6
+        "width": 25,
+        "height": 13,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-11-06T15:40:09.000Z",
-      "updated_at": "2025-09-25T23:41:24.184Z"
+      "updated_at": "2025-09-25T23:58:11.132Z"
     },
     {
       "id": "DCCTGgqxM0i",
@@ -4079,21 +4129,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCTGgqxM0i_1_f451dc99.jpg"
+        "/images/products/DCCTGgqxM0i_1_f451dc99.jpg",
+        "/images/products/DCCTGgqxM0i_2_90bc9708.jpg",
+        "/images/products/DCCTGgqxM0i_3_fdf559f2.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 11,
+      "weight": 8,
       "dimensions": {
-        "width": 14,
-        "height": 20,
-        "depth": 9
+        "width": 22,
+        "height": 11,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-11-06T16:02:53.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:12.022Z"
     },
     {
       "id": "DCCP11oxNHq",
@@ -4104,21 +4156,22 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCP11oxNHq_1_acbbedb0.jpg"
+        "/images/products/DCCP11oxNHq_1_acbbedb0.jpg",
+        "/images/products/DCCP11oxNHq_2_680621fb.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 24,
       "dimensions": {
-        "width": 11,
+        "width": 8,
         "height": 6,
-        "depth": 5
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2024-11-06T15:34:23.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:12.498Z"
     },
     {
       "id": "DB7er0lRZmp",
@@ -4129,21 +4182,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DB7er0lRZmp_1_4061ca84.jpg"
+        "/images/products/DB7er0lRZmp_1_4061ca84.jpg",
+        "/images/products/DB7er0lRZmp_2_470ea2e7.jpg",
+        "/images/products/DB7er0lRZmp_3_e1f4a0eb.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 11,
+      "weight": 21,
       "dimensions": {
-        "width": 11,
-        "height": 19,
-        "depth": 11
+        "width": 12,
+        "height": 15,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-11-04T00:29:24.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:15.259Z"
     },
     {
       "id": "DCCMJe9x-n_",
@@ -4154,21 +4209,22 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCMJe9x-n__1_3ff8b15e.jpg"
+        "/images/products/DCCMJe9x-n__1_3ff8b15e.jpg",
+        "/images/products/DCCMJe9x-n__2_f84e6461.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 7,
+      "weight": 6,
       "dimensions": {
-        "width": 8,
-        "height": 7,
-        "depth": 6
+        "width": 14,
+        "height": 18,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2024-11-06T15:02:07.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:16.157Z"
     },
     {
       "id": "DCCO4JBxzxK",
@@ -4179,21 +4235,22 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCO4JBxzxK_1_60902161.jpg"
+        "/images/products/DCCO4JBxzxK_1_60902161.jpg",
+        "/images/products/DCCO4JBxzxK_2_4b15a080.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
       "weight": 7,
       "dimensions": {
-        "width": 17,
-        "height": 11,
-        "depth": 11
+        "width": 23,
+        "height": 19,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2024-11-06T15:25:58.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:16.896Z"
     },
     {
       "id": "DB0B70bx1Mb",
@@ -4204,21 +4261,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DB0B70bx1Mb_1_cb7502e9.jpg"
+        "/images/products/DB0B70bx1Mb_1_cb7502e9.jpg",
+        "/images/products/DB0B70bx1Mb_2_a32cd54d.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 18,
       "dimensions": {
-        "width": 26,
-        "height": 9,
-        "depth": 13
+        "width": 23,
+        "height": 19,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2024-11-01T03:03:30.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:17.312Z"
     },
     {
       "id": "DBz_HJmREp7",
@@ -4229,21 +4287,22 @@
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DBz_HJmREp7_1_072e3a84.jpg"
+        "/images/products/DBz_HJmREp7_1_072e3a84.jpg",
+        "/images/products/DBz_HJmREp7_2_44581cae.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 21,
       "dimensions": {
-        "width": 10,
-        "height": 13,
-        "depth": 12
+        "width": 16,
+        "height": 16,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2024-11-01T02:38:50.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:17.964Z"
     },
     {
       "id": "DBz_6jDxRfB",
@@ -4260,15 +4319,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 8,
+      "weight": 24,
       "dimensions": {
-        "width": 20,
-        "height": 8,
-        "depth": 9
+        "width": 27,
+        "height": 9,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-11-01T02:45:51.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:18.489Z"
     },
     {
       "id": "DB0AKw7x-xW",
@@ -4285,15 +4344,15 @@
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 23,
       "dimensions": {
-        "width": 11,
-        "height": 10,
-        "depth": 12
+        "width": 21,
+        "height": 8,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2024-11-01T02:48:04.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:18.897Z"
     },
     {
       "id": "DB7ei7JxzI-",
@@ -4304,21 +4363,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DB7ei7JxzI-_1_ec3e9e34.jpg"
+        "/images/products/DB7ei7JxzI-_1_ec3e9e34.jpg",
+        "/images/products/DB7ei7JxzI-_2_46a99172.jpg",
+        "/images/products/DB7ei7JxzI-_3_3dbcf963.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 24,
+      "weight": 10,
       "dimensions": {
-        "width": 11,
-        "height": 11,
+        "width": 26,
+        "height": 16,
         "depth": 9
       },
       "specifications": {},
       "created_at": "2024-11-04T00:28:12.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:19.726Z"
     },
     {
       "id": "DB0DX2BRTYn",
@@ -4332,18 +4393,18 @@
         "/images/products/DB0DX2BRTYn_1_087bb274.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 19,
       "dimensions": {
-        "width": 22,
-        "height": 9,
-        "depth": 5
+        "width": 18,
+        "height": 13,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2024-11-01T03:16:04.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:20.072Z"
     },
     {
       "id": "DB7ecQjxjpz",
@@ -4354,21 +4415,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DB7ecQjxjpz_1_a80b83c7.jpg"
+        "/images/products/DB7ecQjxjpz_1_a80b83c7.jpg",
+        "/images/products/DB7ecQjxjpz_2_9304f745.jpg",
+        "/images/products/DB7ecQjxjpz_3_37d15999.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 15,
       "dimensions": {
-        "width": 22,
-        "height": 15,
+        "width": 25,
+        "height": 16,
         "depth": 7
       },
       "specifications": {},
       "created_at": "2024-11-04T00:27:17.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:20.966Z"
     },
     {
       "id": "DBz_RUVRbcE",
@@ -4379,21 +4442,22 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DBz_RUVRbcE_1_115abf27.jpg"
+        "/images/products/DBz_RUVRbcE_1_115abf27.jpg",
+        "/images/products/DBz_RUVRbcE_2_ef0e346b.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 20,
       "dimensions": {
-        "width": 16,
-        "height": 7,
-        "depth": 4
+        "width": 8,
+        "height": 6,
+        "depth": 6
       },
       "specifications": {},
       "created_at": "2024-11-01T02:40:13.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:23.591Z"
     },
     {
       "id": "DB0AwIwxWFK",
@@ -4412,13 +4476,13 @@
       "location": "Warrensville Heights, OH",
       "weight": 8,
       "dimensions": {
-        "width": 24,
-        "height": 20,
-        "depth": 4
+        "width": 8,
+        "height": 7,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2024-11-01T02:53:10.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:23.660Z"
     },
     {
       "id": "DB0BWdKxsci",
@@ -4429,21 +4493,22 @@
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DB0BWdKxsci_1_495a6db0.jpg"
+        "/images/products/DB0BWdKxsci_1_495a6db0.jpg",
+        "/images/products/DB0BWdKxsci_2_eeb3d835.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 16,
+      "weight": 7,
       "dimensions": {
-        "width": 9,
-        "height": 7,
-        "depth": 5
+        "width": 22,
+        "height": 11,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2024-11-01T02:58:24.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:24.539Z"
     },
     {
       "id": "DBz_cUaRLZJ",
@@ -4454,21 +4519,22 @@
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DBz_cUaRLZJ_1_7b052cb6.jpg"
+        "/images/products/DBz_cUaRLZJ_1_7b052cb6.jpg",
+        "/images/products/DBz_cUaRLZJ_2_30ce9f1f.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 24,
+      "weight": 15,
       "dimensions": {
-        "width": 22,
-        "height": 7,
-        "depth": 10
+        "width": 12,
+        "height": 14,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-11-01T02:41:43.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:25.521Z"
     },
     {
       "id": "DCCLKHnRkF1",
@@ -4479,21 +4545,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCLKHnRkF1_1_08c1851f.jpg"
+        "/images/products/DCCLKHnRkF1_1_08c1851f.jpg",
+        "/images/products/DCCLKHnRkF1_2_5a68e7a6.jpg",
+        "/images/products/DCCLKHnRkF1_3_3017b470.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 24,
       "dimensions": {
-        "width": 23,
-        "height": 7,
-        "depth": 9
+        "width": 12,
+        "height": 17,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-11-06T14:53:28.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:27.500Z"
     },
     {
       "id": "DCCP8RfxGTT",
@@ -4504,21 +4572,22 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCP8RfxGTT_1_c86d1fc8.jpg"
+        "/images/products/DCCP8RfxGTT_1_c86d1fc8.jpg",
+        "/images/products/DCCP8RfxGTT_2_13f6a4af.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 11,
+      "weight": 20,
       "dimensions": {
-        "width": 17,
-        "height": 9,
-        "depth": 8
+        "width": 26,
+        "height": 11,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-11-06T15:35:16.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:28.510Z"
     },
     {
       "id": "DBhbuc_R73c",
@@ -4529,21 +4598,22 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DBhbuc_R73c_1_0b7cb672.jpg"
+        "/images/products/DBhbuc_R73c_1_0b7cb672.jpg",
+        "/images/products/DBhbuc_R73c_2_97082c3b.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 5,
       "dimensions": {
-        "width": 11,
-        "height": 10,
-        "depth": 8
+        "width": 10,
+        "height": 18,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2024-10-24T21:43:18.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:29.338Z"
     },
     {
       "id": "DBh5dnyRlHW",
@@ -4554,21 +4624,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DBh5dnyRlHW_1_51ed606a.jpg"
+        "/images/products/DBh5dnyRlHW_1_51ed606a.jpg",
+        "/images/products/DBh5dnyRlHW_2_e36a89a0.jpg",
+        "/images/products/DBh5dnyRlHW_3_f9936575.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 19,
+      "weight": 23,
       "dimensions": {
-        "width": 25,
-        "height": 16,
-        "depth": 9
+        "width": 13,
+        "height": 17,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-10-25T02:03:09.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:30.431Z"
     },
     {
       "id": "DBh9IkQRE7y",
@@ -4579,21 +4651,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DBh9IkQRE7y_1_a0ca55d1.jpg"
+        "/images/products/DBh9IkQRE7y_1_a0ca55d1.jpg",
+        "/images/products/DBh9IkQRE7y_2_f5a9ed01.jpg",
+        "/images/products/DBh9IkQRE7y_3_be5b73b9.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 15,
       "dimensions": {
-        "width": 13,
-        "height": 12,
-        "depth": 10
+        "width": 21,
+        "height": 6,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-10-25T02:35:13.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:31.801Z"
     },
     {
       "id": "C_gyOaAN5C-",
@@ -4604,21 +4678,23 @@
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/C_gyOaAN5C-_1_938c43de.jpg"
+        "/images/products/C_gyOaAN5C-_1_938c43de.jpg",
+        "/images/products/C_gyOaAN5C-_2_93975fc5.jpg",
+        "/images/products/C_gyOaAN5C-_3_b280c1f3.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 16,
       "dimensions": {
-        "width": 8,
-        "height": 15,
-        "depth": 6
+        "width": 19,
+        "height": 17,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2024-09-04T22:37:52.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:32.980Z"
     },
     {
       "id": "DBhYZn0RaUV",
@@ -4635,15 +4711,15 @@
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 13,
+      "weight": 22,
       "dimensions": {
-        "width": 15,
+        "width": 9,
         "height": 18,
-        "depth": 5
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2024-10-24T21:14:15.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:35.352Z"
     },
     {
       "id": "C_RkORdRn6C",
@@ -4654,21 +4730,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/C_RkORdRn6C_1_73ea6fa0.jpg"
+        "/images/products/C_RkORdRn6C_1_73ea6fa0.jpg",
+        "/images/products/C_RkORdRn6C_2_c79924ea.jpg",
+        "/images/products/C_RkORdRn6C_3_cfdf2ada.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 16,
+      "weight": 6,
       "dimensions": {
-        "width": 16,
-        "height": 15,
-        "depth": 11
+        "width": 13,
+        "height": 16,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2024-08-30T00:46:55.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:36.608Z"
     },
     {
       "id": "DBha7iexgIi",
@@ -4679,21 +4757,23 @@
       "category": "Appliances",
       "condition": "Grade A",
       "images": [
-        "/images/products/DBha7iexgIi_1_7c8d3062.jpg"
+        "/images/products/DBha7iexgIi_1_7c8d3062.jpg",
+        "/images/products/DBha7iexgIi_2_d1b5a5e9.jpg",
+        "/images/products/DBha7iexgIi_3_d2563535.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 8,
+      "weight": 12,
       "dimensions": {
-        "width": 8,
+        "width": 20,
         "height": 19,
-        "depth": 8
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2024-10-24T21:36:21.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:37.802Z"
     },
     {
       "id": "C_gxu6ItF_7",
@@ -4704,21 +4784,23 @@
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/C_gxu6ItF_7_1_1a5fec11.jpg"
+        "/images/products/C_gxu6ItF_7_1_1a5fec11.jpg",
+        "/images/products/C_gxu6ItF_7_2_dc6c6aeb.jpg",
+        "/images/products/C_gxu6ItF_7_3_f1104af2.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 9,
+      "weight": 12,
       "dimensions": {
-        "width": 14,
-        "height": 17,
-        "depth": 7
+        "width": 22,
+        "height": 7,
+        "depth": 11
       },
       "specifications": {},
       "created_at": "2024-09-04T22:33:34.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:38.600Z"
     },
     {
       "id": "C_RkzNaxEnR",
@@ -4729,21 +4811,23 @@
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/C_RkzNaxEnR_1_68bba7e1.jpg"
+        "/images/products/C_RkzNaxEnR_1_68bba7e1.jpg",
+        "/images/products/C_RkzNaxEnR_2_bab3aa9b.jpg",
+        "/images/products/C_RkzNaxEnR_3_d642e222.jpg"
       ],
       "inStock": true,
-      "is_featured": true,
+      "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 17,
+      "weight": 20,
       "dimensions": {
-        "width": 25,
-        "height": 16,
-        "depth": 6
+        "width": 21,
+        "height": 17,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2024-08-30T00:51:57.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:39.694Z"
     },
     {
       "id": "DB0HLFoRR7m",
@@ -4754,21 +4838,23 @@
       "category": "Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DB0HLFoRR7m_1_b9038b2e.jpg"
+        "/images/products/DB0HLFoRR7m_1_b9038b2e.jpg",
+        "/images/products/DB0HLFoRR7m_2_a1b37aca.jpg",
+        "/images/products/DB0HLFoRR7m_3_d630f5a9.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 21,
+      "weight": 22,
       "dimensions": {
-        "width": 9,
-        "height": 10,
-        "depth": 8
+        "width": 26,
+        "height": 7,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2024-11-01T03:49:17.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:40.575Z"
     },
     {
       "id": "DBh3KODRTbl",
@@ -4779,21 +4865,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DBh3KODRTbl_1_14773aea.jpg"
+        "/images/products/DBh3KODRTbl_1_14773aea.jpg",
+        "/images/products/DBh3KODRTbl_2_ed9ac913.jpg",
+        "/images/products/DBh3KODRTbl_3_1276f9c0.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 10,
+      "weight": 12,
       "dimensions": {
-        "width": 18,
-        "height": 20,
-        "depth": 11
+        "width": 17,
+        "height": 17,
+        "depth": 12
       },
       "specifications": {},
       "created_at": "2024-10-25T01:43:01.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:41.517Z"
     },
     {
       "id": "DBhYQI9SNqv",
@@ -4804,21 +4892,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DBhYQI9SNqv_1_013b3ca3.jpg"
+        "/images/products/DBhYQI9SNqv_1_013b3ca3.jpg",
+        "/images/products/DBhYQI9SNqv_2_ac928bd0.jpg",
+        "/images/products/DBhYQI9SNqv_3_e9c1c6f1.jpg"
       ],
       "inStock": true,
       "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 11,
+      "weight": 13,
       "dimensions": {
-        "width": 11,
-        "height": 17,
-        "depth": 12
+        "width": 22,
+        "height": 7,
+        "depth": 10
       },
       "specifications": {},
       "created_at": "2024-10-24T21:12:57.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:42.513Z"
     },
     {
       "id": "DCCSr0BxpvQ",
@@ -4829,21 +4919,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCSr0BxpvQ_1_e257ffd9.jpg"
+        "/images/products/DCCSr0BxpvQ_1_e257ffd9.jpg",
+        "/images/products/DCCSr0BxpvQ_2_eee5f1f5.jpg",
+        "/images/products/DCCSr0BxpvQ_3_ddf00daa.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 20,
+      "weight": 17,
       "dimensions": {
         "width": 24,
-        "height": 15,
-        "depth": 4
+        "height": 12,
+        "depth": 8
       },
       "specifications": {},
       "created_at": "2024-11-06T15:59:14.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:43.703Z"
     },
     {
       "id": "DCCRGK8x1bT",
@@ -4854,21 +4946,22 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/DCCRGK8x1bT_1_4686822f.jpg"
+        "/images/products/DCCRGK8x1bT_1_4686822f.jpg",
+        "/images/products/DCCRGK8x1bT_2_cebb8fe8.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 10,
       "dimensions": {
-        "width": 9,
-        "height": 18,
-        "depth": 4
+        "width": 27,
+        "height": 15,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2024-11-06T15:45:21.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:44.568Z"
     },
     {
       "id": "DBhgh2HxLuF",
@@ -4879,21 +4972,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/DBhgh2HxLuF_1_adc88131.jpg"
+        "/images/products/DBhgh2HxLuF_1_adc88131.jpg",
+        "/images/products/DBhgh2HxLuF_2_eab3abdb.jpg",
+        "/images/products/DBhgh2HxLuF_3_4602c7e6.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 9,
+      "weight": 5,
       "dimensions": {
-        "width": 21,
-        "height": 14,
-        "depth": 8
+        "width": 11,
+        "height": 17,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2024-10-24T22:25:16.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:48.085Z"
     },
     {
       "id": "C8crzfgNFOE",
@@ -4904,21 +4999,23 @@
       "category": "Appliances",
       "condition": "Grade B",
       "images": [
-        "/images/products/C8crzfgNFOE_1_2e731241.jpg"
+        "/images/products/C8crzfgNFOE_1_2e731241.jpg",
+        "/images/products/C8crzfgNFOE_2_68caccba.jpg",
+        "/images/products/C8crzfgNFOE_3_408c0dc7.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 22,
       "dimensions": {
-        "width": 26,
-        "height": 19,
-        "depth": 8
+        "width": 15,
+        "height": 14,
+        "depth": 9
       },
       "specifications": {},
       "created_at": "2024-06-20T18:50:37.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:49.226Z"
     },
     {
       "id": "C_RgtVNRCAH",
@@ -4929,21 +5026,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/C_RgtVNRCAH_1_89f0f5b5.jpg"
+        "/images/products/C_RgtVNRCAH_1_89f0f5b5.jpg",
+        "/images/products/C_RgtVNRCAH_2_9fc68c87.jpg",
+        "/images/products/C_RgtVNRCAH_3_dfd22305.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 23,
+      "weight": 5,
       "dimensions": {
-        "width": 21,
-        "height": 15,
-        "depth": 13
+        "width": 11,
+        "height": 7,
+        "depth": 5
       },
       "specifications": {},
       "created_at": "2024-08-30T00:16:12.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:50.697Z"
     },
     {
       "id": "C8aXPF3tjXy",
@@ -4954,21 +5053,23 @@
       "category": "Computer Parts",
       "condition": "Grade B",
       "images": [
-        "/images/products/C8aXPF3tjXy_1_8fc83da7.jpg"
+        "/images/products/C8aXPF3tjXy_1_8fc83da7.jpg",
+        "/images/products/C8aXPF3tjXy_2_3c610aff.jpg",
+        "/images/products/C8aXPF3tjXy_3_ed7ae09e.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 9,
+      "weight": 15,
       "dimensions": {
-        "width": 11,
-        "height": 19,
-        "depth": 5
+        "width": 26,
+        "height": 9,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2024-06-19T21:12:25.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:51.719Z"
     },
     {
       "id": "C_RfNI3RPX3",
@@ -4979,21 +5080,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/C_RfNI3RPX3_1_9072bcc5.jpg"
+        "/images/products/C_RfNI3RPX3_1_9072bcc5.jpg",
+        "/images/products/C_RfNI3RPX3_2_0729d532.jpg",
+        "/images/products/C_RfNI3RPX3_3_6b356023.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 19,
       "dimensions": {
-        "width": 23,
-        "height": 10,
-        "depth": 4
+        "width": 21,
+        "height": 7,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-08-30T00:03:04.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:52.672Z"
     },
     {
       "id": "C_RhLfDxaiJ",
@@ -5004,21 +5107,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/C_RhLfDxaiJ_1_7d8cb810.jpg"
+        "/images/products/C_RhLfDxaiJ_1_7d8cb810.jpg",
+        "/images/products/C_RhLfDxaiJ_2_1efde3b7.jpg",
+        "/images/products/C_RhLfDxaiJ_3_ceb03df6.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 5,
+      "weight": 15,
       "dimensions": {
-        "width": 13,
-        "height": 18,
-        "depth": 8
+        "width": 8,
+        "height": 17,
+        "depth": 4
       },
       "specifications": {},
       "created_at": "2024-08-30T00:20:19.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:54.635Z"
     },
     {
       "id": "C_Rfx-ix3zL",
@@ -5029,21 +5134,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/C_Rfx-ix3zL_1_ac1d2a34.jpg"
+        "/images/products/C_Rfx-ix3zL_1_ac1d2a34.jpg",
+        "/images/products/C_Rfx-ix3zL_2_d7b40b5c.jpg",
+        "/images/products/C_Rfx-ix3zL_3_54695173.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 15,
+      "weight": 12,
       "dimensions": {
-        "width": 17,
-        "height": 12,
-        "depth": 5
+        "width": 23,
+        "height": 15,
+        "depth": 7
       },
       "specifications": {},
       "created_at": "2024-08-30T00:08:06.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:55.682Z"
     },
     {
       "id": "C_RgRjARAXw",
@@ -5054,21 +5161,23 @@
       "category": "Computers & Electronics",
       "condition": "Grade B",
       "images": [
-        "/images/products/C_RgRjARAXw_1_e1c9974b.jpg"
+        "/images/products/C_RgRjARAXw_1_e1c9974b.jpg",
+        "/images/products/C_RgRjARAXw_2_a5ff92f1.jpg",
+        "/images/products/C_RgRjARAXw_3_0f485237.jpg"
       ],
       "inStock": true,
-      "is_featured": false,
+      "is_featured": true,
       "warranty_months": 3,
       "location": "Warrensville Heights, OH",
-      "weight": 7,
+      "weight": 8,
       "dimensions": {
-        "width": 11,
-        "height": 11,
-        "depth": 12
+        "width": 20,
+        "height": 16,
+        "depth": 13
       },
       "specifications": {},
       "created_at": "2024-08-30T00:12:24.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:57.292Z"
     },
     {
       "id": "C_Ri6c4xoiO",
@@ -5079,21 +5188,23 @@
       "category": "Electronics",
       "condition": "Grade A",
       "images": [
-        "/images/products/C_Ri6c4xoiO_1_1ac19a69.jpg"
+        "/images/products/C_Ri6c4xoiO_1_1ac19a69.jpg",
+        "/images/products/C_Ri6c4xoiO_2_4f21bfb5.jpg",
+        "/images/products/C_Ri6c4xoiO_3_a2f33175.jpg"
       ],
       "inStock": true,
       "is_featured": false,
       "warranty_months": 6,
       "location": "Warrensville Heights, OH",
-      "weight": 6,
+      "weight": 22,
       "dimensions": {
         "width": 25,
-        "height": 8,
+        "height": 11,
         "depth": 5
       },
       "specifications": {},
       "created_at": "2024-08-30T00:35:28.000Z",
-      "updated_at": "2025-09-25T23:41:24.185Z"
+      "updated_at": "2025-09-25T23:58:58.857Z"
     }
   ],
   "categories": [
@@ -5128,7 +5239,6 @@
       "description": "Quality used mobile devices at unbeatable prices."
     }
   ],
-  "total": 200,
-  "processed": "2025-09-25T23:41:24.186Z",
-  "lastImageUpdate": "2025-09-25T23:53:35.787Z"
+  "total": 196,
+  "processed": "2025-09-25T23:58:58.859Z"
 }
