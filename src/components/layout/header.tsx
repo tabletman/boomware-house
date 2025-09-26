@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useState } from 'react'
 import { ShoppingCart, Search, Menu, X, User, ChevronDown, Zap } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { getImageUrl } from '@/lib/paths'
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -33,7 +34,7 @@ export function Header() {
         {/* Logo */}
         <Link href="/" className="mr-6 flex items-center">
           <Image
-            src="/colored-logo.png"
+            src={getImageUrl('/colored-logo.png')}
             alt="Boom Warehouse"
             width={240}
             height={80}
