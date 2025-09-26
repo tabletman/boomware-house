@@ -1,8 +1,9 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
-import { ShoppingCart, Search, Menu, X, User, Package, ChevronDown, Zap } from 'lucide-react'
+import { ShoppingCart, Search, Menu, X, User, ChevronDown, Zap } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export function Header() {
@@ -28,11 +29,17 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container pl-8 flex h-16 items-center">
+      <div className="container pl-4 flex h-16 items-center">
         {/* Logo */}
-        <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Package className="h-4 w-4 text-primary" />
-          <span className="font-semibold text-lg">Boom Warehouse</span>
+        <Link href="/" className="mr-6 flex items-center">
+          <Image
+            src="/colored-logo.png"
+            alt="Boom Warehouse"
+            width={240}
+            height={80}
+            className="h-16 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Navigation */}

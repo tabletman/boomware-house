@@ -32,7 +32,7 @@ export function GPUStatsBanner() {
 
   return (
     <div className="bg-gradient-to-r from-green-600 to-emerald-700 text-white">
-      <div className="container pl-8 pr-4">
+      <div className="container pl-4 pr-4">
         <div className="flex items-center justify-between py-2">
           <div className="flex items-center gap-6 text-sm">
             <div className="flex items-center gap-2">
