@@ -87,14 +87,14 @@ export default function HomePage() {
               <Link
                 key={category.name}
                 href={`/category/${category.slug}`}
-                className="group relative overflow-hidden rounded-lg bg-white shadow-sm transition-shadow hover:shadow-md"
+                className="group relative overflow-hidden rounded-lg bg-slate-800 shadow-sm transition-all hover:shadow-lg hover:bg-slate-700"
               >
-                <div className="aspect-square bg-gradient-to-br from-primary/10 to-primary/20 p-6">
+                <div className="aspect-square bg-gradient-to-br from-slate-700 to-slate-900 p-6">
                   <div className="flex h-full flex-col justify-end">
-                    <h3 className="font-semibold text-lg group-hover:text-primary transition-colors">
+                    <h3 className="font-semibold text-lg text-white group-hover:text-primary transition-colors">
                       {category.name}
                     </h3>
-                    <p className="text-sm text-muted-foreground mt-1">
+                    <p className="text-sm text-slate-300 mt-1">
                       {category.description}
                     </p>
                     <div className="flex items-center mt-3 text-sm text-primary">
