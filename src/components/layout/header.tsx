@@ -19,11 +19,11 @@ export function Header() {
 
   const navigation = [
     { name: 'Shop All', href: '/products' },
-    { name: 'Computers', href: '/category/computers-laptops' },
+    { name: 'Computers', href: '/category/computers--electronics' },
     { name: 'Parts', href: '/category/computer-parts' },
-    { name: 'Monitors', href: '/category/monitors-displays' },
+    { name: 'Monitors', href: '/category/monitors--displays' },
     { name: 'Mobile', href: '/category/mobile-devices' },
-    { name: 'Gaming', href: '/category/gaming' },
+    { name: 'Appliances', href: '/category/appliances' },
   ]
 
   const gpuMenuItems = [
@@ -35,7 +35,7 @@ export function Header() {
   ]
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full bg-[#131921] text-white shadow-sm">
       <div className="container pl-4 flex h-16 items-center">
         {/* Logo */}
         <Link href="/" className="mr-6 flex items-center">

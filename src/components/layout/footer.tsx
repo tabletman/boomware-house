@@ -36,26 +36,25 @@ export function Footer() {
           <div className="space-y-4">
             <h3 className="font-semibold">Shop Categories</h3>
             <div className="flex flex-col space-y-2 text-sm">
-              <Link href="/category/computers-laptops" className="hover:underline">
-                Computers & Laptops
+              <Link href="/category/computers--electronics" className="hover:underline">
+                Computers & Electronics
               </Link>
               <Link href="/category/computer-parts" className="hover:underline">
                 Computer Parts
               </Link>
-              <Link href="/category/monitors-displays" className="hover:underline">
+              <Link href="/category/monitors--displays" className="hover:underline">
                 Monitors & Displays
               </Link>
               <Link href="/category/mobile-devices" className="hover:underline">
                 Mobile Devices
               </Link>
-              <Link href="/category/gaming" className="hover:underline">
-                Gaming
-              </Link>
               <Link href="/category/appliances" className="hover:underline">
                 Appliances
               </Link>
-            </div>
-          </div>
+              <Link href="/category/electronics" className="hover:underline">
+                Electronics
+              </Link>
+            </div>          </div>
 
           {/* Customer Service */}
           <div className="space-y-4">

@@ -1,8 +1,34 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Amazon Color Palette - Light Theme */
+  --amazon-orange: #FF9900;
+  --amazon-yellow: #FFD814;
+  --amazon-dark-blue: #131921;
+  --amazon-light-blue: #232F3E;
+
+  --background: #FFFFFF;
+  --background-secondary: #F3F3F3;
+  --background-tertiary: #EAEDED;
+  --foreground: #0F1111;
+  --foreground-secondary: #565959;
+  --foreground-muted: #6F6F6F;
+
+  --primary: #FFD814;
+  --primary-foreground: #0F1111;
+  --secondary: #FFA41C;
+  --accent: #007185;
+  --accent-hover: #C7511F;
+  --destructive: #CC0C39;
+  --success: #067D62;
+
+  --border: #D5D9D9;
+  --border-light: #E3E6E6;
+
+  --card: #FFFFFF;
+  --card-foreground: #0F1111;
+
+  --price-red: #B12704;
 }
 
 @theme inline {
@@ -14,8 +40,17 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    /* Amazon Dark Theme */
+    --background: #0F1111;
+    --background-secondary: #131A22;
+    --background-tertiary: #1A2028;
+    --foreground: #FFFFFF;
+    --foreground-secondary: #DDD;
+    --foreground-muted: #999;
+    --border: #2A2F38;
+    --border-light: #3E4756;
+    --card: #1E2732;
+    --card-foreground: #FFFFFF;
   }
 }
 
@@ -23,4 +58,6 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
 }
