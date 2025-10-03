@@ -10,10 +10,14 @@ interface MainLayoutProps {
 
 export function MainLayout({ children }: MainLayoutProps) {
   return (
-    <div className="relative flex min-h-screen flex-col">
+    <div className="relative flex min-h-screen flex-col bg-gray-50">
       <GPUStatsBanner />
       <Header />
-      <main className="flex-1">{children}</main>
+      <main className="flex-1 w-full">
+        <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 py-6">
+          {children}
+        </div>
+      </main>
       <Footer />
       <CrispChat />
       <SocialProofNotifications />

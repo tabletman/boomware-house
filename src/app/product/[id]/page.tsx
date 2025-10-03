@@ -9,6 +9,7 @@ import { ImageGallery } from '@/components/ui/image-gallery'
 import { ProductReviews } from '@/components/ui/product-reviews'
 import { WishlistButton } from '@/components/ui/wishlist-button'
 import { UpsellSection } from '@/components/ui/upsell-section'
+import { AddToCartButton } from '@/components/product/add-to-cart-button'
 import { getProduct } from '@/lib/data-adapter'
 import { products } from '@/lib/products-data'
 import { getRecommendations } from '@/lib/recommendations'
@@ -149,10 +150,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
             {/* Action Buttons */}
             <div className="space-y-4">
               <div className="flex gap-3">
-                <Button size="lg" className="flex-1">
-                  <ShoppingCart className="mr-2 h-5 w-5" />
-                  Add to Cart
-                </Button>
+                <AddToCartButton
+                  productId={product.id}
+                  productName={product.name}
+                  price={product.price}
+                />
                 <WishlistButton productId={product.id} />
               </div>
 
