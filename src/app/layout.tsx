@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
+import { CartProvider } from "@/contexts/cart-context";
 import "./globals.css";
 
 const inter = Inter({
@@ -14,6 +15,12 @@ export const metadata: Metadata = {
   keywords: "used electronics, used computers, refurbished electronics, Warrensville Heights, Ohio, computer parts, gaming consoles, appliances",
   authors: [{ name: "Boom Warehouse" }],
   creator: "Boom Warehouse",
+  manifest: "/manifest.json",
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "default",
+    title: "Boom Warehouse",
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -48,7 +55,9 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} font-sans antialiased`}>
-        {children}
+        <CartProvider>
+          {children}
+        </CartProvider>
         <Toaster position="bottom-right" />
       </body>
     </html>

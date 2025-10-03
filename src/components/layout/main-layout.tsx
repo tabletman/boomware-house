@@ -1,6 +1,8 @@
 import { Header } from './header'
 import { Footer } from './footer'
 import { GPUStatsBanner } from './gpu-stats-banner'
+import { CrispChat } from '../chat/crisp-chat'
+import { SocialProofNotifications } from '../ui/social-proof'
 
 interface MainLayoutProps {
   children: React.ReactNode
@@ -13,6 +15,8 @@ export function MainLayout({ children }: MainLayoutProps) {
       <Header />
       <main className="flex-1">{children}</main>
       <Footer />
+      <CrispChat />
+      <SocialProofNotifications />
     </div>
   )
 }

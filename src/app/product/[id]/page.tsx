@@ -5,8 +5,13 @@ import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { MainLayout } from '@/components/layout/main-layout'
 import { ProductImage } from '@/components/ui/product-image'
+import { ImageGallery } from '@/components/ui/image-gallery'
+import { ProductReviews } from '@/components/ui/product-reviews'
+import { WishlistButton } from '@/components/ui/wishlist-button'
 import { UpsellSection } from '@/components/ui/upsell-section'
-import { getProductById, products } from '@/lib/products-data'
+import { getProduct } from '@/lib/data-adapter'
+import { products } from '@/lib/products-data'
+import { getRecommendations } from '@/lib/recommendations'
 import { ShoppingCart, Truck, Shield, Star, MapPin } from 'lucide-react'
 
 // Generate static params for all product IDs
@@ -24,16 +29,14 @@ interface ProductPageProps {
 
 export default async function ProductPage({ params }: ProductPageProps) {
   const { id } = await params
-  const product = getProductById(id)
+  const product = await getProduct(id)
 
   if (!product) {
     notFound()
   }
 
-  // Get related products from same category
-  const relatedProducts = products
-    .filter(p => p.category === product.category && p.id !== product.id)
-    .slice(0, 4)
+  // Get recommended products using recommendation engine
+  const recommendedProducts = getRecommendations(product, products, 4)
 
   return (
     <MainLayout>
@@ -50,20 +53,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
       <div className="container pb-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Product Images */}
-          <div className="space-y-4">
-            <div className="aspect-square rounded-lg overflow-hidden bg-muted relative">
-              {product.images[0] && (
-                <ProductImage
-                  src={product.images[0]}
-                  alt={product.name}
-                  fill
-                  className="object-cover"
-                />
-              )}
-            </div>
-            {/* Additional images could go here */}
-          </div>
+          {/* Product Images Gallery */}
+          <ImageGallery images={product.images} productName={product.name} />
 
           {/* Product Details */}
           <div className="space-y-6">
@@ -162,9 +153,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
                   <ShoppingCart className="mr-2 h-5 w-5" />
                   Add to Cart
                 </Button>
-                <Button variant="outline" size="lg">
-                  Contact Us
-                </Button>
+                <WishlistButton productId={product.id} />
               </div>
 
               {/* Features */}
@@ -189,19 +178,22 @@ export default async function ProductPage({ params }: ProductPageProps) {
         {/* Upsell Section */}
         <UpsellSection product={product} className="mt-16" />
 
-        {/* Related Products */}
-        {relatedProducts.length > 0 && (
+        {/* Reviews Section */}
+        <ProductReviews productId={product.id} className="mt-16" />
+
+        {/* Recommended Products */}
+        {recommendedProducts.length > 0 && (
           <div className="mt-16">
             <div className="flex items-center justify-between mb-8">
-              <h2 className="text-2xl font-bold">Related Products</h2>
-              <Link href={`/category/${product.category.toLowerCase().replace(' & ', '-').replace(' ', '-')}`}>
+              <h2 className="text-2xl font-bold">Recommended for You</h2>
+              <Link href="/products">
                 <Button variant="outline">
-                  View All in {product.category}
+                  View All Products
                 </Button>
               </Link>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-              {relatedProducts.map((relatedProduct) => (
+              {recommendedProducts.map((relatedProduct) => (
                 <Link key={relatedProduct.id} href={`/product/${relatedProduct.id}`}>
                   <Card className="group cursor-pointer hover:shadow-md transition-shadow">
                     <CardContent className="p-0">

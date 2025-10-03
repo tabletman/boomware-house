@@ -1,12 +1,30 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  // Enable full Next.js features (SSR, ISR, API routes)
+  // Note: For GitHub Pages deployment, we'll use a separate build config
   images: {
-    unoptimized: true,
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'cdn.shopify.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+      },
+    ],
+    formats: ['image/avif', 'image/webp'],
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/boomware-house' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/boomware-house' : '',
+  // Conditional GitHub Pages config
+  ...(process.env.DEPLOY_TARGET === 'github-pages' && {
+    output: 'export',
+    images: {
+      unoptimized: true,
+    },
+    basePath: '/boomware-house',
+    assetPrefix: '/boomware-house',
+  }),
 };
 
 export default nextConfig;

@@ -1,51 +1,86 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
+import { Button } from '@/components/ui/button'
 import { MainLayout } from '@/components/layout/main-layout'
 import { ProductImage } from '@/components/ui/product-image'
+import { ProductFilters } from '@/components/ui/product-filters'
 import { products, categories } from '@/lib/products-data'
 import { Filter, Grid, List } from 'lucide-react'
 
 export default function ProductsPage() {
-  const [selectedCategory, setSelectedCategory] = useState<string>('all')
-  const [selectedCondition, setSelectedCondition] = useState<string>('all')
   const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
   const [sortBy, setSortBy] = useState<'price-low' | 'price-high' | 'name' | 'condition'>('price-low')
-
-  // Filter products
-  let filteredProducts = products
-
-  if (selectedCategory !== 'all') {
-    filteredProducts = filteredProducts.filter(product =>
-      product.category === selectedCategory
-    )
-  }
-
-  if (selectedCondition !== 'all') {
-    filteredProducts = filteredProducts.filter(product =>
-      product.condition === selectedCondition
-    )
-  }
-
-  // Sort products
-  filteredProducts = [...filteredProducts].sort((a, b) => {
-    switch (sortBy) {
-      case 'price-low':
-        return a.price - b.price
-      case 'price-high':
-        return b.price - a.price
-      case 'name':
-        return a.name.localeCompare(b.name)
-      case 'condition':
-        const conditionOrder = { 'Grade A': 4, 'Grade B': 3, 'Grade C': 2, 'Grade D': 1 }
-        return conditionOrder[b.condition] - conditionOrder[a.condition]
-      default:
-        return 0
-    }
+  const [filters, setFilters] = useState({
+    categories: [] as string[],
+    conditions: [] as string[],
+    brands: [] as string[],
+    priceRange: [0, 10000] as [number, number],
+    inStock: false,
+    onSale: false,
   })
+
+  // Generate filter options from products
+  const filterOptions = useMemo(() => {
+    const allBrands = [...new Set(products.map(p => p.brand).filter((b): b is string => b !== undefined))].sort()
+    const allPrices = products.map(p => p.price)
+    return {
+      categories: categories.map(c => c.name),
+      conditions: ['Grade A', 'Grade B', 'Grade C', 'Grade D'] as Array<'Grade A' | 'Grade B' | 'Grade C' | 'Grade D'>,
+      brands: allBrands,
+      priceRange: {
+        min: Math.floor(Math.min(...allPrices) / 10) * 10,
+        max: Math.ceil(Math.max(...allPrices) / 10) * 10,
+      },
+    }
+  }, [])
+
+  // Filter and sort products
+  const filteredProducts = useMemo(() => {
+    let result = [...products]
+
+    // Apply filters
+    if (filters.categories.length > 0) {
+      result = result.filter(p => filters.categories.includes(p.category))
+    }
+    if (filters.conditions.length > 0) {
+      result = result.filter(p => filters.conditions.includes(p.condition))
+    }
+    if (filters.brands.length > 0) {
+      result = result.filter(p => p.brand && filters.brands.includes(p.brand))
+    }
+    if (filters.priceRange[0] !== filterOptions.priceRange.min || filters.priceRange[1] !== filterOptions.priceRange.max) {
+      result = result.filter(p => p.price >= filters.priceRange[0] && p.price <= filters.priceRange[1])
+    }
+    if (filters.inStock) {
+      result = result.filter(p => p.inStock)
+    }
+    if (filters.onSale) {
+      result = result.filter(p => p.compareAtPrice)
+    }
+
+    // Sort
+    result.sort((a, b) => {
+      switch (sortBy) {
+        case 'price-low':
+          return a.price - b.price
+        case 'price-high':
+          return b.price - a.price
+        case 'name':
+          return a.name.localeCompare(b.name)
+        case 'condition':
+          const conditionOrder = { 'Grade A': 4, 'Grade B': 3, 'Grade C': 2, 'Grade D': 1 }
+          return conditionOrder[b.condition] - conditionOrder[a.condition]
+        default:
+          return 0
+      }
+    })
+
+    return result
+  }, [filters, sortBy, filterOptions])
 
   return (
     <MainLayout>
@@ -61,73 +96,12 @@ export default function ProductsPage() {
 
       <div className="container py-8">
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Filters Sidebar */}
-          <div className="lg:w-64 space-y-6">
-            <div>
-              <h3 className="font-semibold mb-3 flex items-center">
-                <Filter className="h-4 w-4 mr-2" />
-                Filters
-              </h3>
-
-              {/* Category Filter */}
-              <div className="space-y-2">
-                <h4 className="text-sm font-medium">Category</h4>
-                <div className="space-y-1">
-                  <button
-                    onClick={() => setSelectedCategory('all')}
-                    className={`block w-full text-left text-sm px-2 py-1 rounded ${
-                      selectedCategory === 'all' ? 'bg-primary text-primary-foreground' : 'hover:bg-muted'
-                    }`}
-                  >
-                    All Categories ({products.length})
-                  </button>
-                  {categories.map(category => {
-                    const count = products.filter(p => p.category === category.name).length
-                    return (
-                      <button
-                        key={category.slug}
-                        onClick={() => setSelectedCategory(category.name)}
-                        className={`block w-full text-left text-sm px-2 py-1 rounded ${
-                          selectedCategory === category.name ? 'bg-primary text-primary-foreground' : 'hover:bg-muted'
-                        }`}
-                      >
-                        {category.name} ({count})
-                      </button>
-                    )
-                  })}
-                </div>
-              </div>
-
-              {/* Condition Filter */}
-              <div className="space-y-2 pt-4">
-                <h4 className="text-sm font-medium">Condition</h4>
-                <div className="space-y-1">
-                  <button
-                    onClick={() => setSelectedCondition('all')}
-                    className={`block w-full text-left text-sm px-2 py-1 rounded ${
-                      selectedCondition === 'all' ? 'bg-primary text-primary-foreground' : 'hover:bg-muted'
-                    }`}
-                  >
-                    All Conditions
-                  </button>
-                  {['Grade A', 'Grade B', 'Grade C', 'Grade D'].map(condition => {
-                    const count = products.filter(p => p.condition === condition).length
-                    if (count === 0) return null
-                    return (
-                      <button
-                        key={condition}
-                        onClick={() => setSelectedCondition(condition)}
-                        className={`block w-full text-left text-sm px-2 py-1 rounded ${
-                          selectedCondition === condition ? 'bg-primary text-primary-foreground' : 'hover:bg-muted'
-                        }`}
-                      >
-                        {condition} ({count})
-                      </button>
-                    )
-                  })}
-                </div>
-              </div>
-            </div>
+          {/* Advanced Filters Sidebar */}
+          <div className="lg:w-80">
+            <ProductFilters
+              options={filterOptions}
+              onFilterChange={setFilters}
+            />
           </div>
 
           {/* Products Grid */}

@@ -3,13 +3,19 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
-import { ShoppingCart, Search, Menu, X, User, ChevronDown, Zap } from 'lucide-react'
+import { ShoppingCart, Menu, X, User, ChevronDown, Zap } from 'lucide-react'
 import { Button } from '@/components/ui/button'
+import { EnhancedSearch } from '@/components/search/enhanced-search'
+import { CartDrawer } from '@/components/cart/cart-drawer'
+import { useCart } from '@/contexts/cart-context'
 import { getImageUrl } from '@/lib/paths'
+import { products } from '@/lib/products-data'
 
 export function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isGPUMenuOpen, setIsGPUMenuOpen] = useState(false)
+  const [isCartOpen, setIsCartOpen] = useState(false)
+  const { itemCount } = useCart()
 
   const navigation = [
     { name: 'Shop All', href: '/products' },
@@ -88,16 +94,16 @@ export function Header() {
         </nav>
 
         <div className="flex flex-1 items-center justify-end space-x-4">
-          {/* Search */}
-          <div className="w-full flex-1 md:w-auto md:flex-none">
-            <div className="relative">
-              <Search className="absolute left-2.5 top-2.5 h-4 w-4 text-muted-foreground" />
-              <input
-                type="search"
-                placeholder="Search products..."
-                className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 pl-8 text-sm shadow-sm transition-colors file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:cursor-not-allowed disabled:opacity-50 md:w-[200px] lg:w-[300px]"
-              />
-            </div>
+          {/* Enhanced Search - Hidden on mobile */}
+          <div className="hidden md:block flex-1 max-w-xl">
+            <EnhancedSearch allProducts={products.map(p => ({
+              id: p.id,
+              name: p.name,
+              category: p.category,
+              price: p.price,
+              image: p.images[0],
+              condition: p.condition
+            }))} />
           </div>
 
           {/* User Account */}
@@ -107,11 +113,18 @@ export function Header() {
           </Button>
 
           {/* Cart */}
-          <Button variant="ghost" size="icon" className="relative">
+          <Button
+            variant="ghost"
+            size="icon"
+            className="relative"
+            onClick={() => setIsCartOpen(true)}
+          >
             <ShoppingCart className="h-5 w-5" />
-            <span className="absolute -top-1 -right-1 h-4 w-4 rounded-full bg-primary text-[10px] font-medium text-primary-foreground flex items-center justify-center">
-              0
-            </span>
+            {itemCount > 0 && (
+              <span className="absolute -top-1 -right-1 h-5 w-5 rounded-full bg-primary text-[10px] font-medium text-primary-foreground flex items-center justify-center">
+                {itemCount}
+              </span>
+            )}
             <span className="sr-only">Shopping cart</span>
           </Button>
 
@@ -136,6 +149,18 @@ export function Header() {
       {isMobileMenuOpen && (
         <div className="border-t md:hidden">
           <div className="grid gap-2 p-4">
+            {/* Mobile Search */}
+            <div className="mb-4">
+              <EnhancedSearch allProducts={products.map(p => ({
+                id: p.id,
+                name: p.name,
+                category: p.category,
+                price: p.price,
+                image: p.images[0],
+                condition: p.condition
+              }))} />
+            </div>
+
             {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -179,6 +204,9 @@ export function Header() {
           </div>
         </div>
       )}
+
+      {/* Cart Drawer */}
+      <CartDrawer isOpen={isCartOpen} onClose={() => setIsCartOpen(false)} />
     </header>
   )
 }
