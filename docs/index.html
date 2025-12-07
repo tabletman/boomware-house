@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BoomWare House - AI-powered marketplace automation system that transforms product photos into live listings across 5 platforms automatically.">
-    <title>BoomWare House v2 - Autonomous Multi-Platform Listing Swarm</title>
+    <meta name="description" content="BoomWare House - Enterprise-grade marketplace automation powered by AI. Transform product photos into live listings across 5 platforms in under 60 seconds.">
+    <title>BoomWare House - Enterprise Marketplace Automation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1e40af;
+            --primary-light: #3b82f6;
+            --secondary: #0f172a;
+            --accent: #06b6d4;
+            --success: #10b981;
+            --warning: #f59e0b;
+            --gray-50: #f8fafc;
+            --gray-100: #f1f5f9;
+            --gray-200: #e2e8f0;
+            --gray-300: #cbd5e1;
+            --gray-600: #475569;
+            --gray-700: #334155;
+            --gray-900: #0f172a;
+            --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+            --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+            --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+            --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -13,395 +37,722 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
+            color: var(--gray-900);
+            background: #ffffff;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        .container {
-            max-width: 1200px;
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid var(--gray-200);
+            z-index: 1000;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .nav-container {
+            max-width: 1280px;
             margin: 0 auto;
-            padding: 2rem;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
-        header {
-            text-align: center;
-            color: white;
-            padding: 3rem 0;
-        }
-
-        h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
-        }
-
-        .tagline {
+        .logo {
             font-size: 1.5rem;
-            margin-bottom: 2rem;
-            opacity: 0.95;
-        }
-
-        .status {
-            display: inline-block;
-            background: #10b981;
-            color: white;
-            padding: 0.5rem 1.5rem;
-            border-radius: 2rem;
-            font-weight: bold;
-            margin: 1rem 0;
-        }
-
-        .main-content {
-            background: white;
-            border-radius: 1rem;
-            padding: 3rem;
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            margin-top: 2rem;
-        }
-
-        .vision {
-            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
-            padding: 2rem;
-            border-radius: 0.5rem;
-            margin-bottom: 2rem;
-            border-left: 4px solid #667eea;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 2rem 0;
-        }
-
-        .feature-card {
-            background: #f8f9fa;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            border: 2px solid #e9ecef;
-            transition: transform 0.2s, border-color 0.2s;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-5px);
-            border-color: #667eea;
-        }
-
-        .feature-card h3 {
-            color: #667eea;
-            margin-bottom: 1rem;
-        }
-
-        .phase {
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: #f8f9fa;
-            border-radius: 0.5rem;
-        }
-
-        .phase h3 {
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .phase.complete {
-            border-left: 4px solid #10b981;
-        }
-
-        .phase.next {
-            border-left: 4px solid #f59e0b;
-        }
-
-        .tech-stack {
+            font-weight: 700;
+            color: var(--primary);
+            text-decoration: none;
             display: flex;
-            flex-wrap: wrap;
+            align-items: center;
             gap: 0.5rem;
-            margin: 1rem 0;
         }
 
-        .tech-tag {
-            background: #667eea;
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--gray-700);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 70px;
+            background: linear-gradient(135deg, var(--secondary) 0%, #1e293b 100%);
             color: white;
-            padding: 0.4rem 1rem;
-            border-radius: 1rem;
-            font-size: 0.9rem;
+            padding: 8rem 2rem 6rem;
+            position: relative;
+            overflow: hidden;
         }
 
-        .metrics {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 2rem 0;
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(37, 99, 235, 0.15) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 50%, rgba(6, 182, 212, 0.1) 0%, transparent 50%);
         }
 
-        .metric {
-            background: white;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            border: 2px solid #e9ecef;
-            text-align: center;
+        .hero-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
         }
 
-        .metric-value {
-            font-size: 2rem;
-            font-weight: bold;
-            color: #667eea;
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(16, 185, 129, 0.1);
+            border: 1px solid rgba(16, 185, 129, 0.3);
+            color: #6ee7b7;
+            padding: 0.5rem 1rem;
+            border-radius: 2rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
         }
 
-        .metric-label {
-            color: #6c757d;
-            margin-top: 0.5rem;
+        .hero-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--success);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
         }
 
-        .cta-buttons {
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            line-height: 1.1;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e7ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            color: #cbd5e1;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            max-width: 800px;
+        }
+
+        .hero-description {
+            font-size: 1.125rem;
+            color: #94a3b8;
+            margin-bottom: 3rem;
+            max-width: 700px;
+            line-height: 1.8;
+        }
+
+        .hero-cta {
             display: flex;
             gap: 1rem;
-            justify-content: center;
-            margin: 2rem 0;
             flex-wrap: wrap;
         }
 
         .btn {
             padding: 1rem 2rem;
             border-radius: 0.5rem;
+            font-weight: 600;
+            font-size: 1rem;
             text-decoration: none;
-            font-weight: bold;
-            transition: transform 0.2s, box-shadow 0.2s;
-            display: inline-block;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            border: none;
+            cursor: pointer;
         }
 
         .btn-primary {
-            background: #667eea;
+            background: var(--primary);
             color: white;
+            box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px 0 rgba(37, 99, 235, 0.5);
         }
 
         .btn-secondary {
-            background: white;
-            color: #667eea;
-            border: 2px solid #667eea;
-        }
-
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-        }
-
-        footer {
-            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
             color: white;
-            padding: 2rem 0;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Stats Section */
+        .stats {
+            background: var(--gray-50);
+            padding: 4rem 2rem;
+            border-top: 1px solid var(--gray-200);
+        }
+
+        .stats-grid {
+            max-width: 1280px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .stat-card {
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .stat-value {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--gray-600);
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        /* Features Section */
+        .features {
+            padding: 6rem 2rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-tag {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--gray-900);
+            margin-bottom: 1rem;
+        }
+
+        .section-description {
+            font-size: 1.125rem;
+            color: var(--gray-600);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            background: white;
+            border: 1px solid var(--gray-200);
+            border-radius: 1rem;
+            padding: 2rem;
+            transition: all 0.3s;
+        }
+
+        .feature-card:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-4px);
+        }
+
+        .feature-icon {
+            width: 3rem;
+            height: 3rem;
+            background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+            border-radius: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--gray-900);
+            margin-bottom: 0.75rem;
+        }
+
+        .feature-card p {
+            color: var(--gray-600);
+            line-height: 1.7;
+        }
+
+        /* Tech Stack */
+        .tech-stack {
+            background: var(--gray-50);
+            padding: 6rem 2rem;
+        }
+
+        .tech-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 1.5rem;
             margin-top: 3rem;
         }
 
-        code {
-            background: #f8f9fa;
-            padding: 0.2rem 0.5rem;
-            border-radius: 0.25rem;
-            font-family: 'Courier New', monospace;
-            font-size: 0.9em;
+        .tech-item {
+            background: white;
+            border: 1px solid var(--gray-200);
+            border-radius: 0.75rem;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            font-weight: 600;
+            color: var(--gray-700);
+            transition: all 0.2s;
         }
 
-        .architecture {
-            background: #f8f9fa;
+        .tech-item:hover {
+            border-color: var(--primary);
+            box-shadow: var(--shadow-md);
+            transform: translateY(-2px);
+        }
+
+        /* Roadmap */
+        .roadmap {
+            padding: 6rem 2rem;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .roadmap-timeline {
+            margin-top: 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .phase {
+            background: white;
+            border: 2px solid var(--gray-200);
+            border-radius: 1rem;
             padding: 2rem;
-            border-radius: 0.5rem;
-            margin: 2rem 0;
-            font-family: monospace;
-            overflow-x: auto;
+            position: relative;
+            transition: all 0.2s;
         }
 
-        ul {
-            margin-left: 2rem;
+        .phase:hover {
+            box-shadow: var(--shadow-lg);
+        }
+
+        .phase.complete {
+            border-color: var(--success);
+            background: linear-gradient(135deg, rgba(16, 185, 129, 0.05) 0%, transparent 100%);
+        }
+
+        .phase.next {
+            border-color: var(--warning);
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.05) 0%, transparent 100%);
+        }
+
+        .phase-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .phase-status {
+            font-size: 1.5rem;
+        }
+
+        .phase h3 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--gray-900);
+        }
+
+        .phase ul {
+            list-style: none;
+            padding-left: 0;
             margin-top: 1rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 0.75rem;
         }
 
-        li {
-            margin-bottom: 0.5rem;
+        .phase li {
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--gray-600);
         }
 
+        .phase li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: 700;
+        }
+
+        .phase.next li::before {
+            content: '○';
+            color: var(--warning);
+        }
+
+        .phase:not(.complete):not(.next) li::before {
+            content: '○';
+            color: var(--gray-400);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 3rem 2rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-content a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            color: #64748b;
+            font-size: 0.875rem;
+        }
+
+        /* Responsive */
         @media (max-width: 768px) {
-            h1 {
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 5rem 1.5rem 4rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.25rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .section-title {
                 font-size: 2rem;
             }
 
-            .tagline {
-                font-size: 1.2rem;
+            .features-grid {
+                grid-template-columns: 1fr;
             }
 
-            .main-content {
-                padding: 1.5rem;
+            .stats-grid {
+                grid-template-columns: 1fr;
             }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animate {
+            animation: fadeInUp 0.6s ease-out;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🏠 BoomWare House v2</h1>
-            <p class="tagline">AI-Powered Autonomous Multi-Platform Listing Swarm</p>
-            <div class="status">✅ Phase 2 Complete</div>
-        </header>
-
-        <div class="main-content">
-            <div class="vision">
-                <h2>🎯 Vision</h2>
-                <p style="font-size: 1.2rem; margin-top: 1rem;">
-                    Drop a product photo → AI identifies → Smart pricing → <strong>Autonomous listing</strong> on eBay, Facebook, Mercari, Poshmark, and OfferUp.
-                </p>
-            </div>
-
-            <section>
-                <h2>🚀 What It Does</h2>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <h3>🧠 AI Vision Analysis</h3>
-                        <p>Claude Sonnet 4.5 identifies products with 95% accuracy, generates optimized titles and descriptions for each platform.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>🎨 Image Processing</h3>
-                        <p>Auto-enhance, remove backgrounds, resize for each platform. 80%+ cache hit rate for blazing performance.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>💾 Inventory Tracking</h3>
-                        <p>SQLite database tracks all items, listings, sales, and performance metrics across platforms.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>💰 Smart Pricing</h3>
-                        <p>Dynamic pricing strategy with platform-specific fee calculations and auto-accept/decline thresholds.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>🤖 Autonomous Listing</h3>
-                        <p>Parallel execution across 5 platforms with error recovery and retry logic.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>📊 Analytics</h3>
-                        <p>Sales tracking, platform performance, price history, and operation logging.</p>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <h2>📈 Performance Metrics</h2>
-                <div class="metrics">
-                    <div class="metric">
-                        <div class="metric-value">75%</div>
-                        <div class="metric-label">Cost Reduction (Caching)</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">80%+</div>
-                        <div class="metric-label">Image Cache Hit Rate</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">&lt;10ms</div>
-                        <div class="metric-label">Database Queries</div>
-                    </div>
-                    <div class="metric">
-                        <div class="metric-value">60s</div>
-                        <div class="metric-label">Target: Photo → Live Listings</div>
-                    </div>
-                </div>
-            </section>
-
-            <section>
-                <h2>🏗️ System Architecture</h2>
-                <div class="architecture">
-📸 Product Photos
-    ↓
-🧠 AI Vision Analysis (Claude Sonnet/Haiku)
-    ↓
-🎨 Image Processing (Enhancement + Sizing)
-    ↓
-💾 Inventory Database (SQLite)
-    ↓
-💰 Price Optimization (Smart Pricing)
-    ↓
-🤖 Listing Agents (5 Platforms in Parallel)
-    ↓
-📊 Performance Analytics
-                </div>
-            </section>
-
-            <section>
-                <h2>🛠️ Tech Stack</h2>
-                <div class="tech-stack">
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">Node.js</span>
-                    <span class="tech-tag">Anthropic Claude</span>
-                    <span class="tech-tag">SQLite</span>
-                    <span class="tech-tag">Sharp</span>
-                    <span class="tech-tag">BullMQ</span>
-                    <span class="tech-tag">Playwright</span>
-                    <span class="tech-tag">Redis</span>
-                </div>
-            </section>
-
-            <section>
-                <h2>🎯 Development Roadmap</h2>
-
-                <div class="phase complete">
-                    <h3>✅ Phase 1: Database Foundation</h3>
-                    <ul>
-                        <li>SQLite inventory tracking</li>
-                        <li>Multi-platform listing management</li>
-                        <li>Sales analytics and performance metrics</li>
-                        <li>Operation logging and duplicate detection</li>
-                    </ul>
-                </div>
-
-                <div class="phase complete">
-                    <h3>✅ Phase 2: Image Processing Pipeline</h3>
-                    <ul>
-                        <li>AI-powered enhancement (sharpen, normalize, optimize)</li>
-                        <li>Background removal (remove.bg API)</li>
-                        <li>Platform-specific image sizing (5 platforms)</li>
-                        <li>Batch processing with intelligent caching</li>
-                    </ul>
-                </div>
-
-                <div class="phase next">
-                    <h3>🔄 Phase 3: Price Optimization (Next)</h3>
-                    <ul>
-                        <li>Dynamic pricing strategy</li>
-                        <li>Platform-specific fee calculations</li>
-                        <li>Auto-decline/accept thresholds</li>
-                        <li>Price drop scheduling</li>
-                    </ul>
-                </div>
-
-                <div class="phase">
-                    <h3>📋 Phase 4: Listing Executors</h3>
-                    <ul>
-                        <li>eBay API integration</li>
-                        <li>Facebook Marketplace automation</li>
-                        <li>Mercari, Poshmark, OfferUp automation</li>
-                        <li>Parallel listing execution</li>
-                    </ul>
-                </div>
-            </section>
-
-            <section>
-                <h2>📚 Documentation</h2>
-                <ul>
-                    <li><a href="PHASE1_COMPLETE.html">Phase 1 Complete</a> - Database foundation details</li>
-                    <li><a href="PHASE2_COMPLETE.html">Phase 2 Complete</a> - Image processing implementation</li>
-                    <li><a href="QUICK_START.html">Quick Start Guide</a> - Getting started instructions</li>
-                    <li><a href="ARCHITECTURE.html">Architecture</a> - System design documentation</li>
-                </ul>
-            </section>
-
-            <div class="cta-buttons">
-                <a href="https://github.com/tabletman/boomware-house" class="btn btn-primary">View on GitHub</a>
-                <a href="QUICK_START.html" class="btn btn-secondary">Get Started</a>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                BoomWare House
+            </a>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#tech">Technology</a>
+                <a href="#roadmap">Roadmap</a>
+                <a href="https://github.com/tabletman/boomware-house">GitHub</a>
             </div>
         </div>
+    </nav>
 
-        <footer>
-            <p>Built with TypeScript, Node.js, Anthropic Claude, Sharp, SQLite, BullMQ, Playwright</p>
-            <p style="margin-top: 1rem;">Status: Phase 2/7 Complete ✅ | Next Milestone: Price Optimization Agent</p>
-        </footer>
-    </div>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <span class="hero-badge-dot"></span>
+                Phase 2 Complete
+            </div>
+            <h1 class="animate">Enterprise Marketplace Automation</h1>
+            <p class="hero-subtitle animate">Transform product photos into live listings across 5 platforms in under 60 seconds</p>
+            <p class="hero-description animate">AI-powered autonomous listing system leveraging Claude Sonnet 4.5 for product identification, intelligent image processing, dynamic pricing, and parallel multi-platform deployment.</p>
+            <div class="hero-cta animate">
+                <a href="https://github.com/tabletman/boomware-house" class="btn btn-primary">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                    </svg>
+                    View on GitHub
+                </a>
+                <a href="#features" class="btn btn-secondary">
+                    Learn More
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-value">95%</span>
+                <span class="stat-label">Product Identification Accuracy</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">75%</span>
+                <span class="stat-label">Cost Reduction via Caching</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">&lt;60s</span>
+                <span class="stat-label">Photo to Live Listing</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value">5</span>
+                <span class="stat-label">Platforms Simultaneously</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <div class="section-tag">Capabilities</div>
+            <h2 class="section-title">Enterprise-Grade Features</h2>
+            <p class="section-description">Production-ready automation system built with modern AI, intelligent caching, and fault-tolerant architecture</p>
+        </div>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>AI Vision Analysis</h3>
+                <p>Claude Sonnet 4.5 with 95% accuracy for product identification. Generates platform-optimized titles, descriptions, and market positioning with intelligent prompt caching.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎨</div>
+                <h3>Image Processing Pipeline</h3>
+                <p>Sharp-based enhancement with background removal, platform-specific sizing, and 80%+ cache hit rate. Batch processing with intelligent concurrency control.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💾</div>
+                <h3>Inventory Management</h3>
+                <p>SQLite database with &lt;10ms query response. Multi-platform listing tracking, sales analytics, duplicate detection, and comprehensive operation logging.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Dynamic Pricing</h3>
+                <p>Platform-specific fee calculations, auto-accept/decline thresholds, price drop scheduling, and auction vs. fixed price recommendations.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>Autonomous Execution</h3>
+                <p>Parallel listing across eBay, Facebook, Mercari, Poshmark, and OfferUp. Comprehensive error recovery with exponential backoff and retry logic.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📊</div>
+                <h3>Performance Analytics</h3>
+                <p>Real-time metrics collection, platform performance comparison, price history tracking, and detailed operation logging for debugging.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tech Stack -->
+    <section class="tech-stack" id="tech">
+        <div class="tech-container">
+            <div class="section-header">
+                <div class="section-tag">Technology</div>
+                <h2 class="section-title">Modern Tech Stack</h2>
+                <p class="section-description">Built with production-grade tools and enterprise-ready infrastructure</p>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-item">TypeScript</div>
+                <div class="tech-item">Node.js</div>
+                <div class="tech-item">Claude AI</div>
+                <div class="tech-item">SQLite</div>
+                <div class="tech-item">Sharp</div>
+                <div class="tech-item">BullMQ</div>
+                <div class="tech-item">Redis</div>
+                <div class="tech-item">Playwright</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="roadmap" id="roadmap">
+        <div class="section-header">
+            <div class="section-tag">Progress</div>
+            <h2 class="section-title">Development Roadmap</h2>
+            <p class="section-description">Systematic development with clear milestones and measurable outcomes</p>
+        </div>
+        <div class="roadmap-timeline">
+            <div class="phase complete">
+                <div class="phase-header">
+                    <span class="phase-status">✓</span>
+                    <h3>Phase 1: Database Foundation</h3>
+                </div>
+                <ul>
+                    <li>SQLite inventory tracking with comprehensive schema</li>
+                    <li>Multi-platform listing management system</li>
+                    <li>Sales analytics and performance metrics</li>
+                    <li>Operation logging and duplicate detection</li>
+                </ul>
+            </div>
+
+            <div class="phase complete">
+                <div class="phase-header">
+                    <span class="phase-status">✓</span>
+                    <h3>Phase 2: Image Processing Pipeline</h3>
+                </div>
+                <ul>
+                    <li>AI-powered enhancement (sharpen, normalize, optimize)</li>
+                    <li>Background removal with remove.bg integration</li>
+                    <li>Platform-specific image sizing for 5 marketplaces</li>
+                    <li>Batch processing with intelligent caching layer</li>
+                </ul>
+            </div>
+
+            <div class="phase next">
+                <div class="phase-header">
+                    <span class="phase-status">→</span>
+                    <h3>Phase 3: Price Optimization</h3>
+                </div>
+                <ul>
+                    <li>Dynamic pricing strategy engine</li>
+                    <li>Platform-specific fee calculations</li>
+                    <li>Auto-decline/accept threshold logic</li>
+                    <li>Scheduled price drop automation</li>
+                </ul>
+            </div>
+
+            <div class="phase">
+                <div class="phase-header">
+                    <span class="phase-status">○</span>
+                    <h3>Phase 4: Listing Executors</h3>
+                </div>
+                <ul>
+                    <li>eBay Sell API integration</li>
+                    <li>Facebook Marketplace automation via Playwright</li>
+                    <li>Mercari, Poshmark, OfferUp automation</li>
+                    <li>Parallel listing execution with coordination</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <a href="https://github.com/tabletman/boomware-house">GitHub</a>
+                <a href="#">Documentation</a>
+                <a href="#">API Reference</a>
+                <a href="#">Contributing</a>
+            </div>
+            <div class="footer-bottom">
+                <p>Built with TypeScript, Node.js, Anthropic Claude, Sharp, SQLite, BullMQ, Playwright</p>
+                <p style="margin-top: 0.5rem;">Phase 2/7 Complete | Next: Price Optimization Agent</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
