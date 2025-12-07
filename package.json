@@ -1,0 +1,39 @@
+{
+  "name": "boomer-agent",
+  "version": "2.0.0",
+  "description": "High-performance marketplace automation agent",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "watch": "tsx scripts/auto-list-enhanced.ts",
+    "test": "tsx tests/load-test.ts",
+    "build": "tsc",
+    "worker:start": "tsx src/workers/start.ts",
+    "metrics:dashboard": "tsx src/metrics/dashboard.ts",
+    "clean:queue": "tsx scripts/clean-queue.ts",
+    "db:init": "tsx scripts/init-db.ts",
+    "db:test": "tsx tests/agents/inventory-manager.test.ts",
+    "img:test": "tsx tests/agents/image-processor.test.ts",
+    "cli": "tsx scripts/boomware-cli.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.30.0",
+    "bullmq": "^5.0.0",
+    "ioredis": "^5.3.0",
+    "lru-cache": "^10.0.0",
+    "sharp": "^0.33.0",
+    "playwright": "^1.40.0",
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.0",
+    "sql.js": "^1.10.3",
+    "commander": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
