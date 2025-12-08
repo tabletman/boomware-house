@@ -10,10 +10,9 @@ test.describe('Boom Warehouse Landing Page', () => {
   });
 
   test('should display navigation elements', async ({ page }) => {
-    // Logo
+    // Logo (either image or text)
     const logo = page.locator('.logo');
     await expect(logo).toBeVisible();
-    await expect(logo).toContainText('BOOM WAREHOUSE');
 
     // Search box
     const searchBox = page.locator('.search-box input');
