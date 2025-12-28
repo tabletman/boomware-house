@@ -163,12 +163,14 @@ npm run render       # Render video output
 
 **Important**: AgentWise is the single authoritative orchestration hub for autonomous work.
 
-### Principles
+### Principles (Planned Architecture)
 1. All AI assistants and automation tools accept tasks from AgentWise
 2. Direct human calls to automation in production are discouraged
-3. Tools must be invoked via signed wrapper scripts in `tools/` directory
-4. All wrappers validate `AGENTWISE_TOKEN` before execution
-5. Wrappers log to `logs/tool-invocations.log`
+3. Tools should be invoked via signed wrapper scripts (planned for `tools/` directory)
+4. All wrappers should validate `AGENTWISE_TOKEN` before execution
+5. Wrappers should log to `logs/tool-invocations.log`
+
+Note: AgentWise orchestration is documented in AGENTS.md and WARP.md but not fully implemented yet
 
 ### Agent Roles
 - **VisionAgent**: Product identification from images
@@ -178,12 +180,13 @@ npm run render       # Render video output
 - **ListingExecutorAgent**: Multi-platform listing creation
 - **SwarmOrchestrator**: Coordinates all agents
 
-### Tool Wrapper Contract
+### Tool Wrapper Contract (Planned)
+Planned architecture for tool wrappers:
 ```bash
 # Input: JSON payload
 # Validation: Check AGENTWISE_TOKEN
 # Output: JSON { success: bool, data: {...}, logs: "..." }
-# Location: tools/run-*.sh
+# Location: tools/run-*.sh (to be created)
 ```
 
 ## Security Best Practices
@@ -194,8 +197,8 @@ npm run render       # Render video output
 4. **Verify webhooks**: Check signatures for Stripe/Whop
 5. **Rate limiting**: Implement for API routes
 6. **HTTPS only**: Enforce secure connections
-7. **Token validation**: Always verify AgentWise tokens in wrappers
-8. **Audit logging**: Log privileged operations to `logs/`
+7. **Token validation**: Verify tokens for privileged operations
+8. **Audit logging**: Log privileged operations appropriately
 
 ## Error Handling
 
@@ -221,8 +224,8 @@ Required environment variables (see `.env.example`):
 - `DATABASE_URL`
 - `STRIPE_SECRET_KEY`
 - `ANTHROPIC_API_KEY` (for AI features)
-- `EBAY_APP_ID`, `EBAY_CERT_ID`, `EBAY_DEV_ID` (for eBay integration)
-- `AGENTWISE_TOKEN` (for orchestration)
+- `EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET` (for eBay integration)
+- `AGENTWISE_TOKEN` (for orchestration, when implemented)
 
 ## Git Workflow
 
@@ -237,19 +240,19 @@ Required environment variables (see `.env.example`):
 ### Autonomous Listing System
 - Uses Claude 3.5 Sonnet for product identification
 - Integrates with eBay API and browser automation
-- Stores inventory in SQLite database
+- Stores data in PostgreSQL database (via Drizzle ORM)
 - Tracks listings across multiple platforms
 - Implements retry logic for failed operations
 
-### CLI Commands
-```bash
-npm run cli analyze <images>        # Analyze product
-npm run cli list <images>            # Create listings
-npm run cli batch <directory>        # Batch process
-npm run cli inventory                # View inventory
-npm run cli sales --last 30          # Sales report
-npm run cli heal                     # Retry failed listings
-```
+### Future CLI Commands (Planned)
+The autonomous listing system plans to include CLI commands for:
+- Product analysis from images
+- Multi-platform listing creation
+- Batch processing of inventory
+- Inventory management and reporting
+- Sales analytics and failed listing retry
+
+Note: These commands are documented in README.md but not yet implemented in package.json
 
 ## Performance Considerations
 
