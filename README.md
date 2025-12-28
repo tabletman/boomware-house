@@ -7,6 +7,8 @@ A modern, full-stack e-commerce platform built for Boom Warehouse - a used elect
 
 **NEW:** Now with AI-powered autonomous multi-marketplace listing system that automatically identifies, prices, and lists products across eBay, Facebook Marketplace, instagram and others to follow. Starting with eBay and meta.
 
+**🚀 NEW: Warp Command Center** - Set up Warp as your autonomous development command center with AgentWise orchestration. See [Warp Setup Guide](docs/WARP_SETUP.md) and [Refactoring Prompt](prompts/chatgpt-5.1-refactoring-prompt.md).
+
 ## Features
 
 ### 🤖 Autonomous Listing System (NEW!)
@@ -90,6 +92,7 @@ A modern, full-stack e-commerce platform built for Boom Warehouse - a used elect
 - **Vercel** - Hosting and deployment
 - **Cloudflare** - CDN and security
 - **Google Analytics** - Analytics and tracking
+- **Warp + AgentWise** - Autonomous development command center (NEW!)
 
 ## Getting Started
 
@@ -99,6 +102,8 @@ A modern, full-stack e-commerce platform built for Boom Warehouse - a used elect
 - Supabase account
 - Stripe account
 - Cloudinary account
+- **Warp terminal** (for autonomous development) - Optional, see [Warp Setup Guide](docs/WARP_SETUP.md)
+- **AgentWise CLI** (for autonomous development) - Optional: `npm i -g agentwise`
 
 ### Environment Setup
 
@@ -383,6 +388,76 @@ tsx scripts/test-inventory-manager.ts
 ✅ Search functionality works
 ✅ Database backup created
 ```
+
+---
+
+## 🎛️ Warp Command Center (Autonomous Development)
+
+### Overview
+
+This project now supports **autonomous software development** using Warp as a command center with AgentWise orchestration. This means:
+- **Humans ideate and solve problems**
+- **AI autonomously codes, tests, and deploys**
+- **AgentWise orchestrates all autonomous work**
+- **Warp provides the command center UI**
+
+### Quick Setup
+
+1. **Install Warp**: Download from [warp.dev](https://warp.dev)
+2. **Install AgentWise**: `npm i -g agentwise`
+3. **Import workflows**: In Warp, import all `.warp/*.json` files
+4. **Configure secrets**: Add required secrets in Warp Settings → Secrets
+5. **Run health check**: `./scripts/warp-frontier-check.sh --dry-run`
+
+See complete setup guide: [docs/WARP_SETUP.md](docs/WARP_SETUP.md)
+
+### Available Workflows
+
+- **Health Check** (`.warp/workflow_frontier.json`) - System health, GPU checks, API smoke tests
+- **Database Init** (`.warp/workflow_db-init.json`) - Safe database initialization
+- **Worker Control** (`.warp/workflow_worker-control.json`) - Start/stop worker groups
+
+### Wrapper Scripts
+
+All tools are invoked via signed wrappers in `tools/` for security and audit logging:
+
+```bash
+# AgentWise wrapper
+./tools/run-agentwise.sh --dry-run monitor
+
+# BullMQ wrapper
+./tools/run-bullmq.sh enqueue --queue=images --payload-file=job.json
+
+# Docker wrapper
+./tools/run-docker.sh ps
+```
+
+### Architecture Principles
+
+- **AgentWise as Orchestrator**: All autonomous work flows through AgentWise
+- **Wrapper Contract**: All tools invoked via signed wrappers with validation and logging
+- **Security First**: Token validation, secret masking, audit logs
+- **Dry-Run First**: All operations support `--dry-run` for safe testing
+
+See detailed architecture: [AGENTS.md](AGENTS.md) and [WARP.md](WARP.md)
+
+### Refactoring Guide
+
+For a comprehensive guide to refactoring this project to follow AgentWise patterns:
+- Read: [prompts/chatgpt-5.1-refactoring-prompt.md](prompts/chatgpt-5.1-refactoring-prompt.md)
+- This prompt is designed for ChatGPT 5.1 (o1) to understand the entire architecture and implement autonomous development patterns
+
+### Agent Swarm
+
+The autonomous listing system uses 6 specialized agents:
+1. **VisionAgent** - Product identification via Claude vision
+2. **MarketIntelAgent** - Price analysis from market data
+3. **PriceOptimizerAgent** - Dynamic pricing strategies
+4. **ImageProcessorAgent** - Photo optimization per platform
+5. **ListingExecutorAgent** - Multi-marketplace posting
+6. **SwarmOrchestrator** - Coordinates all agents
+
+All agents are managed by AgentWise for orchestration, retry logic, and audit logging.
 
 ---
 
