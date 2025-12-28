@@ -1,0 +1,10 @@
+{
+  "name": "boomware-db-init",
+  "description": "Safely initialize or migrate the local SQLite DB (data/inventory.db) via AgentWise wrapper",
+  "env": {},
+  "steps": [
+    { "name": "DB init (dry-run)", "cmd": "./tools/run-agentwise.sh --dry-run db:init" },
+    { "name": "DB init (run)", "cmd": "./tools/run-agentwise.sh db:init --confirm" }
+  ],
+  "secrets": [ "AGENTWISE_TOKEN" ]
+}
