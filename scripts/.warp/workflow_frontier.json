@@ -1,0 +1,34 @@
+{
+  "name": "boomware-frontier-health-check",
+  "description": "Health check and smoke-test across repo + Frontier endpoint. Uses scripts/warp-frontier-check.sh",
+  "env": {
+    "FRONTIER_API_URL": "<FRONTIER_API_URL>",
+    "FRONTIER_MODEL": "<FRONTIER_MODEL>",
+    "FRONTIER_API_KEY": "<set_in_warp_secrets>",
+    "MAC_IP": "<MAC_IP>",
+    "MAC_USER": "<MAC_USER>",
+    "SSH_PORT": "22"
+  },
+  "steps": [
+    {
+      "name": "Repo status",
+      "cmd": "git status --porcelain; git rev-parse --abbrev-ref HEAD || true"
+    },
+    {
+      "name": "Install node deps (if needed)",
+      "cmd": "npm ci --prefer-offline || npm install --no-audit --prefer-offline"
+    },
+    {
+      "name": "DB init (safe)",
+      "cmd": "npm run db:init || echo 'db:init failed or already initialized'"
+    },
+    {
+      "name": "Run warp-frontier-check",
+      "cmd": "bash scripts/warp-frontier-check.sh"
+    }
+  ],
+  "secrets": [
+    "FRONTIER_API_KEY",
+    "AGENTWISE_TOKEN"
+  ]
+}

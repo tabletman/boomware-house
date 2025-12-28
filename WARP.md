@@ -1,78 +1,83 @@
 # WARP.md — Warp as Command Center for Boom Warehouse
 
-This file documents how to use Warp (warp.dev) as the command center for Boom Warehouse. It is intended to be written/created by the project's AgentWise brain (GPT‑5.1 Codex) and to be imported alongside `.warp/` workflow files into the Warp app.
+Warp is the operator UI. AgentWise is the executor. Every action in Warp must flow through AgentWise-compliant wrappers (`tools/run-*.sh`) so we keep audit logs and secret hygiene.
 
 Overview
-- Purpose: Use Warp as the central UI to run repo health checks, AgentWise tasks, worker control, model endpoint smoke tests, and deploy operations.
-- Principle: AgentWise is the canonical executor. Warp is the command center that triggers AgentWise wrappers (tools/run-*.sh) and workflows. Do not run external tools directly from Warp unless they are calling the signed wrappers.
+- Purpose: run repo health checks, AgentWise tasks, Factory Droids (vibe coding), worker control, model smoke tests, and deploy operations from Warp.
+- Principle: never bypass wrappers. Warp → `.warp/*.json` workflow → `tools/run-*.sh` (validates `AGENTWISE_TOKEN`, logs invocation, supports `--dry-run` / `--confirm`).
 
 Immediate operator checklist (import & setup)
-1. Import workflows
-   - In Warp: Workflows → Import → select `.warp/*.json` files (e.g. `.warp/workflow_frontier.json`, `.warp/workflow_db-init.json`, `.warp/workflow_worker-control.json`).
-2. Configure Warp secrets (DO NOT store secrets in repo)
-   - Add the following secrets in Warp secret storage:
-     - FRONTIER_API_KEY
-     - AGENTWISE_TOKEN
-     - ANTHROPIC_API_KEY (if required)
-     - EBAY_CLIENT_ID / EBAY_CLIENT_SECRET (if required)
-3. Confirm agentwise wrappers exist
-   - Ensure `tools/run-*.sh` wrappers are present and executable. They should validate `AGENTWISE_TOKEN`, support `--dry-run`, and log invocations to `logs/tool-invocations.log`.
-4. Run health-check (dry-run first)
-   - In Warp open the imported workflow `boomware-frontier-health-check` and run it in `--dry-run` mode or use the terminal:
-     ```bash
-     bash scripts/warp-frontier-check.sh --dry-run
-     ```
-5. Provide secrets when requested
-   - The AgentWise brain will create workflows and attempt dry-run checks. If any step requires secrets to proceed, the workflow or wrapper will pause and request the secret (Warp secrets or AgentWise secret store). Provide secrets via Warp's secret UI or AgentWise secret set commands.
+1) Import workflows (Warp → Workflows → Import):
+   - `.warp/workflow_frontier.json`
+   - `.warp/workflow_db-init.json`
+   - `.warp/workflow_worker-control.json`
+   - `.warp/workflow_droid-vibe.json` (Factory Droids / vibe coding)
+2) Configure Warp secrets (placeholders only; do **not** store in repo):
+   - AGENTWISE_TOKEN
+   - FRONTIER_API_KEY
+   - FACTORY_API_KEY
+   - ANTHROPIC_API_KEY (if required)
+   - EBAY_CLIENT_ID / EBAY_CLIENT_SECRET (if required)
+3) Confirm wrappers exist and are executable:
+   - `tools/run-bullmq.sh`, `tools/run-docker.sh`, `tools/run-droid.sh` (new), and any `tools/run-*.sh` wrappers.
+4) Run health-checks (dry-run first):
+   - `bash scripts/warp-frontier-check.sh --dry-run`
+   - `./tools/run-droid.sh exec --prompt "vibe-code a Next.js + Tailwind landing page" --auto low --output-format text --dry-run`
+5) Provide secrets when prompted by wrappers/workflows (Warp secrets UI or AgentWise secret store).
+
+Factory AI Droids + Vibe coding (Factory-first, AgentWise-orchestrated)
+- Skill location: `.factory/skills/vibe-coding/SKILL.md` (auto-discovered by Factory Droids).
+- Wrapper: `tools/run-droid.sh` ensures AGENTWISE_TOKEN + FACTORY_API_KEY and logs to `logs/tool-invocations.log`.
+- Workflow: `.warp/workflow_droid-vibe.json` runs a dry-run vibe prototype by default.
+- Use cases: rapid web UI prototyping, landing pages, dashboards; keep AgentWise as orchestrator.
+- Reference: Factory droid CLI reference (non-interactive + interactive): https://docs.factory.ai/reference/cli-reference.md
 
 How Warp interacts with AgentWise
-- Workflows in `.warp/` call local wrapper scripts in `tools/` (e.g., `./tools/run-bullmq.sh enqueue ...`) which in turn validate `AGENTWISE_TOKEN`, log the invocation, and then call AgentWise APIs or run the desired command within the controlled environment.
-- This design centralizes audit logs in `logs/tool-invocations.log` and prevents ad-hoc direct CLI calls.
+- `.warp/*.json` workflows call `tools/run-*.sh`, which validate tokens, mask args, log to `logs/tool-invocations.log`, then delegate to AgentWise/Droids.
+- All destructive operations require `--confirm`; default to `--dry-run`.
 
 Key workflows to import
 - boomware-frontier-health-check (`.warp/workflow_frontier.json`)
-  - Purpose: run repository health checks, GPU checks (if present), SSH connectivity smoke tests, and a Frontier model smoke test (if API key present).
-  - Secrets required: FRONTIER_API_KEY, AGENTWISE_TOKEN
+  - Runs repo checks, GPU/SSH smoke tests, Frontier model ping.
+  - Secrets: FRONTIER_API_KEY, AGENTWISE_TOKEN
 - boomware-db-init (`.warp/workflow_db-init.json`)
-  - Purpose: safely initialize or migrate `data/inventory.db` using wrapper `tools/run-db.sh` (requires `--confirm` to perform destructive actions).
+  - Safe DB init/migration via `tools/run-db.sh` (`--confirm` for destructive).
   - Secrets: AGENTWISE_TOKEN
 - boomware-worker-control (`.warp/workflow_worker-control.json`)
-  - Purpose: start/stop worker groups via `tools/run-worker.sh` and monitor job queues.
+  - Start/stop worker groups via `tools/run-worker.sh`; monitor queues.
   - Secrets: AGENTWISE_TOKEN
+- boomware-factory-vibe (`.warp/workflow_droid-vibe.json`)
+  - Invokes Factory Droids (vibe-coding skill) through `tools/run-droid.sh` (dry-run default).
+  - Secrets: FACTORY_API_KEY, AGENTWISE_TOKEN
 
 Recommended Warp snippets
-- frontier_call snippet:
+- Frontier smoke:
   ```bash
   curl -s -X POST "${FRONTIER_API_URL}/v1/${FRONTIER_MODEL}/infer" \
     -H "Authorization: Bearer ${FRONTIER_API_KEY}" \
     -H "Content-Type: application/json" \
     -d '{ "input": "health check" }' | jq -r '.output'
   ```
-- enqueue image job (via wrapper):
+- Queue enqueue (dry-run):
   ```bash
   ./tools/run-bullmq.sh --dry-run enqueue --queue=image-processing --payload-file=payload.json
   ```
+- Factory Droid vibe prototype (safe):
+  ```bash
+  ./tools/run-droid.sh exec --prompt "vibe-code a SvelteKit admin dashboard" --auto low --output-format text --dry-run
+  ```
 
 Proceed with development
-- The AgentWise brain (GPT‑5.1 Codex) is authorized to proceed with development: generate wrappers, `.warp/` workflows, scripts, and docs (including this `WARP.md`) and to run non‑destructive dry-run validations. It must use placeholders for secrets and request them only when needed for privileged actions. Operator will provide secrets via Warp secrets or AgentWise secret store when requested.
+- GPT‑5.1 Codex (AgentWise brain) may generate wrappers, `.warp/` workflows, scripts, docs (including this file) and run dry-run validations. Request secrets only when truly needed for privileged steps. AgentWise remains the orchestrator even when Factory Droids execute tasks.
 
 Troubleshooting & common checks
-- If a workflow fails in Warp, inspect `logs/tool-invocations.log` for masked invocation records.
-- Validate workflow JSON locally:
-  ```bash
-  jq . .warp/workflow_frontier.json
-  ```
-- Validate wrapper syntax:
-  ```bash
-  sh -n tools/run-bullmq.sh
-  ./tools/run-bullmq.sh --dry-run --help
-  ```
+- Check logs: `tail -n 20 logs/tool-invocations.log`
+- Validate workflows: `jq . .warp/workflow_frontier.json` and `jq . .warp/workflow_droid-vibe.json`
+- Wrapper syntax: `sh -n tools/run-bullmq.sh` and `sh -n tools/run-droid.sh`
 
 Notes & security
-- Never store secret values in the repo. Use Warp secrets or AgentWise secret management.
-- All wrapper logs should be rotated and protected; do not leak secrets in logs.
+- No secrets in repo. Use Warp secrets or AgentWise secret management.
+- All wrapper logs are masked; keep `logs/` protected and rotated.
 
 Attribution
 - "Scaffolding assisted by tabletman + GPT‑5.1 Codex (AgentWise brain)"
-
-End of WARP.md
