@@ -1,282 +1,394 @@
-# BoomWare House v2 - Autonomous Multi-Platform Listing Swarm
+# Boom Warehouse E-Commerce + Autonomous Listing Platform
 
-**AI-powered marketplace automation system that transforms product photos into live listings across 5 platforms automatically.**
 
-## 🎯 Vision
+This is a general guideline. the below frameworks and technologies if they are conflicting with existing plan from Agent Wise and the boilerplate. Follow what agent-wise and the boilerplate code suggests first. 
 
-Drop a product photo → AI identifies → Smart pricing → **Autonomous listing** on eBay, Facebook, Mercari, Poshmark, and OfferUp.
+A modern, full-stack e-commerce platform built for Boom Warehouse - a used electronics and appliances business in Warrensville Heights, OH.
 
-## ✅ Current Status: Phase 2 Complete
+**NEW:** Now with AI-powered autonomous multi-marketplace listing system that automatically identifies, prices, and lists products across eBay, Facebook Marketplace, instagram and others to follow. Starting with eBay and meta.
 
-### Phase 1: Database Foundation ✓
-- SQLite inventory tracking
-- Multi-platform listing management
-- Sales analytics and performance metrics
-- Operation logging and duplicate detection
+## Features
 
-### Phase 2: Image Processing Pipeline ✓
-- AI-powered enhancement (sharpen, normalize, optimize)
-- Background removal (remove.bg API)
-- Platform-specific image sizing (5 platforms)
-- Batch processing with intelligent caching
-- Watermark support for cross-posting
+### 🤖 Autonomous Listing System (NEW!)
 
-### Phase 3: Price Optimization (Next)
-- Dynamic pricing strategy
-- Platform-specific fee calculations
-- Auto-decline/accept thresholds
-- Price drop scheduling
-- Auction vs fixed price recommendations
+**Snap photos → AI analyzes → Smart pricing → Auto-list to 5+ marketplaces**
 
-### Phase 4: Listing Executors (Coming)
-- eBay API integration
-- Facebook Marketplace automation
-- Mercari, Poshmark, OfferUp automation
-- Parallel listing execution
-- Error recovery and retry logic
+- **Vision AI**: Automatic product identification via Claude 3.5 Sonnet
+- **Market Intelligence**: Real-time pricing from eBay sold listings
+- **Smart Pricing**: 20% below market average for fast sales
+- **Multi-Platform**: eBay (API) + Facebook/Mercari/Poshmark/OfferUp (automation)
+- **Self-Healing**: Automatic retry of failed listings
+- **Analytics**: Track sales performance across platforms
+- **CLI Tools**: Command-line interface for batch processing
+- **Cron Automation**: Hands-off operation with scheduled tasks
 
-## 🚀 Quick Start
+### 🏪 Core E-Commerce
+- Complete product catalog with advanced filtering
+- Professional condition grading system (Grade A-D)
+- Serial number tracking for electronics
+- Real-time inventory management
+- Shopping cart and checkout system
+- Order tracking and management
 
+### 📱 Customer Experience
+- Responsive design optimized for mobile
+- Guest checkout capability
+- Local pickup scheduling
+- Delivery radius calculator
+- Order tracking via email/SMS
+- Customer account management
+
+### 🔧 Admin Dashboard
+- Comprehensive inventory management
+- Barcode scanning integration
+- Bulk product imports (CSV)
+- Order fulfillment system
+- Analytics and reporting
+- Customer management
+
+### 💳 Payment & Fulfillment
+- Stripe payment processing
+- Multiple payment methods
+- Local pickup option
+- Delivery scheduling
+- Email notifications
+- Receipt generation
+
+### 🎨 Design & UX
+- Modern, clean interface
+- Condition-based product badges
+- Dynamic pricing displays
+- Image optimization with Cloudinary
+- SEO-optimized pages
+- Performance monitoring
+
+## Tech Stack
+
+### Autonomous Listing System
+- **Vision AI**: Claude 3.5 Sonnet (Anthropic)
+- **Browser Automation**: Playwright
+- **Database**: SQLite (inventory) + Supabase (app data)
+- **Image Processing**: Sharp + remove.bg API
+- **APIs**: eBay Sell API, Anthropic Claude
+- **Job Queues**: Node.js EventEmitter (future: BullMQ + Redis)
+
+### Frontend
+- **Next.js 14** - React framework with App Router
+- **TypeScript** - Type safety and developer experience
+- **Tailwind CSS** - Utility-first styling
+- **Radix UI** - Accessible component primitives
+- **Lucide React** - Beautiful icons
+- **React Hook Form** - Form management
+- **Zod** - Schema validation
+
+### Backend & Database
+- **Supabase** - PostgreSQL database and authentication
+- **Stripe** - Payment processing
+- **Cloudinary** - Image management and optimization
+
+### Infrastructure
+- **Vercel** - Hosting and deployment
+- **Cloudflare** - CDN and security
+- **Google Analytics** - Analytics and tracking
+
+## Getting Started
+
+### Prerequisites
+- Node.js 18+
+- npm or yarn
+- Supabase account
+- Stripe account
+- Cloudinary account
+
+### Environment Setup
+
+1. Clone the repository
 ```bash
-# Install dependencies
-npm install
-
-# Initialize database
-npm run db:init
-
-# Run full pipeline example
-npm run dev
-
-# Run tests
-npm run db:test   # Database tests
-npm run img:test  # Image processing tests
+git clone <repository-url>
+cd boom-warehouse
 ```
 
-## 📦 System Architecture
-
-```
-📸 Product Photos
-    ↓
-🧠 AI Vision Analysis (Claude Sonnet/Haiku)
-    ↓
-🎨 Image Processing (Enhancement + Sizing)
-    ↓
-💾 Inventory Database (SQLite)
-    ↓
-💰 Price Optimization (Smart Pricing)
-    ↓
-🤖 Listing Agents (5 Platforms in Parallel)
-    ↓
-📊 Performance Analytics
-```
-
-## 🛠️ Tech Stack
-
-**AI & Vision**
-- Anthropic Claude (Sonnet 4.5 & Haiku 3.5)
-- Prompt caching for 75% cost reduction
-- Vision API for product identification
-
-**Image Processing**
-- Sharp (enhancement, resizing, compression)
-- remove.bg API (background removal)
-- Intelligent caching system
-
-**Database & Queue**
-- SQLite with sql.js (pure JavaScript)
-- BullMQ + Redis for job queuing
-- LRU cache for performance
-
-**Automation**
-- Playwright (browser automation)
-- eBay Sell API (official integration)
-- TypeScript for type safety
-
-## 📊 Current Capabilities
-
-### VisionAnalysisAgent
-```typescript
-const productData = await vision.analyzeProduct(imagePaths, ['ebay', 'facebook']);
-// ✅ Product identification with 95% confidence
-// ✅ Condition assessment (NEW, LIKE_NEW, GOOD, FAIR, POOR)
-// ✅ Market positioning and unique selling points
-// ✅ Platform-optimized titles and descriptions
-// ✅ Estimated retail value range
-```
-
-### ImageProcessorAgent
-```typescript
-const processed = await imageProcessor.processGallery(imagePaths, {
-  enhance: { sharpen: true, autoLevel: true, quality: 90 },
-  removeBackground: false,
-  watermark: 'BoomWare House'
-});
-// ✅ Auto-enhancement (sharpen, normalize, optimize)
-// ✅ Background removal ($0.09/image or 50/month free)
-// ✅ Platform-specific sizing (eBay: 1600x1600, FB: 1200x1200, etc.)
-// ✅ Batch processing with concurrency
-// ✅ Intelligent caching (80%+ cache hit rate)
-```
-
-### InventoryManagerAgent
-```typescript
-const itemId = await inventory.addItem(productData, images);
-await inventory.addListing(itemId, 'ebay', 99.99);
-await inventory.markSold(itemId, 'ebay', 89.99);
-
-const report = await inventory.getSalesReport(startDate, endDate);
-// ✅ Inventory tracking with duplicate detection
-// ✅ Multi-platform listing management
-// ✅ Sales analytics and platform performance
-// ✅ Price history tracking
-// ✅ Operation logging for debugging
-```
-
-## 📈 Performance Metrics
-
-**Vision Analysis**
-- First call: ~$0.015 (Sonnet)
-- Cached call: ~$0.004 (90% cheaper)
-- Fast mode: ~$0.001 (Haiku)
-
-**Image Processing**
-- Enhancement: Free (~200ms per image)
-- Background removal: $0.09/image (2-5s latency)
-- Batch 5 images: ~500ms total (parallel)
-- Cache hit rate: 80%+
-
-**Database**
-- SQLite (76KB initialized)
-- 5 tables with 7 indexes
-- <10ms query response time
-- Scales to thousands of items
-
-## 🔧 Configuration
-
-**Environment Variables**
+2. Install dependencies
 ```bash
-# Required
-ANTHROPIC_API_KEY=your_anthropic_key
-
-# Optional
-REMOVE_BG_API_KEY=your_removebg_key  # For background removal
-
-# Redis (for job queue)
-REDIS_HOST=localhost
-REDIS_PORT=6379
+npm install --legacy-peer-deps
 ```
 
-## 📚 Documentation
-
-- [Phase 1 Complete](docs/PHASE1_COMPLETE.md) - Database foundation
-- [Phase 2 Complete](docs/PHASE2_COMPLETE.md) - Image processing
-- [Quick Start Guide](docs/QUICK_START.md) - Getting started
-- [Visual Prompt](docs/VISUAL_PROMPT.md) - System architecture visualization
-
-## 🧪 Testing
-
+3. Set up environment variables
 ```bash
-# Database tests
-npm run db:test
+cp .env.local.example .env.local
+```
 
-# Image processing tests
-npm run img:test
+Fill in your environment variables:
+- Supabase credentials
+- Stripe keys
+- Cloudinary settings
+- Email configuration
 
-# Full pipeline example
+### Database Setup
+
+1. Create a new Supabase project
+2. Run the database migrations:
+```sql
+-- Execute the contents of supabase/migrations/001_initial_schema.sql
+-- Execute the contents of supabase/seed.sql for sample data
+```
+
+### Development
+
+Start the development server:
+```bash
 npm run dev
 ```
 
-## 📁 Project Structure
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-```
-📁 src/
-  ├── lib/
-  │   ├── agents/
-  │   │   ├── optimized-vision-agent.ts      # AI product analysis
-  │   │   ├── image-processor.ts             # Image enhancement
-  │   │   └── inventory-manager.ts           # Inventory tracking
-  │   ├── db/
-  │   │   ├── client.ts                      # Database client
-  │   │   └── types.ts                       # TypeScript types
-  │   └── queue/
-  │       └── job-queue.ts                   # BullMQ queue
-  └── examples/
-      └── full-pipeline-example.ts           # Complete workflow demo
+### Autonomous Listing CLI
 
-📁 data/
-  ├── schema.sql                             # Database schema
-  ├── inventory.db                           # SQLite database
-  └── processed-images/                      # Image cache
+```bash
+# Analyze a product
+npm run cli analyze ./photos/item.jpg
 
-📁 tests/
-  └── agents/
-      ├── inventory-manager.test.ts          # DB tests
-      └── image-processor.test.ts            # Image tests
+# List on eBay and Facebook
+npm run cli list ./photos/item.jpg --platforms ebay,facebook
 
-📁 docs/
-  ├── PHASE1_COMPLETE.md                     # Phase 1 docs
-  ├── PHASE2_COMPLETE.md                     # Phase 2 docs
-  └── VISUAL_PROMPT.md                       # Architecture viz
+# Process entire folder
+npm run cli batch ./photos/ --auto
+
+# View inventory
+npm run cli inventory
+
+# Sales report
+npm run cli sales --last 30
+
+# Retry failed listings
+npm run cli heal
 ```
 
-## 🎯 Roadmap
+For detailed CLI documentation, see the **Autonomous Listing** section below.
 
-- [x] **Phase 1**: Database Foundation (Inventory, Listings, Analytics)
-- [x] **Phase 2**: Image Processing (Enhancement, Sizing, Caching)
-- [ ] **Phase 3**: Price Optimization (Dynamic Pricing, Fee Calculation)
-- [ ] **Phase 4**: eBay Listing Executor (API Integration)
-- [ ] **Phase 5**: Browser Automation (Facebook, Mercari, Poshmark, OfferUp)
-- [ ] **Phase 6**: Swarm Orchestrator (Multi-agent Coordination)
-- [ ] **Phase 7**: CLI & Automation (Watch Folders, Cron Jobs)
+### Building for Production
 
-## 🏆 Success Criteria (MVP)
+```bash
+npm run build
+npm start
+```
 
-- [x] Database schema with inventory tracking
-- [x] AI-powered product identification
-- [x] Image processing pipeline
-- [ ] Smart pricing strategy
-- [ ] Autonomous listing on eBay
-- [ ] Autonomous listing on Facebook
-- [ ] Cross-platform listing coordination
-- [ ] Sales analytics dashboard
-- [ ] Automated price drops
-- [ ] Listing health monitoring
+## Database Schema
 
-**MVP Target**: Drop image → Listed on 5 platforms within 60 seconds
+The application uses a comprehensive PostgreSQL schema including:
+- `products` - Product catalog with condition grading
+- `categories` - Product categorization
+- `orders` - Order management
+- `customers` - Customer data
+- `cart_items` - Shopping cart functionality
+- `inventory_transactions` - Inventory tracking
 
-## 💡 Key Features
+## Key Features Implementation
 
-**Intelligent Processing**
-- Prompt caching reduces AI costs by 75%
-- Intelligent image caching (80%+ hit rate)
-- Parallel processing for speed
-- Automatic duplicate detection
+### Condition Grading System
+Products are graded A through D with:
+- **Grade A**: Excellent condition, minimal wear
+- **Grade B**: Good condition, light wear
+- **Grade C**: Fair condition, noticeable wear
+- **Grade D**: Poor cosmetic condition, fully functional
 
-**Production Ready**
-- Type-safe TypeScript
-- Comprehensive error handling
-- Unit test coverage
-- Operation logging
-- Performance metrics
+### Inventory Management
+- Real-time stock tracking
+- Reserved inventory for pending orders
+- Automatic inventory adjustments
+- Location-based organization
+- Barcode scanning support
 
-**Scalable Architecture**
-- Agent-based design
-- Queue-based processing
-- Database persistence
-- Modular components
+### Order Processing
+- Automated order number generation
+- Inventory reservation on order
+- Email notifications
+- Tracking number integration
+- Local pickup scheduling
 
-## 📄 License
+## Deployment
 
-MIT License - See LICENSE file
+### Vercel Deployment
+1. Connect your repository to Vercel
+2. Configure environment variables
+3. Deploy automatically on push to main
 
-## 🤝 Contributing
+### Supabase Configuration
+1. Set up Row Level Security policies
+2. Configure database functions
+3. Set up real-time subscriptions
 
-This is an active development project. See PHASE documentation for implementation details.
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+This project is proprietary software for Boom Warehouse.
 
 ---
 
-**Built with**: TypeScript, Node.js, Anthropic Claude, Sharp, SQLite, BullMQ, Playwright
+## 🤖 Autonomous Listing System
 
-**Status**: Phase 2/7 Complete ✅
+### Quick Start
 
-**Next Milestone**: Price Optimization Agent
+1. **Set up API keys**
+   ```bash
+   # Add to .env.local
+   ANTHROPIC_API_KEY=sk-ant-xxx
+   EBAY_APP_ID=your_app_id
+   EBAY_CERT_ID=your_cert_id
+   EBAY_DEV_ID=your_dev_id
+   REMOVE_BG_API_KEY=your_api_key  # optional
+   ```
+
+2. **Analyze a product**
+   ```bash
+   npm run cli analyze ./photos/iphone.jpg --verbose
+   ```
+
+3. **Create listings**
+   ```bash
+   npm run cli list ./photos/iphone.jpg \
+     --platforms ebay,facebook,mercari \
+     --urgency balanced
+   ```
+
+### Agent Architecture
+
+The system uses 6 specialized AI agents:
+
+1. **VisionAgent** - Product identification via Claude vision
+2. **MarketIntelAgent** - Price analysis from sold listings
+3. **PriceOptimizerAgent** - Dynamic pricing strategies
+4. **ImageProcessorAgent** - Photo optimization per platform
+5. **ListingExecutorAgent** - Multi-marketplace posting
+6. **SwarmOrchestrator** - Coordinates entire pipeline
+
+### CLI Commands
+
+```bash
+# Analysis only (no listing)
+npm run cli analyze <images...> [--verbose]
+
+# Create listings
+npm run cli list <images...> \
+  --platforms ebay,facebook,mercari \
+  --urgency fast_sale|balanced|maximize_profit
+
+# Batch process folder
+npm run cli batch <directory> \
+  --platforms ebay,facebook \
+  --concurrent 3 \
+  --auto
+
+# View inventory
+npm run cli inventory \
+  --status listed|sold \
+  --limit 20
+
+# Sales analytics
+npm run cli sales --last 30
+
+# Retry failed listings
+npm run cli heal
+
+# Sync statuses
+npm run cli sync
+```
+
+### Pricing Strategies
+
+- **Fast Sale**: 20th percentile (20% below market)
+- **Balanced**: 5% below market mean
+- **Maximize Profit**: 80th percentile
+- Auto price drops at day 7, 14, 21
+
+### Platform Support
+
+| Platform | Method | Fee Structure |
+|----------|--------|---------------|
+| eBay | Official Sell API | 13.25% final value |
+| Facebook | Playwright automation | 0% (local) / 5% (shipping) |
+| Mercari | Playwright automation | 12.9% (10% + 2.9% payment) |
+| Poshmark | Playwright automation | 20% flat |
+| OfferUp | Playwright automation | 0% free |
+
+### Cron Automation
+
+Set up hands-off operation:
+
+```bash
+# Install cron jobs
+crontab -e
+
+# Add these lines:
+0 */6 * * * cd /path/to/boomware-house && npm run cron:heal >> logs/heal.log 2>&1
+0 9 * * * cd /path/to/boomware-house && npm run cron:prices >> logs/price-drops.log 2>&1
+0 3 * * 0 cd /path/to/boomware-house && npm run cron:cleanup >> logs/cleanup.log 2>&1
+0 8 * * * cd /path/to/boomware-house && npm run cron:metrics >> logs/metrics.log 2>&1
+```
+
+See [CRON_SETUP.md](./CRON_SETUP.md) for details.
+
+### Database Schema (Autonomous Listing)
+
+SQLite database (`data/boomware.db`) with:
+- `inventory` - Product catalog with JSON data
+- `listings` - Multi-platform listing tracking
+- `price_history` - Price changes over time
+- `market_cache` - Cached market research
+- `agent_logs` - Swarm operation logs
+- `scheduled_actions` - Auto price drops
+- `platform_metrics` - Performance analytics
+
+### Example Workflow
+
+```typescript
+// Complete pipeline
+const orchestrator = new SwarmOrchestrator();
+
+const result = await orchestrator.processAndList(
+  ['./photos/iphone-front.jpg', './photos/iphone-back.jpg'],
+  {
+    platforms: ['ebay', 'facebook', 'mercari'],
+    urgency: 'balanced',
+    optimizeImages: true
+  }
+);
+
+console.log(`Listed ${result.productName} on ${result.listings.length} platforms`);
+```
+
+### Testing
+
+```bash
+# Test inventory manager
+tsx scripts/test-inventory-manager.ts
+
+# Expected output:
+✅ Created inventory item
+✅ Created eBay listing
+✅ Created Facebook listing
+✅ Simulated success
+✅ Simulated failure
+✅ Tracked price history
+✅ Processed sale: Net profit $550
+✅ Generated sales analytics
+✅ Tested failed listing recovery
+✅ Search functionality works
+✅ Database backup created
+```
+
+---
+
+## Support
+
+For support and inquiries:
+- Email: info@boomwarehouse.com
+- Phone: (216) 555-0123
+- Address: Warrensville Heights, OH
