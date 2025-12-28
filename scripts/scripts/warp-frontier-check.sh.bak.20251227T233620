@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+# warp-frontier-check.sh -- health check + Frontier smoke test
+# Idempotent checks for system, connectivity to Mac, and Frontier endpoint.
+set -euo pipefail
+
+FRONTIER_API_URL="${FRONTIER_API_URL:-<FRONTIER_API_URL>}"
+FRONTIER_MODEL="${FRONTIER_MODEL:-<FRONTIER_MODEL>}"
+FRONTIER_API_KEY="${FRONTIER_API_KEY:-}"
+MAC_IP="${MAC_IP:-<MAC_IP>}"
+MAC_USER="${MAC_USER:-<MAC_USER>}"
+SSH_PORT="${SSH_PORT:-22}"
+
+echo "=== Basic system info ==="
+echo "USER: $(whoami)"
+uname -a
+free -h || true
+df -h . || true
+
+echo
+echo "=== GPU (if present) ==="
+if command -v nvidia-smi >/dev/null 2>&1; then
+  nvidia-smi --query-gpu=index,name,memory.total,memory.used,utilization.gpu --format=csv,noheader,nounits || true
+else
+  echo "nvidia-smi not found; skipping GPU checks"
+fi
+
+echo
+echo "=== SSH test to Mac (${MAC_IP}) ==="
+if [ -n "${MAC_IP}" ] && [ "${MAC_IP}" != "<MAC_IP>" ]; then
+  if ssh -o ConnectTimeout=5 -p "${SSH_PORT}" "${MAC_USER}@${MAC_IP}" 'echo OK; uname -a' >/dev/null 2>&1; then
+    echo "SSH OK to ${MAC_USER}@${MAC_IP}"
+  else
+    echo "SSH failed to ${MAC_USER}@${MAC_IP}" >&2 || true
+  fi
+else
+  echo "MAC_IP not set; skipping SSH test"
+fi
+
+echo
+if [ -n "${FRONTIER_API_KEY}" ] && [ "${FRONTIER_API_KEY}" != "<FRONTIER_API_KEY>" ]; then
+  echo "=== Frontier smoke test ==="
+  set +e
+  RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "${FRONTIER_API_URL}/v1/${FRONTIER_MODEL}/infer" \
+    -H "Authorization: Bearer ${FRONTIER_API_KEY}" \
+    -H "Content-Type: application/json" \
+    -d '{ "input": "health check" }' || true)
+  set -e
+  HTTP_CODE=$(echo "$RESPONSE" | tail -n1)
+  BODY=$(echo "$RESPONSE" | sed '$d')
+  echo "HTTP status: $HTTP_CODE"
+  if [ "$HTTP_CODE" -ge 200 ] && [ "$HTTP_CODE" -lt 300 ]; then
+    echo "Frontier response: $BODY"
+  else
+    echo "Frontier call failed or returned non-2xx; body: $BODY" >&2
+  fi
+else
+  echo "FRONTIER_API_KEY not set; skipping Frontier test"
+fi
+
+echo
+echo "=== Done ==="

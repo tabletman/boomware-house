@@ -1,49 +1,78 @@
-# WARP.md
+# WARP.md — Warp as Command Center for Boom Warehouse
 
-This file provides guidance to WARP (warp.dev) when working with code in this repository.
+This file documents how to use Warp (warp.dev) as the command center for Boom Warehouse. It is intended to be written/created by the project's AgentWise brain (GPT‑5.1 Codex) and to be imported alongside `.warp/` workflow files into the Warp app.
 
-## AgentWise Policy (must follow)
-- AgentWise is the sole orchestrator for automation. Prefer invoking tasks via AgentWise commands rather than direct human/manual runs.
-- External tools/CLIs should be invoked through signed wrappers under `tools/run-*.sh` that check `AGENTWISE_TOKEN` and log to `logs/tool-invocations.log`. If you need a new integration, add a wrapper instead of calling tools directly.
-- Agents managed by AgentWise: VisionAgent, MarketIntelAgent, PriceOptimizerAgent, ImageProcessorAgent, ListingExecutorAgent; SwarmOrchestrator coordinates them.
+Overview
+- Purpose: Use Warp as the central UI to run repo health checks, AgentWise tasks, worker control, model endpoint smoke tests, and deploy operations.
+- Principle: AgentWise is the canonical executor. Warp is the command center that triggers AgentWise wrappers (tools/run-*.sh) and workflows. Do not run external tools directly from Warp unless they are calling the signed wrappers.
 
-## How to run / common commands
-- Install deps (Node 18+): `npm install`
-- Initialize local SQLite DB (creates `data/inventory.db`): `npm run db:init`
-- Dev pipeline (CLI demo): `npm run dev`
-- Watch mode for automated processing: `npm run watch`
-- Build TypeScript: `npm run build`
-- Start workers (requires Redis): `npm run worker:start`
-- Metrics dashboard (emits metrics): `npm run metrics:dashboard`
-- Clean BullMQ queue: `npm run clean:queue`
-- CLI entry point (full pipeline / subcommands): `npm run cli -- <args>` e.g., `npm run cli -- list ./photos/item.jpg --platforms ebay --mock`
+Immediate operator checklist (import & setup)
+1. Import workflows
+   - In Warp: Workflows → Import → select `.warp/*.json` files (e.g. `.warp/workflow_frontier.json`, `.warp/workflow_db-init.json`, `.warp/workflow_worker-control.json`).
+2. Configure Warp secrets (DO NOT store secrets in repo)
+   - Add the following secrets in Warp secret storage:
+     - FRONTIER_API_KEY
+     - AGENTWISE_TOKEN
+     - ANTHROPIC_API_KEY (if required)
+     - EBAY_CLIENT_ID / EBAY_CLIENT_SECRET (if required)
+3. Confirm agentwise wrappers exist
+   - Ensure `tools/run-*.sh` wrappers are present and executable. They should validate `AGENTWISE_TOKEN`, support `--dry-run`, and log invocations to `logs/tool-invocations.log`.
+4. Run health-check (dry-run first)
+   - In Warp open the imported workflow `boomware-frontier-health-check` and run it in `--dry-run` mode or use the terminal:
+     ```bash
+     bash scripts/warp-frontier-check.sh --dry-run
+     ```
+5. Provide secrets when requested
+   - The AgentWise brain will create workflows and attempt dry-run checks. If any step requires secrets to proceed, the workflow or wrapper will pause and request the secret (Warp secrets or AgentWise secret store). Provide secrets via Warp's secret UI or AgentWise secret set commands.
 
-## Testing
-- Full test script: `npm test` (runs `tsx tests/load-test.ts`)
-- DB-focused tests: `npm run db:test`
-- Image pipeline tests: `npm run img:test`
-- Run a single spec directly: `npx tsx tests/agents/image-processor.test.ts`
-- Playwright visual test (if needed): `npx playwright test tests/visual/landing-page.spec.ts`
+How Warp interacts with AgentWise
+- Workflows in `.warp/` call local wrapper scripts in `tools/` (e.g., `./tools/run-bullmq.sh enqueue ...`) which in turn validate `AGENTWISE_TOKEN`, log the invocation, and then call AgentWise APIs or run the desired command within the controlled environment.
+- This design centralizes audit logs in `logs/tool-invocations.log` and prevents ad-hoc direct CLI calls.
 
-## Environment & data
-- Copy `.env.example` → `.env` and set at least `ANTHROPIC_API_KEY`; optional: `REMOVE_BG_API_KEY`, `EBAY_CLIENT_ID/SECRET`, `EBAY_SANDBOX`, Redis host/port.
-- DB file lives in `data/inventory.db`; schema at `data/schema.sql`. Scripts assume working directory is repo root.
-- Redis is required for BullMQ queues (`src/lib/queue/*`) and cache (`src/lib/cache/cache-manager.ts`). Without Redis, queue/worker commands will fail.
-- eBay listing in production mode needs real policy IDs and credentials; `ListingExecutorAgent` supports `mockMode` to simulate listings.
+Key workflows to import
+- boomware-frontier-health-check (`.warp/workflow_frontier.json`)
+  - Purpose: run repository health checks, GPU checks (if present), SSH connectivity smoke tests, and a Frontier model smoke test (if API key present).
+  - Secrets required: FRONTIER_API_KEY, AGENTWISE_TOKEN
+- boomware-db-init (`.warp/workflow_db-init.json`)
+  - Purpose: safely initialize or migrate `data/inventory.db` using wrapper `tools/run-db.sh` (requires `--confirm` to perform destructive actions).
+  - Secrets: AGENTWISE_TOKEN
+- boomware-worker-control (`.warp/workflow_worker-control.json`)
+  - Purpose: start/stop worker groups via `tools/run-worker.sh` and monitor job queues.
+  - Secrets: AGENTWISE_TOKEN
 
-## High-level architecture
-- Core pipeline (CLI or AgentWise): image(s) → `OptimizedVisionAgent` (Claude vision) → `ImageProcessorAgent` (sharp, optional remove.bg) → `PriceOptimizerAgent` → `ListingExecutorAgent` (eBay API or mock) → `InventoryManagerAgent` (sqlite via sql.js) → metrics/cache/queue layers.
-- Persistence: sqlite via `src/lib/db/client-sqljs.ts`, stored in `data/inventory.db`; typed models in `src/lib/db/types.ts`.
-- Queues: BullMQ (`src/lib/queue/job-queue.ts`) with Redis backing; worker orchestration in `src/lib/queue/worker-pool.ts`.
-- Caching: L1 LRU + L2 Redis (`src/lib/cache/cache-manager.ts`); reusable cache key helpers in the same file.
-- Pricing: `src/lib/agents/price-optimizer.ts` computes strategy, thresholds, auction suggestion.
-- Listing: `src/lib/agents/listing-executor.ts` builds payloads; eBay API client in `src/lib/platforms/ebay/`.
-- CLI: `scripts/boomware-cli.ts` exposes analyze/list/batch/inventory/sales flows using the agents above; relies on `.env`.
-- Initialization: `scripts/init-db.ts` seeds schema; `data/schema.sql` defines inventory/listings/price_history/etc.
-- Tests: agent-level tests under `tests/agents/*` (sharp-based image assertions), load test at `tests/load-test.ts`, Playwright spec in `tests/visual/`.
+Recommended Warp snippets
+- frontier_call snippet:
+  ```bash
+  curl -s -X POST "${FRONTIER_API_URL}/v1/${FRONTIER_MODEL}/infer" \
+    -H "Authorization: Bearer ${FRONTIER_API_KEY}" \
+    -H "Content-Type: application/json" \
+    -d '{ "input": "health check" }' | jq -r '.output'
+  ```
+- enqueue image job (via wrapper):
+  ```bash
+  ./tools/run-bullmq.sh --dry-run enqueue --queue=image-processing --payload-file=payload.json
+  ```
 
-## Project-specific cautions
-- Run commands from `boomware-house/` (this directory); paths are relative to here.
-- Queue/worker commands need a running Redis instance; otherwise they exit or hang.
-- Image tests generate and delete temp files under `tests/agents/test-output`; ensure write permissions.
-- eBay production calls will fail without valid policy IDs; use `--mock` during development.
+Proceed with development
+- The AgentWise brain (GPT‑5.1 Codex) is authorized to proceed with development: generate wrappers, `.warp/` workflows, scripts, and docs (including this `WARP.md`) and to run non‑destructive dry-run validations. It must use placeholders for secrets and request them only when needed for privileged actions. Operator will provide secrets via Warp secrets or AgentWise secret store when requested.
+
+Troubleshooting & common checks
+- If a workflow fails in Warp, inspect `logs/tool-invocations.log` for masked invocation records.
+- Validate workflow JSON locally:
+  ```bash
+  jq . .warp/workflow_frontier.json
+  ```
+- Validate wrapper syntax:
+  ```bash
+  sh -n tools/run-bullmq.sh
+  ./tools/run-bullmq.sh --dry-run --help
+  ```
+
+Notes & security
+- Never store secret values in the repo. Use Warp secrets or AgentWise secret management.
+- All wrapper logs should be rotated and protected; do not leak secrets in logs.
+
+Attribution
+- "Scaffolding assisted by tabletman + GPT‑5.1 Codex (AgentWise brain)"
+
+End of WARP.md
