@@ -1,0 +1,39 @@
+{
+  "nodes": [
+    { "id": "repo", "type": "repository", "name": "tabletman/boomware-house" },
+    { "id": "cli", "type": "component", "name": "scripts/boomware-cli.ts" },
+    { "id": "agents", "type": "group", "name": "Agent components" },
+    { "id": "vision_agent", "type": "agent", "name": "VisionAgent / OptimizedVisionAgent" },
+    { "id": "image_agent", "type": "agent", "name": "ImageProcessorAgent" },
+    { "id": "price_agent", "type": "agent", "name": "PriceOptimizerAgent" },
+    { "id": "listing_agent", "type": "agent", "name": "ListingExecutorAgent" },
+    { "id": "inventory_agent", "type": "agent", "name": "InventoryManagerAgent" },
+    { "id": "swarm", "type": "agent", "name": "SwarmOrchestrator" },
+    { "id": "db", "type": "service", "name": "SQLite (data/inventory.db)" },
+    { "id": "redis", "type": "service", "name": "Redis (BullMQ backend)" },
+    { "id": "warp_workflow", "type": "workflow", "name": "boomware-frontier-health-check" },
+    { "id": "warp_script", "type": "script", "name": "scripts/warp-frontier-check.sh" },
+    { "id": "agentwise_wrappers", "type": "folder", "name": "tools/run-*.sh" }
+  ],
+  "edges": [
+    { "from": "repo", "to": "cli", "relation": "contains" },
+    { "from": "repo", "to": "agents", "relation": "contains" },
+    { "from": "agents", "to": "vision_agent", "relation": "includes" },
+    { "from": "agents", "to": "image_agent", "relation": "includes" },
+    { "from": "agents", "to": "price_agent", "relation": "includes" },
+    { "from": "agents", "to": "listing_agent", "relation": "includes" },
+    { "from": "agents", "to": "inventory_agent", "relation": "includes" },
+    { "from": "agents", "to": "swarm", "relation": "coordinated_by" },
+    { "from": "cli", "to": "db", "relation": "reads_writes" },
+    { "from": "agents", "to": "redis", "relation": "queues_with" },
+    { "from": "warp_workflow", "to": "warp_script", "relation": "executes" },
+    { "from": "warp_workflow", "to": "cli", "relation": "may_invoke" },
+    { "from": "warp_script", "to": "db", "relation": "checks" },
+    { "from": "agentwise_wrappers", "to": "agents", "relation": "invoked_by" }
+  ],
+  "meta": {
+    "generated_by": "assistant",
+    "date": "2025-12-28",
+    "notes": "Secrets are represented as placeholders elsewhere. Expand this graph to include endpoints, models, and external APIs when available."
+  }
+}

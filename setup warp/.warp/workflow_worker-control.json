@@ -1,0 +1,11 @@
+{
+  "name": "boomware-worker-control",
+  "description": "Start/stop worker groups via the AgentWise wrappers",
+  "env": {},
+  "steps": [
+    { "name": "Worker status (dry-run)", "cmd": "./tools/run-agentwise.sh --dry-run worker:status" },
+    { "name": "Start workers", "cmd": "./tools/run-agentwise.sh worker:start --group default" },
+    { "name": "Stop workers", "cmd": "./tools/run-agentwise.sh worker:stop --group default --confirm" }
+  ],
+  "secrets": [ "AGENTWISE_TOKEN" ]
+}
